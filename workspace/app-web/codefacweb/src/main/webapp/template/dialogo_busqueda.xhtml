@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Buscador</title>
+    </h:head>
+
+    <h:body > 
+        <h:form>
+            <p:dataTable 
+                id="tablaBusqueda" 
+                var="objeto" 
+                value="#{dialogoBuscarMb.datosBusqueda}" 
+                rowIndexVar="indice" 
+                paginator="true"
+                style="width: 100%;height: 100%;font-size: 12px"
+                rows="10"
+                selectionMode="single"
+                selection="#{dialogoBuscarMb.objetoSeleccionado}"
+                rowKey="#{objeto}"
+                >
+
+                <p:ajax event="rowSelect" listener="#{dialogoBuscarMb.filaSeleccionada}" update="@this" />
+                <!--<p:ajax event="rowUnselect" listener="#{dtSelectionView.onRowUnselect}"  />!-->
+                <!--
+                <f:facet name="header">
+                    <p:outputPanel>
+                        <h:outputText value="Ingrese el campo para buscar:" />
+                        <p:inputText id="globalFilter" onkeyup="PF('tablaBusqueda').filter()" style="width:150px" placeholder="Ingrese el texto"/>
+                    </p:outputPanel>
+                </f:facet>!-->
+
+                <p:columns 
+                    var="propiedad" 
+                    value="#{dialogoBuscarMb.propiedadesObjeto}" 
+                    headerText="#{dialogoBuscarMb.columnasConsulta.get(columna).getNombre()}" 
+                    filterBy="#{dialogoBuscarMb.buscarValorObjecto(objeto,propiedad)}"
+                    filterFunction="#{dialogoBuscarMb.filterByName}"
+                    columnIndexVar="columna"   
+                    priority="#{columna}"
+                    >
+
+<!--<h:outputText value="#{objeto}"/>   -->
+                    <h:outputText value="#{dialogoBuscarMb.buscarValorObjecto(objeto,propiedad)}"/>
+
+                </p:columns>
+
+                <!--<p:column style="width:32px;text-align: center">
+                    <p:commandButton icon="ui-icon-search" actionListener="#{dialogoBuscarMb.selecccionarObjecto}" />
+                </p:column>-->
+
+            </p:dataTable>
+        </h:form>
+    </h:body>
+
+</html>

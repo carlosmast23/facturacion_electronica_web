@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="factura_fisica" pageWidth="500" pageHeight="842" whenNoDataType="BlankPage" columnWidth="496" leftMargin="2" rightMargin="2" topMargin="20" bottomMargin="20" uuid="9b36c502-cff2-4d1a-a8f4-03d85696bb48">
+	<property name="ireport.zoom" value="1.4641000000000064"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="identificacion" class="java.lang.String"/>
+	<parameter name="razonSocial" class="java.lang.String"/>
+	<parameter name="fechaEmision" class="java.lang.String"/>
+	<parameter name="direccion" class="java.lang.String"/>
+	<parameter name="telefono" class="java.lang.String"/>
+	<parameter name="subtotalSinImpuesto" class="java.lang.String"/>
+	<parameter name="correoElectronico" class="java.lang.String"/>
+	<parameter name="subtotalImpuesto" class="java.lang.String"/>
+	<parameter name="subtotalConDescuento" class="java.lang.String"/>
+	<parameter name="iva" class="java.lang.String"/>
+	<parameter name="valorIva" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="descuento" class="java.lang.String"/>
+	<parameter name="subtotalAntesImpuestos" class="java.lang.String"/>
+	<parameter name="formaPagoEfectivo" class="java.lang.String"/>
+	<parameter name="formaPagoCheque" class="java.lang.String"/>
+	<parameter name="formaPagoDineroElec" class="java.lang.String"/>
+	<parameter name="formaPagoTarjetaCred" class="java.lang.String"/>
+	<parameter name="formaPagoOtros" class="java.lang.String"/>
+	<parameter name="guiaRemision" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cantidad" class="java.lang.String"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="valorUnitario" class="java.lang.String"/>
+	<field name="valorTotal" class="java.lang.String"/>
+	<field name="codigoPrincipal" class="java.lang.String"/>
+	<field name="descuentoDetalle" class="java.lang.String"/>
+	<field name="ivaDetalle" class="java.lang.String"/>
+	<filterExpression><![CDATA[new Boolean($F{descripcion}.toString().indexOf("[Hidden]")<0)]]></filterExpression>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="84" splitType="Stretch">
+			<textField>
+				<reportElement x="289" y="50" width="133" height="15" uuid="e165fa85-1cb1-47e9-9af2-f89f0ff2c065"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{identificacion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="5" width="133" height="15" uuid="2915f0d2-afa9-4aba-8f9a-6bc7a4ac49c7"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaEmision}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="20" width="244" height="15" uuid="a93fd1ad-f710-4b35-ad52-4a4a75b14b83"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{razonSocial}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="35" width="188" height="15" uuid="0ee1f0c6-f914-4ffc-9a43-874e4dc6e8af"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{direccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="50" width="133" height="15" uuid="649694ec-4c36-45e9-b405-4cc54a640582"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="35" width="133" height="15" uuid="bf6539d9-3e3f-4f8b-b9be-917a103e0796"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{correoElectronico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="65" width="133" height="15" uuid="60338b1e-f1dc-4065-ab8f-ce5dbc1cee44"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{guiaRemision}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="91" y="0" width="60" height="15" uuid="4187fe71-1b90-4ecb-a317-b1515b77fe14"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="289" y="0" width="51" height="15" uuid="4352aef2-1d77-425e-95bd-736cd2211c25"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorUnitario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="446" y="0" width="45" height="15" uuid="3119d150-a3dc-4e39-9e60-4e349cc1daf9"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="0" width="73" height="15" uuid="e9273991-5c40-484d-8858-a722d863aa60"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoPrincipal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="387" y="0" width="59" height="14" uuid="107d6f63-0c26-4b99-8921-75d43cb504b8"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descuentoDetalle}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="151" y="0" width="117" height="15" uuid="63c13824-dd49-434e-a00d-7c356f78688b"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="0" width="37" height="15" uuid="da4670c8-a585-4e0b-bb67-417c5efd01e3"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ivaDetalle}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="104" splitType="Stretch">
+			<textField>
+				<reportElement x="391" y="26" width="100" height="15" uuid="b9a3a0cb-774d-485f-8933-f4ca3b41fba7"/>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotalSinImpuesto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="11" width="100" height="15" uuid="86054d4c-ae41-4430-9510-2d8749561874"/>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotalImpuesto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="41" width="100" height="15" uuid="0e91accb-5609-49f8-9878-4f77c27b8491"/>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{descuento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="56" width="100" height="15" uuid="32b039ed-968e-4b31-acd0-943e1063e6df"/>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotalConDescuento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="71" width="100" height="15" uuid="ad8a6e6b-030a-4490-9630-ee0dadf104db"/>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorIva}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="362" y="71" width="29" height="15" uuid="bfa48f42-e1e5-4bda-84a5-41af89f66937"/>
+				<textElement markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{iva}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="86" width="100" height="15" uuid="e8b582dc-3b95-4f26-a1b6-dddde4a42378"/>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="31" width="85" height="20" uuid="e0093ae7-97e7-4a30-bf24-16207c5d9819"/>
+				<textElement textAlignment="Left" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{direccion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="51" width="100" height="20" uuid="1caa08b5-5b51-4a2d-8265-0d21118832bf"/>
+				<textElement textAlignment="Left" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{telefono}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="18" y="71" width="100" height="20" uuid="63fe999c-ba9e-46ef-9d95-81e16d44e3b5"/>
+				<textElement textAlignment="Left" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{correoElectronico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="18" y="11" width="127" height="20" uuid="53b5eba0-0107-4d3b-9633-4bfddc42a777"/>
+				<textElement textAlignment="Right" markup="html">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subtotalAntesImpuestos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="172" y="21" width="69" height="15" uuid="7884b397-66d7-481f-bb9c-5b797e66cf6c"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$P{formaPagoEfectivo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="172" y="36" width="69" height="15" uuid="1e3ff100-b5f3-4f41-8546-a4bab11c618e"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$P{formaPagoCheque}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="172" y="51" width="69" height="15" uuid="a320d71f-4e5d-42a1-943b-c67bb2520ea6"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$P{formaPagoDineroElec}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="172" y="66" width="69" height="15" uuid="0061e225-2555-43ea-96b1-5a3a5990c0a4"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$P{formaPagoTarjetaCred}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="172" y="81" width="69" height="15" uuid="773022d8-63ad-475c-adb6-1bc251ce1fd4"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$P{formaPagoOtros}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>

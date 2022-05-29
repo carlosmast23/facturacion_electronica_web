@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="encabezado" pageWidth="405" pageHeight="595" whenNoDataType="AllSectionsNoDetail" columnWidth="405" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="58e2b8e6-fde5-4ef1-90e6-cb1dd3f4a182">
+	<property name="ireport.zoom" value="2.3579476910000396"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pl_direccion" class="java.lang.String"/>
+	<parameter name="pl_nombre_empresa" class="java.lang.String"/>
+	<parameter name="pl_usuario" class="java.lang.String"/>
+	<parameter name="pl_fecha_hora" class="java.lang.String"/>
+	<parameter name="pl_titulo" class="java.lang.String"/>
+	<parameter name="pl_telefonos" class="java.lang.String"/>
+	<parameter name="pl_url_img1" class="java.lang.Object"/>
+	<parameter name="pl_razon_social" class="java.lang.String"/>
+	<title>
+		<band height="49" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="138" y="39" width="249" height="9" uuid="762323ac-9ad0-48e2-a3ff-8bc176c1b6ea"/>
+				<textElement textAlignment="Right">
+					<font size="7" isItalic="true"/>
+					<paragraph rightIndent="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_direccion}+" / "+$P{pl_telefonos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="75" y="27" width="271" height="13" uuid="957c3dc5-2b07-45d2-bd7b-2b90920bf27c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_nombre_empresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="96" height="9" uuid="2a89b962-3f61-40ba-b75e-599e103de21e"/>
+				<textElement>
+					<font size="7" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_usuario}+" , "+$P{pl_fecha_hora}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="75" height="37" uuid="b08fe98a-9d8a-4999-8d5a-cfc8a7599be8"/>
+				<imageExpression><![CDATA[$P{pl_url_img1}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="75" y="0" width="271" height="18" uuid="6d32c61e-7403-4e29-ae20-cc34c0e33104"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_titulo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="48" width="401" height="1" forecolor="#003366" uuid="feed92f2-8eed-4098-b895-dfd5b101cec8"/>
+			</line>
+			<textField>
+				<reportElement x="75" y="18" width="271" height="9" uuid="fe0c3c18-185a-4cdb-89c2-1afabd33b1eb"/>
+				<textElement textAlignment="Center">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_razon_social}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

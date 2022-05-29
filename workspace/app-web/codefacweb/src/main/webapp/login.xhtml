@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition  template="/WEB-INF/plantilla_publica.xhtml">
+
+        <ui:define name="referenciaMb" >
+            <f:event listener="#{loginMb.agregarControlador(controllerPublicoMb)}" type="preRenderComponent" /> 
+        </ui:define>
+
+        <ui:define name="contenido">
+            <div style="text-align: center"><h2>Ingresar al Sistema</h2></div>
+            <div class="p-grid" style="padding: 20px" >
+                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
+                    <div><h:outputLabel for="username" value="Usuario:"  /></div>
+                    <p:inputText id="username"  required="true" label="username" value="#{loginMb.nick}" style="width: 100%" />
+                </div>
+
+                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
+                    <div><h:outputLabel for="password" value="Contraseña:" /></div>
+                    <p:password id="password"  required="true" label="password" value="#{loginMb.clave}" style="width: 100%"  />
+                </div>
+
+                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
+                    <div><h:outputLabel for="password" value="Empresa:" /></div>
+                    <p:selectOneMenu id="cmbEmpresa" value="#{loginMb.empresaSeleccionada}" style="width: 100%" converter="empresaConverter"  >
+                        <f:selectItems value="#{loginMb.empresas}" var="empresa" itemValue="#{empresa.id.toString()}"/>                        
+                        <p:ajax event="itemSelect" listener="#{loginMb.cargarSucursalEvento()}" update=":formulario:cmbSucursal"  />
+                    </p:selectOneMenu> 
+                </div>
+
+                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
+                    <div><h:outputLabel for="password" value="Sucursales" /></div>
+                    <p:selectOneMenu id="cmbSucursal" value="#{loginMb.sucursalSeleccionada}" converter="sucursalConverter" style="width: 100%" >                        
+                        <f:selectItems value="#{loginMb.sucursales}" var="sucursal" itemValue="#{sucursal.id.toString()}" />
+                    </p:selectOneMenu>                    
+                </div>
+                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
+                    <p:commandButton value="Ingresar" action="#{loginMb.login()}" />
+                </div>
+            </div>
+
+        </ui:define>
+    </ui:composition>
+
+</html>
+

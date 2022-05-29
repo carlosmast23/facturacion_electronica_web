@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteEjemplo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eebb6c8f-6681-4b1f-9c88-39752bf00886">
+	<property name="ireport.zoom" value="1.3286707500000086"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Carlos\\Documents\\GitHub\\codefac-lite\\workspace\\recursos\\src\\main\\resources\\reportes\\crm\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="pl_fecha_hora" class="java.lang.String"/>
+	<parameter name="pl_direccion" class="java.lang.String"/>
+	<parameter name="pl_nombre_empresa" class="java.lang.String"/>
+	<parameter name="pl_telefonos" class="java.lang.String"/>
+	<parameter name="pl_usuario" class="java.lang.String"/>
+	<parameter name="pl_titulo" class="java.lang.String"/>
+	<parameter name="pl_url_img1" class="java.lang.Object"/>
+	<parameter name="pl_img_facebook" class="java.lang.Object"/>
+	<parameter name="pl_img_whatsapp" class="java.lang.Object"/>
+	<parameter name="pl_img_telefono" class="java.lang.Object"/>
+	<parameter name="pl_img_logo_pie" class="java.lang.Object"/>
+	<parameter name="pl_url_cabecera" class="java.lang.Object"/>
+	<parameter name="pl_url_piepagina" class="java.lang.Object"/>
+	<parameter name="subreporte_datos" class="java.lang.Object"/>
+	<parameter name="pl_celular" class="java.lang.String"/>
+	<parameter name="pl_adicional" class="java.lang.String"/>
+	<parameter name="pl_facebook" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="periodo" class="java.lang.String"/>
+	<field name="curso" class="java.lang.String"/>
+	<field name="nombres" class="java.lang.String"/>
+	<field name="representante" class="java.lang.String"/>
+	<field name="nota" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<field name="deudas" class="java.util.Collection"/>
+	<variable name="subReport_COUNT" class="java.lang.Integer"/>
+	<group name="Estudiante" isStartNewPage="true">
+		<groupExpression><![CDATA[$F{nombres}]]></groupExpression>
+		<groupHeader>
+			<band height="50">
+				<textField>
+					<reportElement x="36" y="11" width="493" height="25" uuid="ad6b9b76-c8b7-42b5-9c20-feecf4df7ddf"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="true" isUnderline="false" isStrikeThrough="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="154">
+				<staticText>
+					<reportElement x="36" y="10" width="46" height="20" uuid="5f6f6b0d-e230-42bc-9b5c-69d710481a69"/>
+					<textElement textAlignment="Right">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Nota:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="92" y="10" width="268" height="20" uuid="7c1a13a3-be3c-4196-84f3-5329ed88cfe5"/>
+					<textElement>
+						<font isItalic="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[($F{nota} == null) ? $F{nota} : "No existe nota"]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="371" y="7" width="52" height="20" uuid="0fd9a777-6584-4cae-9a50-3b9c14fc07ab"/>
+					<textElement textAlignment="Right">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="423" y="7" width="75" height="20" uuid="e026e1d9-3559-451e-821e-19ec1ad4d81c"/>
+					<textElement textAlignment="Right" verticalAlignment="Top">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="67" width="555" height="1" uuid="776eb5fe-cb10-48ce-9bc4-5fa041ae4d36"/>
+				</line>
+				<staticText>
+					<reportElement x="0" y="48" width="555" height="20" uuid="895f759e-635c-49fd-aca3-0a3358521723"/>
+					<box>
+						<topPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Información de Cobro]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="68" width="115" height="15" uuid="50a30e32-92b3-485a-9341-3544300d3a89"/>
+					<text><![CDATA[Fecha de cobro:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="120" y="82" width="156" height="1" uuid="8d62fd12-409b-43d8-a407-9cd4948b555d"/>
+				</line>
+				<line>
+					<reportElement x="120" y="97" width="156" height="1" uuid="ad9d7176-78a0-4b1c-adba-031b132930cc"/>
+				</line>
+				<staticText>
+					<reportElement x="0" y="83" width="115" height="15" uuid="a4ac68fe-cafb-4a07-9d8b-a92bc59a84c4"/>
+					<text><![CDATA[Valor Efectivo:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="0" y="98" width="115" height="15" uuid="d2d274ad-7b0b-4251-9a93-9f6f2961ec28"/>
+					<text><![CDATA[Código Transferencia:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="120" y="112" width="156" height="1" uuid="ee05a9f3-5efc-4c9c-a2e0-6fcba5ce33b4"/>
+				</line>
+				<staticText>
+					<reportElement x="0" y="113" width="115" height="15" uuid="cffa2e00-8903-4d8e-bc11-b7f76aac9fc7"/>
+					<text><![CDATA[Banco - Cheque No:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="120" y="127" width="156" height="1" uuid="57cf13ef-fa14-4ff1-9e05-b8a8e026ad75"/>
+				</line>
+				<staticText>
+					<reportElement x="0" y="128" width="115" height="15" uuid="b36bf790-7ba7-40c1-9cf7-09aea9219e71"/>
+					<text><![CDATA[Cod. Depósito en cuenta:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="120" y="142" width="156" height="1" uuid="4c466bad-45ed-4fd2-821a-5f34071c2aa3"/>
+				</line>
+				<line>
+					<reportElement x="479" y="96" width="66" height="1" uuid="a52c609e-f9ed-462c-b6fc-93c30817c565"/>
+				</line>
+				<staticText>
+					<reportElement x="433" y="82" width="37" height="15" uuid="55f5ee88-90c1-49c7-9431-4e253410ab9c"/>
+					<text><![CDATA[Valor:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="479" y="124" width="66" height="1" uuid="2a3df84a-20f9-46a5-9c3b-5c07defa37c0"/>
+				</line>
+				<line>
+					<reportElement x="479" y="110" width="66" height="1" uuid="825a213e-6ca1-4112-aa8a-1c6b919c2b5c"/>
+				</line>
+				<staticText>
+					<reportElement x="433" y="96" width="37" height="15" uuid="35a72381-fd47-4f5e-855a-b5b7d7e37956"/>
+					<text><![CDATA[Valor:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="433" y="110" width="37" height="15" uuid="15fae112-2600-409e-a1f5-4fb8419e17f9"/>
+					<text><![CDATA[Valor:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="433" y="125" width="37" height="15" uuid="04a16904-300e-499c-ae8f-f8abc155801e"/>
+					<text><![CDATA[Valor:]]></text>
+				</staticText>
+				<line>
+					<reportElement x="479" y="139" width="66" height="1" uuid="38865758-cb7d-4457-8301-f8ea1d5740de"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="50">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="50" uuid="35826285-2ba3-4374-a880-47d8b954ac17"/>
+				<subreportParameter name="pl_direccion">
+					<subreportParameterExpression><![CDATA[$P{pl_direccion}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_telefonos">
+					<subreportParameterExpression><![CDATA[$P{pl_telefonos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_titulo">
+					<subreportParameterExpression><![CDATA[$P{pl_titulo}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_nombre_empresa">
+					<subreportParameterExpression><![CDATA[$P{pl_nombre_empresa}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_fecha_hora">
+					<subreportParameterExpression><![CDATA[$P{pl_fecha_hora}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_usuario">
+					<subreportParameterExpression><![CDATA[$P{pl_usuario}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_url_img1">
+					<subreportParameterExpression><![CDATA[$P{pl_url_img1}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{pl_url_cabecera}]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="111" splitType="Stretch">
+			<textField>
+				<reportElement x="152" y="0" width="377" height="20" uuid="b510025e-11d0-4d96-9ae3-6368668dc310"/>
+				<textFieldExpression><![CDATA[$F{periodo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="20" width="377" height="20" uuid="18889be0-4e20-4839-a142-bec50c9a5263"/>
+				<textFieldExpression><![CDATA[$F{curso}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="40" width="377" height="20" uuid="30a594dc-d3c2-402f-b6e7-6830503b201b"/>
+				<textFieldExpression><![CDATA[($F{representante}==null) ?"No existe representante": $F{representante}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="36" y="0" width="106" height="20" uuid="75c939f7-89d4-4ae5-b2cb-3a79dbf22a8c"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Periodo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="20" width="106" height="20" uuid="a0e76b77-2650-4e97-8185-b3f4d4aa736b"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Curso:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="40" width="106" height="20" uuid="9093dc08-1abc-4284-be9a-855ca01270fe"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Representante:]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="0" y="60" width="555" height="51" uuid="a66298dd-6664-4a1b-875f-a1d91e23c7e0"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{deudas})]]></dataSourceExpression>
+				<returnValue subreportVariable="REPORT_COUNT" toVariable="subReport_COUNT"/>
+				<subreportExpression><![CDATA[$P{subreporte_datos}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="54" uuid="7968d49c-a764-40cd-8900-3f9f7f1947c8"/>
+				<subreportParameter name="pl_img_whatsapp">
+					<subreportParameterExpression><![CDATA[$P{pl_img_whatsapp}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_img_logo_pie">
+					<subreportParameterExpression><![CDATA[$P{pl_img_logo_pie}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_img_telefono">
+					<subreportParameterExpression><![CDATA[$P{pl_img_telefono}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_img_facebook">
+					<subreportParameterExpression><![CDATA[$P{pl_img_facebook}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_celular">
+					<subreportParameterExpression><![CDATA[$P{pl_celular}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_telefonos">
+					<subreportParameterExpression><![CDATA[$P{pl_telefonos}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_facebook">
+					<subreportParameterExpression><![CDATA[$P{pl_facebook}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="pl_adicional">
+					<subreportParameterExpression><![CDATA[$P{pl_adicional}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{pl_url_piepagina}]]></subreportExpression>
+			</subreport>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="34" width="40" height="20" uuid="0f173187-9a40-4bd1-b1b0-77314d7d2247"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="34" width="79" height="20" uuid="08568762-4f73-46f0-ac43-f3f67181ae6f"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Pagina "+$V{PAGE_NUMBER}+" de"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

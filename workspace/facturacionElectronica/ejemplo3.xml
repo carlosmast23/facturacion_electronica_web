@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<factura>
+    <infoTributaria>
+        <ambiente>01</ambiente>
+        <claveAcceso>123921893891238918293</claveAcceso>
+        <codDoc>01</codDoc>
+        <dirMatriz>sangolqui ecuador</dirMatriz>
+        <estab>01</estab>
+        <nombreComercial>Codesoft</nombreComercial>
+        <ptoEmi>02</ptoEmi>
+        <razonSocial>Codesoft</razonSocial>
+        <ruc>1724218951</ruc>
+        <secuencial>00000001</secuencial>
+        <tipoEmision>02</tipoEmision>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision/>
+        <identificacionComprador>17242131515</identificacionComprador>
+    </infoFactura>
+</factura>

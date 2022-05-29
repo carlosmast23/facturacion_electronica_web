@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="encabezado" pageWidth="200" pageHeight="200" whenNoDataType="AllSectionsNoDetail" columnWidth="160" leftMargin="0" rightMargin="40" topMargin="0" bottomMargin="0" uuid="58e2b8e6-fde5-4ef1-90e6-cb1dd3f4a182">
+	<property name="ireport.zoom" value="3.4522712143931593"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pl_direccion" class="java.lang.String"/>
+	<parameter name="pl_nombre_empresa" class="java.lang.String"/>
+	<parameter name="pl_usuario" class="java.lang.String"/>
+	<parameter name="pl_fecha_hora" class="java.lang.String"/>
+	<parameter name="pl_titulo" class="java.lang.String"/>
+	<parameter name="pl_telefonos" class="java.lang.String"/>
+	<parameter name="pl_url_img1" class="java.lang.Object"/>
+	<parameter name="pl_razon_social" class="java.lang.String"/>
+	<title>
+		<band height="76" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="59" width="160" height="8" uuid="cd48d5fa-c3a3-4c0a-9514-838fa8011953"/>
+				<textElement textAlignment="Center">
+					<font size="6" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_razon_social}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="38" width="160" height="12" uuid="6d32c61e-7403-4e29-ae20-cc34c0e33104"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_titulo}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="15" y="67" width="145" height="8" uuid="762323ac-9ad0-48e2-a3ff-8bc176c1b6ea"/>
+				<textElement textAlignment="Center">
+					<font size="6" isItalic="true"/>
+					<paragraph rightIndent="20"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_direccion}+" / "+$P{pl_telefonos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="50" width="160" height="11" uuid="957c3dc5-2b07-45d2-bd7b-2b90920bf27c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_nombre_empresa}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center">
+				<reportElement x="0" y="0" width="160" height="38" uuid="7bd91739-6399-49ec-830c-7ace7d372f42"/>
+				<imageExpression><![CDATA[$P{pl_url_img1}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+                <meta name="apple-mobile-web-app-capable" content="yes" />                
+                <h:outputStylesheet library="css" name="pagina_informativa.css" />
+                <h:outputStylesheet name="primeflex/primeflex.css" library="css" />
+                <title>FactuLab</title>
+            </f:facet>
+            <!--<f:metadata>
+                <f:viewAction action="#{applicationCodefacMb.controladorConexionServidor()}" />
+            </f:metadata>-->
+        </h:head>
+
+        <h:body style="margin-bottom: 0px;"   > 
+            <ui:insert name="referenciaMb">
+            </ui:insert>
+
+            <h:form id="formulario">
+                <!--    SECCION 1   -->
+                <div class="p-grid p-nogutter "   >
+                    <div class="p-col-12 ">                    
+                        <div class="p-grid" >
+                            <div class="p-col-12 p-col-nogutter"  >
+                                <!-- MENU SUPERIOR !-->
+
+                                <p:toolbar id="tb">
+
+                                    <f:facet name="left" >
+                                        <div style="text-align: center">
+                                            <p:graphicImage library="img" name="logo-blanco.png" style="height: 25px;padding-top: 5px"/>                                             
+                                        </div>
+                                        
+
+                                    </f:facet>   
+                                    <f:facet name="right" >
+                                        <div style="vertical-align: bottom;color: red;padding-top: 10px">
+                                            <p:commandButton icon="fa fa-fw fa-cube" value=" Productos" title="Productos" process="@this" action="#{controllerPublicoMb.construirUrl(navigationMb.consultarProductos)}"   class="boton-principal"  />
+                                            <p:commandButton id="btnLogin" icon="fa fa-fw fa-sign-in"  title="Login" process="@this" action="#{controllerPublicoMb.construirUrl(navigationMb.login)}"   class="boton-principal"  />
+
+                                        </div>
+                                    </f:facet>
+
+                                </p:toolbar>
+                            </div>                 
+                        </div>
+                        <ui:insert name="contenido">
+                            Contenido por defecto de la plantilla  
+                        </ui:insert>
+                    </div >  
+                </div>   
+            </h:form>
+        </h:body>
+
+    </f:view>
+</html>
+

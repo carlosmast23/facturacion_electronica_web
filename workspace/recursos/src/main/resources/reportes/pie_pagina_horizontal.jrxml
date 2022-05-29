@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pie_pagina" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f53d2141-f2f6-49f7-92d8-b84d6335680c">
+	<property name="ireport.zoom" value="1.0000000000000016"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pl_img_facebook" class="java.lang.Object"/>
+	<parameter name="pl_img_whatsapp" class="java.lang.Object"/>
+	<parameter name="pl_img_telefono" class="java.lang.Object"/>
+	<parameter name="pl_img_logo_pie" class="java.lang.Object"/>
+	<parameter name="pl_telefonos" class="java.lang.String"/>
+	<parameter name="pl_celular" class="java.lang.String"/>
+	<parameter name="pl_adicional" class="java.lang.String"/>
+	<parameter name="pl_facebook" class="java.lang.String"/>
+	<pageFooter>
+		<band height="49" splitType="Stretch">
+			<image isLazy="true">
+				<reportElement x="0" y="23" width="90" height="25" uuid="16aef6e5-330e-474c-baeb-1f2d83947753"/>
+				<imageExpression><![CDATA[$P{pl_img_logo_pie}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="627" y="29" width="100" height="20" uuid="1bddc1b7-413c-418e-afbe-e211bef8ac46"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pl_telefonos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="5" width="663" height="20" uuid="2493a00c-db4f-407e-8462-4afde06650b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_adicional}]]></textFieldExpression>
+			</textField>
+			<image isLazy="true">
+				<reportElement x="600" y="28" width="27" height="21" uuid="15089e08-f78b-43be-84a9-1954807aadab"/>
+				<imageExpression><![CDATA[$P{pl_img_telefono}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="189" y="28" width="100" height="20" uuid="4977bff5-ebf7-4c9f-b1d7-0e2d50ecfac5"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pl_facebook}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="29" width="100" height="20" uuid="973d8834-2369-46c3-bcac-24e3a1c51816"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{pl_celular}]]></textFieldExpression>
+			</textField>
+			<image isLazy="true">
+				<reportElement x="166" y="28" width="23" height="21" uuid="2f5a8d90-0aac-44a5-b6a6-2c9036ede6c2"/>
+				<imageExpression><![CDATA[$P{pl_img_facebook}]]></imageExpression>
+			</image>
+			<image isLazy="true">
+				<reportElement x="384" y="28" width="24" height="21" uuid="75a5bd20-b40b-41c3-80a4-62828962a647"/>
+				<imageExpression><![CDATA[$P{pl_img_whatsapp}]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

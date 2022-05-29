@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pie_pagina" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f53d2141-f2f6-49f7-92d8-b84d6335680c">
+	<property name="ireport.zoom" value="1.3310000000000037"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="campoFirma1" class="java.lang.String"/>
+	<parameter name="campoFirma2" class="java.lang.String"/>
+	<parameter name="campoFirma3" class="java.lang.String"/>
+	<pageFooter>
+		<band height="60" splitType="Stretch">
+			<textField>
+				<reportElement x="15" y="40" width="150" height="20" uuid="b5228939-3a24-495b-90cd-593b16cabbbb">
+					<printWhenExpression><![CDATA[new Boolean($P{campoFirma1}!=null && !$P{campoFirma1}.isEmpty() )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{campoFirma1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="40" width="150" height="20" uuid="b294b06c-a814-4456-a671-8e88581877b4">
+					<printWhenExpression><![CDATA[new Boolean($P{campoFirma2}!=null && !$P{campoFirma2}.isEmpty() )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{campoFirma2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="40" width="150" height="20" uuid="e3bd92d9-8c14-4756-85ce-34332d9c241b">
+					<printWhenExpression><![CDATA[new Boolean($P{campoFirma3}!=null && !$P{campoFirma3}.isEmpty() )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineStyle="Dashed"/>
+					<topPen lineWidth="0.5" lineStyle="Dashed"/>
+					<leftPen lineStyle="Dashed"/>
+					<bottomPen lineStyle="Dashed"/>
+					<rightPen lineStyle="Dashed"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{campoFirma3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

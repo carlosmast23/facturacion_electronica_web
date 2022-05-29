@@ -1,0 +1,210 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/08/2018, 05:22:39 PM
+    Author     : Carlos
+*/
+
+.pie-pagina
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    color: #007ad9;
+    color: white;
+    text-align: center    
+}
+
+.cabecera
+{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
+.titulo_contenido
+{
+    text-align: center;
+    color: darkgrey;
+    padding-top: 5px;
+    margin: 0px;
+}
+/* ===============================================================
+                        CORRECCIONES
+==================================================================
+*/
+.leftCol {
+    overflow: scroll;
+}
+
+
+/* ===============================================================
+                        ICONOS
+==================================================================
+*/
+
+.ui-layout-north {
+    z-index:20 !important;
+    overflow:visible !important;
+}
+
+.ui-layout-north .ui-layout-unit-content {
+    overflow:visible !important;
+}
+
+.home-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png") !important;
+    background-size: 30px;
+}
+
+.new-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/new_icon.png") !important;
+    background-size: 30px;
+}
+
+.save-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/save-icon.png") !important;
+    background-size: 30px;
+}
+
+.print-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/print-icon.png") !important;
+    background-size: 30px;
+}
+
+.find-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/find_icon.png") !important;
+    background-size: 30px;
+}
+
+.refresh-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/refresh_icon.png") !important;
+    background-size: 30px;
+}
+
+.help-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/help_icon.png") !important;
+    background-size: 30px;
+}
+
+.delete-icon {
+    /*background-image: url("#{request.contextPath}/resources/img/iconos/menu/home-icon.png");*/
+    margin-left: -15px !important;
+    margin-top: -15px !important;
+    height: 30px;
+    width: 30px;
+    background-image: url("#{request.contextPath}/resources/img/iconos/menu/delete_icon.png") !important;
+    background-size: 30px;
+}
+
+.button-menu
+{
+    height: 35px;
+    width: 45px !important;
+    background-color: white !important;
+}
+
+.button-menu .ui-panelgrid .ui-panelgrid-cell
+{
+    padding: 0px 0px !important;    
+}
+
+.ui-layout-unit{
+    border: none;
+}
+
+body.ui-layout-container
+{
+    background-color: white !important;    
+}
+
+.boton-principal
+{
+    font-size: 17px !important;     
+}
+
+body .ui-panel .ui-panel-content {
+    border: 0px solid #c8c8c8;
+    background-color: #fff;
+    color: #333;
+    padding: .571em 1em;
+    border-top: 0 none;
+    line-height: 1.5;
+}
+
+.date-time input {
+	vertical-align: middle;
+	margin-right: 1px;
+        width: 80px;
+}
+
+/*================ COMPONENTES RESPONISIVE =================  */
+
+.div-resposive
+{
+    text-align: left;    
+}
+
+.label-responsive
+{    
+    font-weight: bold;
+    margin: auto;
+}
+
+.componente-responsive
+{
+    width: 90%;
+}
+
+.combo .ui-selectonemenu{
+     width: 100% !important;
+}
+.combo .ui-selectonemenu-label{
+     width: 100% !important;
+}  
+
+.etiqueta_titulo
+{
+    font-weight: bold;
+}
+

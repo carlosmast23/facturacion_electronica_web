@@ -1,0 +1,146 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/05/2020, 9:19:40
+    Author     : CARLOS_CODESOFT
+*/
+
+body{
+    font-family: sans-serif;    
+}
+
+
+/* Correciones del menu principal para no tener marco */
+body .ui-panel .ui-panel-content {
+    padding: 0px;
+}
+
+.centrar
+{
+    text-align: center;    
+}
+
+.tituloEmpresaInicio
+{
+    font-weight: bolder;
+    color: #0288D1;
+    border-style: dashed;
+    border-width: 1px;
+    padding: 5px;
+    margin: 12px;
+    border-radius: 5px 30px 45px 60px;
+}
+
+/* Correcion para poder centrar el slogan abajo del logo */
+/*body .ui-button.ui-button-text-only .ui-button-text {
+    padding: 0;
+}*/
+
+.cuadroInformativo
+{
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    height: 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cuadroInformativo .titulo
+{
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.cuadroInformativo .icono
+{
+    font-size: 50px; 
+}
+
+.cuadroInformativo .link
+{    
+    text-align: center;
+    width: 100px;
+    background-color: white;
+    font-size: 30px; 
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px 30px 45px 60px;
+}
+
+.seccion_contactanos
+{
+    background-color: #009688;
+    margin-top: 550px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.seccion_contactanos .titulo
+{
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+
+}
+
+.seccion_contactanos .contenido
+{    
+    color: white;
+    font-size: 15px;
+    border-style: dashed;
+    border-color: white;
+    margin: 30px;
+    padding: 10px;
+
+}
+
+.seccion_productos_mas_vendidos
+{
+    background-color: white;
+    height: 100vh;
+    text-align: center;
+}
+
+.seccion_productos_mas_vendidos .titulo
+{
+    padding: 30px;
+    font-size: 5vh;
+    color: #0288D1;
+
+}
+
+#registrate
+{
+    background-image: url("#{request.contextPath}/resources/img/personal.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /*background-color: #8BC34A*/
+}
+
+#registrate .formulario
+{
+    margin: 5vw;
+    width: 80%;
+    background-color:rgba(255,255,255,0.85) ;
+    border-color: rgba(2, 136, 209, 1);
+    border: 3px;
+    border-style: solid;
+    border-color: rgba(2, 136, 209, 1);
+    border-radius: 15px 0 15px 0;
+    color: rgba(2, 136, 209, 1);
+    text-align: center;    
+}
+
+#contactanos
+{    
+    padding-top: 5px;
+}

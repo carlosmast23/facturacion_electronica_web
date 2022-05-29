@@ -1,0 +1,18 @@
+/workspace/servidor/target/
+/workspace/facturacionElectronica/target/
+/workspace/ws-client-iess/target/
+/workspace/main/target/
+/workspace/recursos/target/
+/workspace/crm/target/
+/workspace/coreCodefacLite/target/
+/workspace/utilidades/target/
+
+#excluir arhivos de compilacion
+
+*.class
+*.jar
+/workspace/mavenCodefacLite/target/
+
+#Configuraciones del netbeans
+nbactions.xml
+nb-configuration.xml

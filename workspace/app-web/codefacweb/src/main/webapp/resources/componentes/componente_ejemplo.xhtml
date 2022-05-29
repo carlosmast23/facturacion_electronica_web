@@ -1,0 +1,17 @@
+<html xmlns = "http://www.w3.org/1999/xhtml"   
+      xmlns:h = "http://java.sun.com/jsf/html"
+      xmlns:f = "http://java.sun.com/jsf/core"
+      xmlns:composite = "http://java.sun.com/jsf/composite"
+      >
+
+    <composite:interface>
+        <composite:attribute name = "nombreEtiqueta" />
+        <composite:attribute name = "valorEtiqueta" />
+    </composite:interface>
+
+    <composite:implementation>
+        <h:outputLabel value="#{cc.attrs.nombreEtiqueta}" /> 
+        <h:inputText id = "username" value = "#{cc.attrs.valorEtiqueta}" />
+    </composite:implementation>
+
+</html>

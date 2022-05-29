@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="pu_ejemplo" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby:Derby2.DB"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>      
+      <property name="eclipselink.allow-zero-id" value="true"/>
+      <!-- Estas dos lines sirven para activar los logs del eclipseLink -->
+      <!--<property name="eclipselink.logging.level.sql" value="FINE"/>-->
+      <!-- <property name="eclipselink.logging.parameters" value="true"/>-->
+      <!--<property name = " eclipselink.ddl-generation " value = "create-or-extend-tables" />-->
+    </properties>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.AccesoDirecto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.BandaComprobante</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Bodega</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.CategoriaProducto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.ComponenteComprobanteFisico</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Compra</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.CompraDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.ComprobanteFisicoDisenio</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Empresa</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Factura</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.FacturaDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.FormaPago</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Impuesto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.ImpuestoDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Kardex</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.KardexDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.KardexItemEspecifico</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.NotaCredito</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.NotaCreditoDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.ParametroCodefac</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Perfil</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.PerfilUsuario</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Persona</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Producto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.ProductoEnsamble</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.ProductoProveedor</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.SriFormaPago</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.SriIdentificacion</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Usuario</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.Aula</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.Nivel</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.Periodo</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.PermisoVentana</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.NivelAcademico</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.Estudiante</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.EstudianteInscrito</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.RubrosNivel</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.RubroEstudiante</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.FacturaAdicional</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Nacionalidad</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.CatalogoProducto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.Cartera</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.CarteraDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.CarteraCruce</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.RubroPlantilla</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.RubroPlantillaEstudiante</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.RubroPlantillaMes</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.NotaCreditoAdicional</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.SriRetencionRenta</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.SriRetencionIva</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.SriRetencion</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.RetencionDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Retencion</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.RetencionAdicional</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.compra.OrdenCompra</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.compra.OrdenCompraDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.OrdenTrabajo</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.OrdenTrabajoDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Empleado</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Departamento</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Presupuesto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.PresupuestoDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Transportista</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.transporte.DestinatarioGuiaRemision</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.transporte.DetalleProductoGuiaRemision</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.transporte.GuiaRemision</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.transporte.GuiaRemisionAdicional</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Sucursal</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.PuntoEmision</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.ActualizarSistema</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.PersonaEstablecimiento</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.TipoDocumento</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.PuntoEmisionUsuario</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.PrestamoTablaInteres</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.Prestamo</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.PrestamoCuota</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.PrestamoCuotaCargo</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.DescuentoAcademico</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.Caja</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.ArqueoCaja</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.CajaSession</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.Venta</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.IngresoCaja</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.CajaPermiso</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.Turno</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.TurnoAsignado</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Zona</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.TipoEstablecimiento</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Ruta</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.RutaDetalle</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.BodegaPermisoTransferencia</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.MarcaProducto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.CompraFacturaReembolso</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Lote</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.Mesa</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.TipoProducto</class>
+    <class>ec.com.codesoft.codefaclite.servidorinterfaz.entity.SegmentoProducto</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+  </persistence-unit>
+</persistence>

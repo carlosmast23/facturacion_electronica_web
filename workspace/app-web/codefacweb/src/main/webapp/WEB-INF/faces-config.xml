@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    <!-- Configuracion necesaria para implementar la funcionalidad de trabajar con dialogo dinamicos!-->
+    <application>
+        <action-listener>org.primefaces.application.DialogActionListener</action-listener>
+        <navigation-handler>org.primefaces.application.DialogNavigationHandler</navigation-handler>
+        <view-handler>org.primefaces.application.DialogViewHandler</view-handler>
+    </application>
+    
+    <navigation-rule>
+        <navigation-case>
+            <from-outcome>login</from-outcome>
+            <to-view-id>login.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>menu</from-outcome>
+            <to-view-id>index.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>principal</from-outcome>
+            <to-view-id>principal.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>consultarProductos</from-outcome>
+            <to-view-id>consultar_productos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>consultarFacturas</from-outcome>
+            <to-view-id>consultar_facturas.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>indexCodefac</from-outcome>
+            <to-view-id>sistema/index.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>empleado</from-outcome>
+            <to-view-id>sistema/empleado/empleado.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>ejemplo</from-outcome>
+            <to-view-id>sistema/crm/ejemplo.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>cliente_reporte</from-outcome>
+            <to-view-id>sistema/crm/cliente_reporte</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>dialogo_busqueda</from-outcome>
+            <to-view-id>template/dialogo_busqueda.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>construyendo</from-outcome>
+            <to-view-id>sistema/facturacion/proforma.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>proforma</from-outcome>
+            <to-view-id>sistema/facturacion/proforma.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+                <view-param>
+                    <name>tipo</name>
+                    <value>proforma</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>factura</from-outcome>
+            <to-view-id>sistema/facturacion/proforma.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+                <view-param>
+                    <name>tipo</name>
+                    <value>factura</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <!---  
+            FACTURACION
+                ->NOTA DE CREDITO
+        -->
+        
+        <navigation-case>
+            <from-outcome>nota_credito</from-outcome>
+            <to-view-id>sistema/facturacion/nota_credito.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        <!--- FIN FACTURACION -->
+        
+        <navigation-case>
+            <from-outcome>cliente</from-outcome>
+            <to-view-id>sistema/crm/cliente.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+                <view-param>
+                    <name>tipo</name>
+                    <value>cliente</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>proveedor</from-outcome>
+            <to-view-id>sistema/crm/cliente.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+                <view-param>
+                    <name>tipo</name>
+                    <value>proveedor</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>producto</from-outcome>
+            <to-view-id>sistema/crm/producto.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>datos_adicionales_dialogo</from-outcome>
+            <to-view-id>sistema/dialog/datos_adicionales_dialogo.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>                
+            </redirect>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>reenviar_comprobante</from-outcome>
+            <to-view-id>sistema/facturacion/reenviar_comprobante.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <!---  
+            FACTURACION
+                ->REPORTES
+                    ->FACTURA REPORTE        
+        -->
+        <navigation-case>
+            <from-outcome>factura_reporte</from-outcome>
+            <to-view-id>sistema/facturacion/factura_reporte.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+                <view-param>
+                    <name>tipo</name>
+                    <value>factura_reporte</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+        
+        <!--
+            ->INVENTARIO
+                ->REPORTES
+                    ->REPORTE INVENTRAIO STOCK
+        -->
+        <navigation-case>
+            <from-outcome>reporte_inventario_stock</from-outcome>
+            <to-view-id>sistema/inventario/reporte_inventario_stock.xhtml</to-view-id>
+            <redirect>
+                <view-param>
+                    <name>faces-redirect</name>
+                    <value>true</value>
+                </view-param>
+                <view-param>
+                    <name>tipo</name>
+                    <value>reporte_inventario_stock</value>
+                </view-param>
+            </redirect>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>

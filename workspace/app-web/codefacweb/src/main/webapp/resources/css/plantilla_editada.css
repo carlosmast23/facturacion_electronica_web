@@ -1,0 +1,345 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/04/2020, 11:02:01
+    Author     : CARLOS_CODESOFT
+*/
+
+
+/*============== > ARCHIVO DE LA PLANTILLA CSS EDITADO <======================*/
+:root {
+  --color-secundario: #FFA000;
+}
+/*============== > COLOR SECUNDARIO <======================*/
+body .ui-autocomplete .ui-autocomplete-multiple-container .ui-autocomplete-token {
+    padding: .10725em 0;
+    margin: .10725em .286em .10725em 0;
+    background: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-autocomplete-panel .ui-autocomplete-items .ui-autocomplete-item.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-autocomplete-itemtip {
+    background: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-selectonelistbox .ui-selectlistbox-listcontainer .ui-selectlistbox-list .ui-selectlistbox-item.ui-state-highlight,
+body .ui-selectmanymenu .ui-selectlistbox-listcontainer .ui-selectlistbox-list .ui-selectlistbox-item.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-selectonemenu-panel .ui-selectonemenu-items .ui-selectonemenu-item.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-selectcheckboxmenu .ui-selectcheckboxmenu-multiple-container .ui-selectcheckboxmenu-token {
+    padding: .10725em 0;
+    margin: .10725em .286em .10725em 0;
+    background: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-selectcheckboxmenu-panel .ui-selectcheckboxmenu-items .ui-selectcheckboxmenu-item.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-chips .ui-chips-container .ui-chips-token {
+    padding: .10725em 0;
+    margin: .10725em .286em .10725em 0;
+    background: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-multiselectlistbox .ui-multiselectlistbox-listcontainer .ui-multiselectlistbox-list .ui-multiselectlistbox-item.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-accordion .ui-accordion-header.ui-state-active {
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-tabs .ui-tabs-nav .ui-tabs-header.ui-state-active {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario)
+}
+
+body .ui-tabs .ui-tabs-navscroller .ui-tabs-navscroller-btn.ui-state-active {
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-fieldset .ui-fieldset-legend.ui-state-active {
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-wizard .ui-wizard-step-titles .ui-wizard-step-title.ui-state-highlight {
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-datatable thead th.ui-state-active {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-datatable .ui-datatable-data>tr.ui-state-highlight {
+    border: 1px solid #c8c8c8;
+    background-color: var(--color-secundario);
+    color: #fff;
+    cursor: default
+}
+
+body .ui-datatable .ui-datatable-data>tr.ui-datatable-rowordering {
+    background-color: var(--color-secundario)
+}
+
+body .ui-picklist .ui-picklist-list .ui-picklist-item.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-orderlist .ui-orderlist-list .ui-orderlist-item.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-treetable thead th.ui-state-active {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-treetable .ui-treetable-data>tr.ui-state-highlight {
+    border: 1px solid #c8c8c8;
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-tree .ui-tree-container .ui-treenode .ui-treenode-content .ui-treenode-label.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-tree .ui-tree-container .ui-tree-droppoint.ui-state-hover {
+    background-color: var(--color-secundario)
+}
+
+body .ui-tree.ui-tree-horizontal .ui-treenode-content.ui-state-highlight {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-tree-draghelper {
+    border: 1px solid var(--color-secundario)
+}
+
+body .ui-tagcloud a.ui-state-hover {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .timeline-frame .timeline-event.ui-state-active {
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-steps .ui-steps-item.ui-state-highlight .ui-steps-number {
+    background: var(--color-secundario);
+    color: #fff
+}
+
+body .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario)
+}
+
+body .ui-panelmenu .ui-panelmenu-header.ui-state-active {
+    border: 1px solid var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: #fff
+}
+
+/*============== > COLOR SECUNDARIO ALTERNO <======================*/
+:root {
+  --color-secundario-2: #FFC107;
+}
+
+body .ui-accordion .ui-accordion-header.ui-state-active:hover,
+body .ui-accordion .ui-accordion-header.ui-state-active.ui-tabs-outline {
+    outline: 0 none;
+    border: 1px solid var(--color-secundario-2);
+    background-color: var(--color-secundario-2);
+    color: #fff
+}
+
+body .ui-fieldset .ui-fieldset-legend.ui-state-active.ui-state-hover,
+body .ui-fieldset .ui-fieldset-legend.ui-state-active.ui-state-focus {
+    outline: 0 none;
+    border: 1px solid var(--color-secundario-2);
+    background-color: var(--color-secundario-2);
+    color: #fff
+}
+
+body .ui-panelmenu .ui-panelmenu-header.ui-state-active:hover,
+body .ui-panelmenu .ui-panelmenu-header.ui-state-active.ui-menuitem-outline {
+    outline: 0 none;
+    border: 1px solid var(--color-secundario-2);
+    background-color: var(--color-secundario-2);
+    color: #fff
+}
+
+/*============== > Tamaño de las letras <======================*/
+:root {
+  --tamanio-letras: 12px;
+}
+
+body .ui-widget:not(.pi),
+body .ui-widget .ui-widget:not(.pi) {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: var(--tamanio-letras) ;
+}
+
+
+body .ui-inputfield {
+    color: #333;
+    font-size: var(--tamanio-letras);
+    background: #fff;
+    padding: .429em;
+    border: 1px solid #a6a6a6;
+    outline: 0 none;
+    -moz-transition: border-color .3s;
+    -o-transition: border-color .3s;
+    -webkit-transition: border-color .3s;
+    transition: border-color .3s;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+body .ui-autocomplete .ui-autocomplete-dropdown {
+    position: relative;
+    height: auto;
+    width: 2.143em;
+    right: auto;
+    font-size: var(--tamanio-letras);
+    margin: 0
+}
+
+
+body .ui-autocomplete .ui-autocomplete-multiple-container .ui-autocomplete-input-token input {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: var(--tamanio-letras);
+    color: #333;
+    padding: 0;
+    margin: 0
+}
+
+body .ui-autocomplete-panel {
+    padding: 0;
+    background-color: #fff;
+    font-size: var(--tamanio-letras);
+    border: 1px solid #c8c8c8;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16)
+}
+
+body .ui-chips .ui-chips-container .ui-chips-input-token input {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: var(--tamanio-letras);
+    color: #333;
+    padding: 0;
+    margin: 0
+}
+
+body .ui-datepicker .ui-datepicker-calendar {
+    font-size: var(--tamanio-letras);
+    margin: .857em 0 0 0
+}
+
+body .ui-button {
+    background-color: #007ad9;
+    color: #fff;
+    border: 1px solid #007ad9;
+    font-size: var(--tamanio-letras);
+    margin: 0;
+    margin-right: .1em;
+    outline: 0 none;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s
+}
+
+body .ui-selectbooleanbutton,
+body .ui-buttonset:not(.ui-splitbutton)>.ui-button {
+    background-color: #dadada;
+    color: #333;
+    border: 1px solid #dadada;
+    font-size: var(--tamanio-letras);
+    margin: 0;
+    outline: 0 none;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s
+}
+
+body .ui-menu .ui-menu-list .ui-widget-header h3 {
+    padding: 0;
+    font-weight: 400;
+    color: #fff;
+    float: none;
+    font-size: var(--tamanio-letras)
+}
+
+body .ui-panelmenu .ui-panelmenu-header {
+    border: 1px solid #007ad9;
+    background-color: #007ad9;
+    color: #fff;
+    padding: .571em 1em .571em 1em;
+    font-weight: 400;
+    position: static;
+    font-size: var(--tamanio-letras);
+    margin-top: 1px;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s
+}
+
+body .ui-terminal .ui-terminal-input {
+    font-size: var(--tamanio-letras)
+}
+
+body .ui-progressbar .ui-progressbar-label {
+    margin-top: 0;
+    color: white;
+    display:block !important;
+}
+

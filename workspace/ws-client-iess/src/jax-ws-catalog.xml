@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/Carlos/Documents/GitHub/codefac-lite/recursos/wsdl/offline/RecepcionComprobantesOffline.wsdl" uri="wsdl/RecepcionComprobantesOffline.wsdl"/>
+    <system systemId="file:/C:/Users/Carlos/Documents/GitHub/codefac-lite/recursos/sri/wsdl/offline/AutorizacionComprobantesOffline.wsdl" uri="wsdl/AutorizacionComprobantesOffline.wsdl"/>
+</catalog>

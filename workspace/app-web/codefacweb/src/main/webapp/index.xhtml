@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition  template="/WEB-INF/plantilla_publica.xhtml">
+
+        <ui:define name="referenciaMb" >
+            <f:event listener="#{paginaInformativaMb.agregarControlador(controllerPublicoMb)}" type="preRenderComponent" /> 
+        </ui:define>
+
+
+        <ui:define name="contenido">
+
+            <div class="p-grid p-nogutter"  >
+                <div class="p-col-12"  >
+                    <!--    SECCION 1   -->
+                    <div class="p-grid" style="text-align: left;padding-top: 30px" >
+                        <div class="p-col-12 p-md-6 p-lg-6" style="text-align: center" >
+                            <div><p:graphicImage library="img" name="logoCodefac.gif"  width="200px"/></div>
+                            <div class="tituloEmpresaInicio" ><p:outputLabel style="font-size: 23px"  value="Bienvenido a #{paginaInformativaMb.controladorPlantilla.empresaSeleccionada.nombreLegal}" /></div>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-6" style="text-align: center" >
+                            <h1>Ingeniería<br/><span>en Desarrollo</span><br/>de Software</h1>
+                            <div>
+                                <p:button value="Productos y Servicios" icon="pi pi-tag" style="margin-right:20px;"/>                                
+                                <p:button value="Contáctanos" icon="pi pi-star" style="margin-right:20px;"/>                                                                
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!--    SECCION 2   -->
+                    <div class="p-grid" style="text-align: left;padding-top: 30px;padding-bottom: 30px" >
+                        <div class="p-col-12 p-md-6 p-lg-3 "  >
+                            <div class="cuadroInformativo" style="background-color: #0288D1">
+                                <div class="titulo">
+                                    Consultar Facturas Electrónicas
+                                </div>
+                                <i class="pi pi-file icono"></i>
+                                <div>
+                                    Nuestro clientes pueden consultar facturas electrónicas para descargar el Ride y Pdf 
+                                </div>                                
+                            </div>
+                            <div style="text-align: center;border-width: 1px;border-style: solid;padding: 5px;margin: 10px;color: #607D8B">
+                                <p:commandLink process="@this" action="#{controllerPublicoMb.construirUrl(navigationMb.consultarFacturas)}" id="ajax" value="Ver Más" /> 
+                            </div>
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3 "  >
+                            <div class="cuadroInformativo" style="background-color: #F57C00">
+                                <div class="titulo">
+                                    Consultar Productos y Servicios
+                                </div>
+                                <i class="pi pi-shopping-cart icono"></i>
+                                <div>
+                                    Busca productos y servicios fácilmente que ofrece nuestra empresa
+                                </div>                                
+                            </div>
+                            <div style="text-align: center;border-width: 1px;border-style: solid;padding: 5px;margin: 10px;color: #607D8B">
+                                <p:commandLink process="@this" action="#{controllerPublicoMb.construirUrl(navigationMb.consultarProductos)}"  value="Ver Más" /> 
+                            </div>
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3 " >
+                            <div class="cuadroInformativo" style="background-color: #009688" >
+                                <div class="titulo">
+                                    Contactar con un Asesor de Venta
+                                </div>
+                                <i class="pi pi-user icono"></i>
+                                <div>
+                                    Tienes dudas o preguntas , nuestros asesores están listos para ayudarte
+                                </div>                                
+                            </div>
+                            <div style="text-align: center;border-width: 1px;border-style: solid;padding: 5px;margin: 10px;color: #607D8B">
+                                <p:commandLink  value="Ver Más" /> 
+                            </div>
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3 " >
+                            <div class="cuadroInformativo" style="background-color: #303F9F" >
+                                <div class="titulo">
+                                    Ingresar al Sistema
+                                </div>
+                                <i class="pi pi-lock icono"></i>
+                                <div>
+                                    Gestionar , administra y controla tus recursos del Sistema FactuLab
+                                </div>                                
+                            </div>
+                            <div style="text-align: center;border-width: 1px;border-style: solid;padding: 5px;margin: 10px;color: #607D8B">
+                                <p:commandLink process="@this" action="#{controllerPublicoMb.construirUrl(navigationMb.login)}"  value="Ver Más" /> 
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- Artificio temporal para dar un espacio en blnaco -->
+                    <div class="p-grid" style="height: 50px">                                
+                    </div>
+
+
+                    <!--    FIN SECCION 2   -->
+                    <!-- SECCION DE CONTACTANOS -->
+                    <section id="section_nosotros">
+                        <div class="p-grid seccion_contactanos">
+                            <div class="p-col-12 p-md-6 p-lg-6 " style="vertical-align: bottom" >
+                                <img width="80%"  src="https://nunsys.com/wp-content/uploads/2013/11/IT-Outsourcing.png" />                            
+                            </div>
+
+                            <div class="p-col-12 p-md-6 p-lg-6 " >
+                                <div class="titulo">
+                                    Sobre Nosotros
+                                </div>
+                                <div class="contenido">
+                                    Somos una empresa multiservicios que está conformada por un grupo de profesionales de diferentes especialidades. Investigamos, y desarrollamos soluciones tecnológicas. Ofrecemos servicios de Ingeniería en sistemas, asesoría y soporte técnico. Estamos comprometidos en ofrecer un servicio de calidad marcado por la excelencia y el compromiso.
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- FIN SECCION DE CONTACTANOS -->
+
+                    <!-- PRODUCTOS MAS POPULARES -->
+                    <div class="seccion_productos_mas_vendidos">
+
+                        <div class="titulo">
+                            Productos Más Vendidos
+                        </div>
+
+                        <img style="width: 30vh" src="https://4.bp.blogspot.com/-8ID5YEAS1N0/WWu15VJZ6WI/AAAAAAAAAPs/3ivxWZ7m03wUsYjScZdboGcqRAsS7SlygCLcBGAs/s1600/kpis.png" />
+
+                        <p:carousel value="#{paginaInformativaMb.listaProductosMasVendidos}" headerText="Listado de productos" var="producto" itemStyle="text-align:center" responsive="true">
+                            <p:panelGrid columns="2" style="width:100%;margin:10px 0px" columnClasses="label,value" layout="grid" styleClass="ui-panelgrid-blank">
+                                <f:facet name="header">
+                                    <p:graphicImage  library="img" name="sinImagen.jpg" width="150px" /> 
+                                </f:facet>
+
+                                <h:outputText value="Id:" style="font-weight: bold" />
+                                <h:outputText value="#{producto.idProducto}" />
+
+                                <h:outputText value="Nombre" style="font-weight: bold" />
+                                <h:outputText value="#{producto.nombre}" />
+
+                                <h:outputText value="Precio" style="font-weight: bold" />
+                                <h:outputText value="#{producto.valorUnitario}" style="color:#{car.color}"/>
+
+                            </p:panelGrid>
+
+                            <f:facet name="footer">
+                                Productos Totales #{paginaInformativaMb.listaProductosMasVendidos.size()}
+                            </f:facet>
+                        </p:carousel>
+                    </div>                    
+                    <!-- FIN PRODUCTOS MAS POPULARES -->
+
+                    <!-- SECCION REGISTRATE -->
+                    <section id="section_contactanos">
+                        <div id="registrate" class="p-grid">
+                            <div class="p-col-12 p-md-6 p-lg-6 " >
+
+                            </div>
+
+                            <div class="p-col-12 p-md-6 p-lg-6 " >
+                                <div class="formulario" >
+                                    <h1>Contáctanos</h1>
+                                    <div style="border: 2px;border-radius: 15px 0 15px 0;">
+                                        <div style="text-align: center"><h:graphicImage library="img" name="registro.png" height="100px" /></div>
+                                        <div style="padding: 5px;margin-right: 10px"><p:inputText id="txtNombre2" value="#{indexMb.nombres}" placeholder="Nombres" style="width: 100%" /></div>
+                                        <div style="padding: 5px;margin-right: 10px"><p:inputText id="txtApellido2" value="#{indexMb.apellidos}" placeholder="Apellidos" style="width: 100%" /></div>
+                                        <div style="padding: 5px;margin-right: 10px"><p:inputText id="txtNombreEmpresa2" value="#{indexMb.nombreEmpresa}" placeholder="Nombre de la empresa" style="width: 100%" /></div>
+                                        <div style="padding: 5px;margin-right: 10px"><p:inputText id="txtCelular2" value="#{indexMb.whatsapp}" placeholder="Celular" style="width: 100%" /></div>
+                                        <div style="padding: 5px;margin-right: 10px"><p:inputText id="txtCorreo2" value="#{indexMb.correo}" placeholder="Correo" style="width: 100%" /></div>
+                                        <div style="padding: 5px;margin-right: 15px">
+                                            <p:commandButton 
+                                                process="txtNombre2,txtApellido2,txtNombreEmpresa2,txtCelular2,txtCorreo2,@this" 
+                                                action="#{indexMb.registroProveedorRedirigir()}"
+                                                value="Enviar" 
+                                                style="width: 101%;height: 30px" />
+                                        </div>
+                                        <div style="padding: 5px;margin-right: 15px"><p:link value="Más Información" style="width: 105%" /></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- SECCION CONTACTANOS -->
+
+                    <div  id="contactanos" >
+                        <section id="section_contactanos">
+                            <div class="p-grid " >
+                                <div class="p-col-12 p-md-4 p-lg-4" style="background-color:rgba(56, 142, 60, 0.8) ;border-color: rgba(2, 136, 209, 1);color: white;text-align: center;font-size: 18px">
+                                    <h3>Celular</h3><h1>0981990638</h1></div>
+                                <div class="p-col-12 p-md-4 p-lg-4" style="background-color:rgba(0, 121, 107, 0.8) ;border-color: rgba(2, 136, 209, 1);color: white;text-align: center;font-size: 18px">
+                                    <h3>Telefono</h3><h1>022339281</h1>
+                                </div>
+                                <div class="p-col-12 p-md-4 p-lg-4" style="background-color:rgba(255, 152, 0, 0.8) ;border-color: rgba(2, 136, 209, 1);color: white;text-align: center;font-size: 18px">
+                                    <h3>Facebook</h3><h1>/codesoft.ec</h1>
+                                </div>
+                                <div class="p-col-12 p-md-12 p-lg-12" style="background-color:rgba(0, 0, 0, 0.3) ;border-color: rgba(2, 136, 209, 1);color: black;text-align: center;font-size: 18px">
+
+                                    <h:graphicImage library="img" name="logoCodefac.png" height="40px"/>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div> 
+
+                    <!-- FIN SECCION CONTACTANOS -->
+                </div>                 
+            </div>
+        </ui:define>
+    </ui:composition>
+
+</html>

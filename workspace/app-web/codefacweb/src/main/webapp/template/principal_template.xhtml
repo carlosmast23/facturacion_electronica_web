@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <h:outputStylesheet library="css" name="estilo.css" />   
+                <h:outputStylesheet library="css" name="plantilla_editada.css" />
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+
+        <h:body style="font-size: 11px">
+            <h:form id="formulario">
+                <p:remoteCommand name="onload" action="#{applicationCodefacMb.controladorConexionServidor()}" autoRun="true" process="@this" />
+                <p:layout fullPage="true">
+
+                    <p:layoutUnit position="north" resizable="false" size="7%" > <!-- TODO: Revisar este tamanio de 10% porque solo es referencial , pero sn poner ningun valor deberia adaptarse al menu principal -->
+                        <p:growl id="messages" showDetail="true" sticky="true"/>
+
+                        <p:menubar style="z-index:1000 !important;">
+                            <p:submenu label="Archivo" icon="ui-icon-document">
+                                <p:submenu label="New" icon="ui-icon-contact">
+                                    <p:menuitem value="Project" url="#" />
+                                    <p:menuitem value="Other" url="#" />
+                                </p:submenu>
+                                <p:menuitem value="Open" url="#" />
+                                <p:separator />
+                                <p:menuitem value="Quit" url="#" />
+                            </p:submenu>
+
+                            <p:submenu label="Control Empleado" icon="ui-icon-pencil">
+                                <p:menuitem value="Undo" url="#" icon="ui-icon-arrowreturnthick-1-w" />
+                                <p:menuitem value="Redo" url="#" icon="ui-icon-arrowreturnthick-1-e" />
+                            </p:submenu>
+
+                            <p:submenu label="Ayuda" icon="ui-icon-help">
+                                <p:menuitem value="Contents" url="#" />
+                                <p:submenu label="Search" icon="ui-icon-search">
+                                    <p:submenu label="Text">
+                                        <p:menuitem value="Workspace" url="#" />
+                                    </p:submenu>
+                                    <p:menuitem value="File" url="#" />
+                                </p:submenu>
+                            </p:submenu>
+
+
+                            <!--<f:facet name="options">
+                                <p:inputText style="margin-right:10px" placeholder="Buscar"/>
+                                <p:commandButton type="button" value="Buscar" icon="ui-icon-extlink" />
+                            </f:facet>-->
+                        </p:menubar>
+                    </p:layoutUnit>
+
+                    <p:layoutUnit position="south" size="30" closable="false" collapsible="true" style="padding: 0px;border: 0px;height: 0px">
+                        <div style="text-align: center;background-color: rgb(62,93,162);color: white;padding: 2px;height: 22px">
+                            Todos los derechos reservador FactuLab 2022
+                        </div>
+                    </p:layoutUnit>
+                    
+                    <p:layoutUnit position="west" size="175" header="Barra Tareas" collapsible="true" collapsed="false" style="height: auto;text-align: center;padding: 5px;border: 1px;border-style: ridge">
+                        
+                        <h:graphicImage library="img" name="logoCodefac.gif" style="height: 20%;border:  0 auto" />
+                        
+                        <p:menu toggleable="true"  style="margin: 5px">                            
+                            <p:submenu label="Sistema">
+                                <p:menuitem process="@this" value="Login" action="login.xhtml"  icon="ui-icon-home"/>
+                            </p:submenu>
+                            
+                            <p:submenu label="Consultas">
+                                <p:menuitem process="@this" value="Facturas" action="consultar_facturas.xhtml"  icon="ui-icon-disk" />
+                                <p:menuitem process="@this" value="Ordenes Trabajo"  update="messages" icon="ui-icon-arrowrefresh-1-w"/>
+                            </p:submenu>
+                            
+                            <p:submenu label=" Productos">
+                                <p:menuitem process="@this" value="Productos" action="consultar_productos.xhtml"  icon="ui-icon-home"/>
+                                <p:menuitem value="Servicios" icon="ui-icon-star"/>
+                            </p:submenu>
+                        </p:menu>
+                    </p:layoutUnit>
+
+                    <p:layoutUnit position="center" style="border:1px;border-style: ridge">
+                        <p:panel>
+                            <f:facet name="header">
+                                <ui:insert name="titulo_contenido">
+                                    Sin titulo por defecto
+                                </ui:insert>                                
+                            </f:facet>
+                            
+                            <div  style="padding: 10px">
+                                <ui:insert name="contenido">
+                                    Contenido por defecto de la plantilla  
+                                </ui:insert>
+                            </div>
+
+                            <f:facet name="actions">
+                                <h:commandLink styleClass="ui-panel-titlebar-icon ui-corner-all ui-state-default"><h:outputText styleClass="ui-icon ui-icon-help" /></h:commandLink>
+                                <h:commandLink styleClass="ui-panel-titlebar-icon ui-corner-all ui-state-default"><h:outputText styleClass="ui-icon ui-icon-star" /></h:commandLink>
+                            </f:facet>
+                        </p:panel>
+                    </p:layoutUnit>
+
+                </p:layout>
+
+            </h:form>
+            <h:outputStylesheet name="primeflex/primeflex.css" library="css" />
+        </h:body>
+        
+
+    </f:view>
+</html>
+

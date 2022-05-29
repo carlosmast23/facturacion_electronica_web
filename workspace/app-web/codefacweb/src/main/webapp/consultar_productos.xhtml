@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition  template="/WEB-INF/plantilla_publica.xhtml">
+        
+        <ui:define name="titulo_contenido">
+            Consultar Productos
+        </ui:define>
+        
+        <ui:define name="referenciaMb" >
+             <f:event listener="#{consultarProductosMb.agregarControlador(controllerPublicoMb)}" type="preRenderComponent" /> 
+        </ui:define>
+
+        <ui:define name="contenido">
+            
+            <div style="text-align: center"><h2>Productos y Servicios</h2></div>
+            <p:dataGrid var="producto" value="#{consultarProductosMb.productos}" columns="3" layout="grid"
+                        rows="12" paginator="true" id="cars"
+                        paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                        rowsPerPageTemplate="6,12,16">
+
+                <f:facet name="header">
+                    Listo de productos
+                </f:facet>
+
+                <p:panel header="#{producto.nombre}" style="text-align:center">
+                    <h:panelGrid columns="1" style="width:100%">
+                        <p:graphicImage library="img" name="sinImagen.jpg" style="height: 30%"/> 
+
+                        <h:outputText value="#{producto.valorUnitario}" style="font-size: 18px;" >
+                            <f:convertNumber minFractionDigits="2" maxFractionDigits="2" />
+                        </h:outputText>
+
+                    </h:panelGrid>
+                </p:panel>
+
+            </p:dataGrid>
+        </ui:define>
+    </ui:composition>
+
+</html>
+

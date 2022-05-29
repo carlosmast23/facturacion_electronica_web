@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+                <meta name="apple-mobile-web-app-capable" content="yes" />                
+                <h:outputStylesheet library="css" name="plantilla_editada.css" />
+                <h:outputStylesheet library="css" name="estilo.css" />
+                <title>FactuLab</title>
+            </f:facet>
+
+        </h:head>
+
+        <h:body style="font-size: 11px;margin: 0px">
+            <ui:insert name="vistaControlador"></ui:insert>
+
+            <h:form id="formulario" onkeypress="if (event.keyCode == 13) {
+                        return false;
+                    }">
+
+                <p:poll process="@this" interval="1" listener="#{sessionMb.ejemploContador()}" update=":formulario:panelComprobantesProcesados" stop="#{!sessionMb.actualizarMonitor}" autoStart="true" widgetVar="poll" />
+                <!--<p:remoteCommand id="remoteCommand" name="updatePoll" update=":formulario:panelSecundario"/>-->
+                <p:remoteCommand name="onload" action="#{applicationCodefacMb.controladorConexionServidor()}" autoRun="true" />
+                <p:remoteCommand name="mostrarComprobantesRC" update=":formulario:panelComprobantesProcesados" action="#{controllerCodefacMb.activarPanelComprobante()}" />
+
+
+                <p:growl id="messages" showDetail="true" life="5000"/>
+                <!--- ============= PANELES AUXILIARES DERECHA, ABAJO ============= -->
+                <p:sidebar widgetVar="sidebar1" baseZIndex="10000" class="leftCol">
+                    <h1 style="font-weight:normal">Menu Principal</h1>
+                    <p:commandButton value="Salir" style="width: 100%" oncomplete="PF('sidebar1').hide()"/>
+
+
+                    <p:separator/>
+
+                    <p:accordionPanel value="#{sessionMb.menuCodefacRespuesta.modulosDisponibles}" var="modulo" >
+
+                        <p:tab title="#{modulo.nombre}">
+                            <p:menu  model="#{sessionMb.menuModelMap.get(modulo)}" toggleable="true"  />
+                        </p:tab>
+
+                    </p:accordionPanel>
+
+                </p:sidebar>
+
+                <!-- Comprobante donde se van a encontrar los comprobantes procesados -->
+                <p:sidebar 
+                    id="panelSecundario" 
+                    widgetVar="sidebar4" 
+                    position="right" 
+                    baseZIndex="10000" 
+                    style="width: 250px" 
+
+                    >
+
+
+                    <!--<p:commandButton value="Cancel" oncomplete="PF('sidebar4').hide()"/>-->
+                </p:sidebar>
+
+                <!-- ============== MENU SUPERIOR DE LAS OPCIONES PRINCIPALES ====== -->            
+                <p:toolbar id="tb"  rendered="#{!controllerCodefacMb.modoDialogo}">
+                    <f:facet name="left">
+                        <p:commandButton icon="fa fa-fw fa-home" process="@this"  title="Home" action="indexCodefac" style="background-color:#0097A;font-size: 19px " value="FactuLab" />
+
+                        <!--<p:commandButton icon="new-icon" class="button-menu" title="Nuevo" process="@this" actionListener="#{controllerCodefacMb.nuevo()}" update="panelContenido">-->
+                        <p:commandButton id="btnNuevo" icon="fa fa-fw fa-plus"  title="Nuevo" process="@this" actionListener="#{controllerCodefacMb.nuevo()}"  update="panelContenido" class="boton-principal"  />
+
+                        <!-- BOTON GRABAR -->
+                        <p:commandButton icon="fa fa-fw fa-save"   type="button" onclick="PF('dialogConfirmarGrabar').show()" title="Grabar" disabled="false" class="boton-principal" />                                
+
+                        <span class="ui-separator">
+                            <span class="ui-icon pi pi-ellipsis-v" /> 
+                        </span>
+
+                        <!-- BOTON IMPRIMIR -->
+                        <p:commandButton 
+                            icon="fa fa-fw fa-print" 
+                            title="Imprimir" 
+                            ajax="false" 
+                            actionListener="#{controllerCodefacMb.imprimir()}" 
+                            update="messages" 
+                            class="boton-principal" 
+                            onclick="this.form.target = '_blank'"  
+                            onblur="this.form.target = '_self'"
+                            />
+
+                        <!-- BOTON BUSCAR-->
+                        <p:commandButton icon="fa fa-fw fa-search"  process="@this" title="Buscar" actionListener="#{controllerCodefacMb.abrirDialogoBusqueda}" class="boton-principal" >
+                            <p:ajax event="dialogReturn" listener="#{controllerCodefacMb.onObjectChosen}" update="panelContenido" />
+                        </p:commandButton>
+
+                        <!-- ELIMINAR BOTON -->
+                        <p:commandButton icon="fa fa-fw fa-close"  type="button" onclick="PF('dialogConfirmarEliminar').show()" title="Eliminar" disabled="false" class="boton-principal" />
+                       
+
+                    </f:facet>   
+                    <f:facet name="right">
+                        
+                        <p:commandButton  icon="fa fa-fw fa-bars" oncomplete="PF('sidebar1').show()" style="background-color: #FFA000;font-size: 14px" />
+                        <!--<p:commandButton icon="fa fa-fw fa-download" oncomplete="PF('panelComprobantesProcesados').show()" />-->
+                        <p:commandButton icon="fa fa-fw fa-download" actionListener="#{controllerCodefacMb.mostrarPanelComprobantes()}" update=":formulario:panelComprobantesProcesados,messages" class="boton-principal" />
+                        <p:menuButton value="" style="font-size: 14px" >                            
+                            <p:menuitem value="Cerrar la sesión" action="login" icon="pi pi-home"  />
+                        </p:menuButton>
+                    </f:facet>
+
+                    <f:facet name="header">
+                        CABECERA
+                    </f:facet>
+
+                    <f:facet name="footer">
+                        CABECERA
+                    </f:facet>
+                </p:toolbar>
+                <div style="text-align: center">
+                    <p:commandButton rendered="#{controllerCodefacMb.modoDialogo}" process="@this" onclick="PF('dialogConfirmarGrabar').show()" style="float: contour;margin-bottom:  10px;margin-right: 50px" label="Grabar" value="G U A R D A R" icon="save-icon" />
+                </div>
+                <p:sticky target="tb" />
+
+
+                <p:panel id="panelContenido" style="text-align: center">
+
+                    <div class="p-grid "  >
+                        <div class="p-col-12 p-md-12 p-lg-12" >
+                            <!-- =================== BARRA DE LOS COMPROBANTES PROCESADOS ========================= -->
+                            <p:panel 
+                                visible="#{controllerCodefacMb.visiblePanelComprobantes}"
+                                id="panelComprobantesProcesados" 
+                                header="Comprobantes Procesados"
+                                toggleable="true" 
+                                toggleSpeed="500" 
+                                widgetVar="panelComprobantesProcesados"
+                                >
+
+                                <div class="p-grid">
+                                    <p:repeat id="barMonitor" value="#{sessionMb.barraProgresoList}" var="barra">
+
+                                        <div class="p-col-12 p-md-6 p-lg-3">
+                                            <div class="ui-inputgroup" style="padding-left: 10px;padding-right: 10px;padding-bottom: 2px;padding-top: 2px">
+                                                <p:progressBar   widgetVar="pbAjax"  ajax="true" value="#{barra.porcentaje}"  labelTemplate="#{barra.titulo()}" styleClass="animated " style="width: 100%;color: white;padding-right: 20px;margin-right: 20px" global="false">
+                                                    <p:ajax event="complete"   oncomplete="PF('startButton2').enable()"/>
+                                                </p:progressBar>                                                
+                                                <p:commandButton id="btnMonitorAlerta" process="@this"  icon="fa fa-bell-o" actionListener="#{barra.alerta()}"  />                                                
+                                                <p:commandButton id="btnMonitorBuscar" 
+                                                                 process="@this" 
+                                                                 ajax="false" 
+                                                                 actionListener="#{barra.imprimir()}"  
+                                                                 icon="fa fa-search" 
+                                                                 onclick="this.form.target = '_blank'"  
+                                                                 onblur="this.form.target = '_self'"
+                                                                 />
+                                                <p:commandButton id="btnMonitorImprimir" process="@this" icon="fa fa-close"  />
+
+                                            </div>
+                                        </div>
+                                    </p:repeat>
+                                </div>
+
+                                <f:facet name="options">
+                                    <p:menu>
+                                        <p:submenu label="Opciones">
+                                            <p:menuitem value="Minimizar" url="#" icon="pi pi-clone" onclick="PF('panelComprobantesProcesados').toggle()" />
+                                            <p:menuitem value="Limpiar" ajax="true" icon="pi pi-trash" process="@this" actionListener="#{sessionMb.limpiarBarrasProgresoFactura()}" update="panelComprobantesProcesados" />
+                                            <p:menuitem value="Cerrar" url="#" icon="pi pi-times" onclick="PF('panelComprobantesProcesados').close()" />
+
+                                        </p:submenu>
+                                    </p:menu>
+                                </f:facet>
+                            </p:panel>  
+
+                        </div>
+
+                        <div class="p-col-12 p-md-12 p-lg-12" >
+                            <p:panel 
+                                id="pnlDatos" 
+                                header="#{controllerCodefacMb.getTituloPagina()}" 
+                                toggleable="true" 
+                                closable="false" 
+                                toggleSpeed="500" 
+                                closeSpeed="500" 
+                                widgetVar="panel" 
+                                style="margin-bottom:20px">
+
+                                <p:ajax event="close"   />
+                                <p:ajax event="toggle"   />
+
+                                <ui:insert name="contenido">
+                                    Contenido por defecto de la plantilla  
+                                </ui:insert>
+
+                                <f:facet name="options">
+                                    <p:menu>
+                                        <p:submenu label="Opciones">
+                                            <!--<p:menuitem value="Toggle" url="#" icon="pi pi-clone" onclick="PF('panel').toggle()" />
+                                            <p:menuitem value="Remove" url="#" icon="pi pi-times" onclick="PF('panel').close()" />-->
+                                            <ui:insert name="opciones">
+
+                                            </ui:insert>
+                                        </p:submenu>
+                                    </p:menu>
+                                </f:facet>
+                            </p:panel> 
+
+                        </div>
+
+                    </div>                    
+
+
+
+
+
+
+
+                    <!-- ========================= PIE DE LA PAGINA ====================== -->
+                    <div class="pie-pagina" >
+                        <p:panel style="color: red">
+                            Todos los derechos <b>reservados FactuLab 2022</b>
+                        </p:panel>
+                    </div> 
+                </p:panel>
+
+                <h:outputStylesheet name="primeflex/primeflex.css" library="css" />
+                <h:outputStylesheet library="css" name="estilo.css" />
+
+                <!-- DIALOGO PARA CONFIRMAR EL GUARDAR -->
+                <p:confirmDialog message="Esta seguro que desea grabar los datos?" header="Alerta" severity="alert" widgetVar="dialogConfirmarGrabar">
+                    <p:commandButton value="Si" process="@form" actionListener="#{controllerCodefacMb.save()}" update="messages,idDialogResultado,panelSecundario,panelContenido"  onclick="PF('dialogConfirmarGrabar').hide();"  />
+                    <p:commandButton value="No" onclick="PF('dialogConfirmarGrabar').hide();" type="button" />
+                </p:confirmDialog>
+
+                <!-- DIALOGO DE RESULTADOS -->
+                <p:dialog 
+                    id="idDialogResultado" 
+                    header="#{controllerCodefacMb.generalAbstractMb.resultadoDialogo.titulo}" 
+                    widgetVar="dialogResultado" 
+                    modal="true" 
+                    height="100" 
+                    style="text-align: center">
+
+                    <h:graphicImage library="img" name="logoCodefac.gif" style="height: 50%" />
+                    <p:separator />
+                    <p:outputLabel value="#{controllerCodefacMb.generalAbstractMb.resultadoDialogo.mensaje}" />
+                    <f:facet name="footer"  >
+                        <div style="text-align: center">
+                            <p:commandButton 
+                                value="Aceptar" 
+                                process="@form" 
+                                actionListener="#{controllerCodefacMb.nuevo()}" 
+                                update="messages,idDialogResultado,formulario:panelSecundario,panelContenido"  onclick="PF('dialogConfirmarGrabar').hide();"  />
+
+                            <p:commandButton 
+                                value="Imprimir" 
+                                process="@this" 
+                                ajax="false" 
+                                actionListener="#{controllerCodefacMb.imprimir()}" 
+                                icon="ui-icon-print" 
+                                onclick="this.form.target = '_blank'"  
+                                onblur="this.form.target = '_self'"
+                                />
+                        </div>
+                    </f:facet>
+                </p:dialog>
+
+                <!-- DIALOGO DE REPORTES -->
+                <p:dialog 
+                    id="idDialogReporte" 
+                    header="Imprimir Reporte" 
+                    widgetVar="dialogReporte" 
+                    modal="true" 
+                    height="100" 
+                    style="text-align: center">
+
+                    <h:graphicImage library="img" name="logoCodefac.gif" style="height: 50%" />
+                    <p:separator />
+                    <p:outputLabel value="Seleccione el reporte que desea imprimir" />
+                    <f:facet name="footer"  >
+                        <div style="text-align: center">
+                            <p:commandButton 
+                                value="Pdf" 
+                                process="@form" 
+                                actionListener="#{controllerCodefacMb.imprimirPdf()}" 
+                                ajax="false" 
+                                onclick="this.form.target = '_blank'"  
+                                onblur="this.form.target = '_self'"
+                                update="messages,idDialogResultado,formulario:panelSecundario,panelContenido"  
+                                />
+
+                            <p:commandButton 
+                                value="Excel" 
+                                process="@this" 
+                                ajax="false" 
+                                actionListener="#{controllerCodefacMb.imprimirExcel()}" 
+                                icon="ui-icon-print" 
+                                onclick="this.form.target = '_blank'"  
+                                onblur="this.form.target = '_self'"
+                                />
+                        </div>
+                    </f:facet>
+                </p:dialog>
+
+                <!-- DIALOGO PARA CONFIRMAR ELIMINAR -->
+                <p:confirmDialog message="Esta seguro que desea eliminar el  registro?" header="Alerta" severity="alert" widgetVar="dialogConfirmarEliminar">
+                    <p:commandButton value="Si" process="@form" actionListener="#{controllerCodefacMb.delete()}" update="messages,idDialogResultado,:formulario:panelSecundario,panelContenido"  onclick="PF('dialogConfirmarEliminar').hide();"  />
+                    <p:commandButton value="No" onclick="PF('dialogConfirmarEliminar').hide();" type="button" />
+                </p:confirmDialog>
+
+            </h:form>
+
+
+        </h:body>
+
+    </f:view>
+</html>
+

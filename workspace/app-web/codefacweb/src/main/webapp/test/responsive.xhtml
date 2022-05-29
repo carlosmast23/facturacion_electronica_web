@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">                   
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+                <meta name="apple-mobile-web-app-capable" content="yes" />
+                <title>PrimeFaces</title>
+            </f:facet>
+        </h:head>
+
+        <h:body >
+            <h:form>
+                <!--- ============= PANELES AUXILIARES DERECHA, ABAJO ============= -->
+                <p:sidebar widgetVar="sidebar1" baseZIndex="10000">
+
+                    <h1 style="font-weight:normal">Menu Principal</h1>
+
+                    <p:commandButton value="Salir" style="width: 100%" oncomplete="PF('sidebar1').hide()"/>
+                    <p:separator/>
+
+<!--<p:accordionPanel value="#{ejemploMenu.menuCodefacRespuesta.modulosDisponibles}" var="modulo" >
+    <p:tab title="#{modulo.nombre}">
+        <p:menu model="#{ejemploMenu.model}" toggleable="true" />
+    </p:tab>
+</p:accordionPanel>-->
+
+                </p:sidebar>
+
+                <p:sidebar widgetVar="sidebar4" position="bottom" baseZIndex="10000">
+                    <h1 style="font-weight:normal">Comprobantes Procesados</h1>
+                    <p:commandButton value="Cancel" oncomplete="PF('sidebar4').hide()"/>
+                </p:sidebar>
+
+                <!-- ============== MENU SUPERIOR DE LAS OPCIONES PRINCIPALES ====== -->            
+                <p:toolbar id="tb" >
+                    <f:facet name="left">
+                        <p:commandButton type="button" class="button-menu"  icon="home-icon"  />
+                        <p:commandButton type="button" class="button-menu"  icon="new-icon"  />
+                        <p:commandButton type="button" class="button-menu"  icon="save-icon"  />
+                        <p:commandButton type="button" class="button-menu"  icon="print-icon"  />
+                        <p:commandButton type="button" class="button-menu"  icon="find-icon"  />
+                        <p:commandButton type="button" class="button-menu"  icon="delete-icon"  />
+                        <p:commandButton type="button" class="button-menu"  icon="refresh-icon"  />
+                        <p:commandButton type="button" class="button-menu"  icon="help-icon"  />
+
+                    </f:facet>   
+                    <f:facet name="right">
+
+
+                        <p:commandButton value="Menu" icon="fa fa-fw fa-bars" oncomplete="PF('sidebar1').show()" />
+                        <p:commandButton value="%" icon="fa fa-fw fa-download" oncomplete="PF('sidebar4').show()" />
+                        <p:menuButton value="Más">
+                            <p:menuitem value="Save" action="#{toolbarView.save}"  icon="pi pi-save" />
+                            <p:menuitem value="Update" action="#{toolbarView.update}"  icon="pi pi-refresh" />
+                            <p:menuitem value="Delete" action="#{toolbarView.delete}" ajax="false" icon="pi pi-times" />
+                            <p:menuitem value="Homepage" url="http://www.primefaces.org" icon="pi pi-home" />
+                        </p:menuButton>
+                    </f:facet>
+                </p:toolbar>
+                <p:sticky target="tb" />
+            </h:form>
+
+            <!-- =================== TITULO DE LA PAGINA ========================= -->
+            <ui:insert name="titulo_contenido">
+                <div class="titulo_contenido" >
+                    Sin titulo de la pantalla
+                </div>
+            </ui:insert>   
+            <p:separator />
+
+            <!-- =================== CONTENIDO DONDE VAN A ESTAR LOS DATOS ========================= -->
+            <div  style="padding: 10px">
+                <ui:insert name="contenido">
+                    Contenido por defecto de la plantilla  
+
+                    <div style="height: 400px"/>
+                    adasd
+                    <div style="height: 500px"/>
+                    asd
+                    <div style="height: 400px"/>
+                    asd
+
+                </ui:insert>
+            </div>
+
+            <!-- ========================= PIE DE LA PAGINA ====================== -->
+            <div class="pie-pagina" >
+                Todos los derechos reservador FactuLab 2022
+            </div> 
+
+            <h:outputStylesheet name="primeflex/primeflex.css" library="css" />
+            <h:outputStylesheet library="css" name="estilo.css" />
+
+        </h:body>
+
+    </f:view>
+</html>

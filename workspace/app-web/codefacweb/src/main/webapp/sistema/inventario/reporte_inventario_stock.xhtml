@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:c="http://xmlns.jcp.org/jsf/composite/componentes">
+
+    <ui:composition  template="/template/codefac_template.xhtml">
+        <ui:define name="contenido" >
+            <f:event listener="#{controllerCodefacMb.agregarVista(reporteInventarioStockMb)}" type="preRenderComponent" /> 
+                <div class="p-grid" style="text-align: left" >
+                    <div class="p-col-12 p-md-6 p-lg-6" >
+                        <div><h:outputLabel id="cmbBodega"  value="Bodega: "/></div>
+                        <p:selectOneMenu id="console1" value="#{reporteInventarioStockMb.controlador.bodegaSeleccionada}"  style="width:125px" converter="bodegaConverter">
+                            <f:selectItems value="#{reporteInventarioStockMb.controlador.bodegasList}" var="bodega" itemValue="#{bodega.idBodega.toString()}"    />
+                        </p:selectOneMenu>
+                    </div> 
+                </div>
+                <div class="p-grid" style="text-align: left" >
+                    <div class="p-col-12 p-md-6 p-lg-6" >
+                        <div><h:outputLabel id="cmbCategoria"  value="Categoria: "/></div>
+                        <p:selectOneMenu id="console2" value="#{reporteInventarioStockMb.controlador.categoriaSeleccionada}" converter="categoriaProductoConverter"  style="width:125px">
+                            <f:selectItem itemLabel="Seleccione un valor" itemValue="" />
+                            <f:selectItems value="#{reporteInventarioStockMb.controlador.categoriaList}" var="categoria" itemValue="#{categoria.idCatProducto.toString()}"     />
+                        </p:selectOneMenu>
+                    </div> 
+                </div>
+                <div class="p-grid" style="text-align: left" >
+                   <div class="p-col-12 p-md-6 p-lg-6" >                       
+                       <p:commandButton 
+                           process="@this"
+                           value="Buscar" 
+                           actionListener="#{reporteInventarioStockMb.controlador.listenerConsultar()}"
+                           update="tblDatos"
+                       >
+                       </p:commandButton>
+                   </div> 
+                </div>
+                <div class="p-grid" style="text-align: left" >
+                    <div class="p-col-12 p-md-12 p-lg-12" >
+                        <p:dataTable id="tblDatos" var="dato" value="#{reporteInventarioStockMb.controlador.listaData}" reflow="true" >
+                            <p:column headerText="Código">
+                                <h:outputText value="#{dato.codigo}" />
+                            </p:column>
+                            <p:column headerText="Producto">
+                                <h:outputText value="#{dato.producto}" />
+                            </p:column>
+                            <p:column headerText="Stock">
+                                <h:outputText value="#{dato.stock}" />
+                            </p:column>
+                            <p:column headerText="Categoria">
+                                <h:outputText value="#{dato.categoria}" />
+                            </p:column>
+                            
+                        </p:dataTable>
+                    </div>
+                </div>
+        </ui:define>
+    </ui:composition>
+
+</html>
+

@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:c="http://xmlns.jcp.org/jsf/composite/componentes">
+
+    <ui:composition  template="/template/codefac_template.xhtml">
+
+        <ui:define name="opciones" >
+
+        </ui:define>
+        
+        <ui:define name="vistaControlador" >
+            <f:event type="preRenderComponent" listener="#{controllerCodefacMb.agregarVista(notaCreditoMb)}" />                 
+        </ui:define>
+
+        <ui:define name="contenido" >
+
+            <p:panel>
+                <div class="p-grid div-resposive" >
+                    <div class="p-col-12 p-md-12 p-lg-6 "  >
+                        <p:outputLabel value="Motivo Anulación:" class="label-responsive"/>
+                        <p:inputText  value="#{notaCreditoMb.notaCredito.razonModificado}" class="componente-responsive"/>                        
+                    </div>
+                </div>
+            </p:panel>
+
+            <p:accordionPanel multiple="true" id="acordionPanelId">
+                <p:tab title="Datos Cabecera">
+                    <div class="p-grid div-resposive"  >
+                        <div class="p-col-12 p-md-6 p-lg-3" >
+                            <p:outputLabel value="Seleccione la Factura:" class="label-responsive"/>
+                            <p:inputText id="txtFactura" placeholder="Factura" value="#{notaCreditoMb.facturaSeleccionada.secuencial}" class="componente-responsive" />                    
+                            <p:commandButton process="@this" icon="fa fa-search"  action="#{notaCreditoMb.abrirDialogoBuscarFactura}">
+                                <p:ajax event="dialogReturn" listener="#{notaCreditoMb.seleccionarFactura}" update="formulario:acordionPanelId:datosCliente,txtFactura,formulario:tabDatosFactura:tblDatosAdicional,:formulario:tblProductoDetalles,"  />
+                            </p:commandButton>                              
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3" >
+                            <p:outputLabel value="Fecha de Emisión:" class="label-responsive"/>
+                            <p:datePicker  id="button" value="#{notaCreditoMb.fechaEmision}" showIcon="true" placeholder="Fecha Emisión" class="componente-responsive" />
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3" >
+                            <div>
+                                <p:outputLabel value="Documento:" class="label-responsive"/>                            
+                            </div>
+                            <p:selectOneMenu id="car" value="#{notaCreditoMb.documentoSeleccionado}" converter="documentoEnumConverter" class="componente-responsive" >
+                                <f:selectItems value="#{notaCreditoMb.documentos}" var="documento" itemValue="#{documento.codigo}" />
+                            </p:selectOneMenu>
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3" >
+                            <div>
+                                <p:outputLabel value="Punto Emisión:" class="label-responsive" />
+                            </div>
+                            <p:selectOneMenu id="cmbPuntoEmision" value="#{notaCreditoMb.puntoEmisionSeleccionado}" converter="puntoEmisionConverter" class="componente-responsive" >
+                                <f:selectItems value="#{notaCreditoMb.puntosEmision}" var="puntoEmision" itemValue="#{puntoEmision.id.toString()}" />
+                            </p:selectOneMenu>
+                        </div>
+
+
+                    </div>
+
+                    <p:panel id="datosCliente"  >
+                        <div class="p-grid div-resposive"  >
+
+                            <div class="p-col-12 p-md-6 p-lg-3" >
+                                <h:outputLabel class="label-responsive" >Razon Social:  </h:outputLabel>
+                                <h:outputLabel  >#{notaCreditoMb.notaCredito.cliente.razonSocial}</h:outputLabel>
+                            </div>
+
+                            <div class="p-col-12 p-md-6 p-lg-3" >
+                                <h:outputLabel class="label-responsive" >Dirección:  </h:outputLabel>
+                                <h:outputLabel >#{notaCreditoMb.notaCredito.cliente.imprimirDireccionPorDefecto()}</h:outputLabel>
+                            </div>
+
+                        </div>
+                    </p:panel>
+
+                </p:tab>
+
+            </p:accordionPanel>
+
+
+            <!--<f:event listener="#{controllerCodefacMb.agregarVista(notaCreditoMb)}" type="preRenderView" />-->
+            <p:remoteCommand name="updateDataTable" update=":formulario:tblProductoDetalles"/>
+
+
+
+            <p:panel id="pnlDatosFactura">
+                <p:tabView id="tabDatosFactura">
+                    <p:tab title="Productos" >
+                        <div class="p-grid div-resposive"  >
+                            <div class="p-col-12 p-md-6 p-lg-3" >
+                                <h:outputLabel class="label-responsive" >Seleccione el producto:  </h:outputLabel>
+                                <p:inputText id="txtProducto" placeholder="" value="#{notaCreditoMb.productoSeleccionado.codigoPersonalizado}" style="width: 70%" />
+                                <p:commandButton  process="@this" icon="fa fa-search"  styleClass="white-button" action="#{notaCreditoMb.abrirDialogoBusquedaProducto()}" style="width: 20%"  >
+                                    <p:ajax event="dialogReturn" listener="#{notaCreditoMb.seleccionarProducto}" update="txtProducto,txtValorUnitario,txtCantidad,txtDescuento,txtDescripcion"  />
+                                </p:commandButton>
+                            </div>
+
+                            <div class="p-col-12 p-md-3 p-lg-2" >
+                                <p:outputLabel class="label-responsive" value="Valor Unitario:" />
+                                <p:inputText id="txtValorUnitario" style="width: 100%" placeholder="" value="#{notaCreditoMb.notaCreditoDetale.precioUnitario}" />                                
+                            </div>
+
+                            <div class="p-col-12 p-md-3 p-lg-1" >
+                                <p:outputLabel class="label-responsive" value="Cantidad:" />
+                                <p:inputText id="txtCantidad" style="width: 100%" placeholder="" value="#{notaCreditoMb.notaCreditoDetale.cantidad}" />                                
+                            </div>
+
+                            <div class="p-col-12 p-md-3 p-lg-2" >
+                                <p:outputLabel class="label-responsive" value="Descuento:" />
+                                <p:inputText id="txtDescuento" style="width: 100%" placeholder="" value="#{notaCreditoMb.notaCreditoDetale.descuento}" />
+                            </div>
+
+                            <div class="p-col-12 p-md-6 p-lg-4" >
+                                <p:outputLabel class="label-responsive" value="Descripción:" />
+                                <p:inputText style="width: 100%" id="txtDescripcion"  placeholder="" value="#{notaCreditoMb.notaCreditoDetale.descripcion}" />
+                            </div>
+
+
+                            <div class="p-col-12 p-md-6 p-md-offset-3 p-lg-2 p-lg-offset-5" >                                
+                                <p:commandButton style="width: 30%" process="@this,txtValorUnitario,txtCantidad,txtDescuento,txtDescripcion" update="txtProducto,txtValorUnitario,txtCantidad,txtDescuento,txtDescripcion,:formulario:tblProductoDetalles,:formulario:messages" icon="fa fa-plus"   styleClass="white-button" action="#{notaCreditoMb.agregarProducto()}" />
+                                <p:commandButton style="width: 30%" process="@this" icon="fa fa-pencil"  styleClass="white-button" action="#{notaCreditoMb.abrirDialogoBuscarCliente}"/>
+                                <p:commandButton style="width: 30%" process="@this" icon="fa fa-close"  styleClass="white-button" action="#{notaCreditoMb.abrirDialogoBuscarCliente}"/>
+                            </div>
+
+                        </div>
+
+                    </p:tab>
+
+                    <p:tab title="Formas de Pago y Datos Adicionales">
+
+                        <p:panelGrid id="pnlDatosAdicionales" columns="4" styleClass="ui-noborder">
+
+
+                            <p:panel id="pnlAdicionalDatos"  >
+
+                                <div style="text-align: center;margin-bottom: 10px">
+                                    <p:commandButton  process="@this"  actionListener="#{notaCreditoMb.abrirDialogoDatosAdicionales()}" id="btnAgregarDatosAdicional"   icon="fa fa-plus" value="Agregar" style="margin: 0 auto" >
+                                        <p:ajax event="dialogReturn" listener="#{notaCreditoMb.seleccionarDatoAdicional}" update="tblDatosAdicional"  />
+                                    </p:commandButton>
+                                </div>
+
+                                <p:dataTable 
+                                    id="tblDatosAdicional" 
+                                    var="detalleAdicional" 
+                                    value="#{notaCreditoMb.notaCredito.datosAdicionales}"
+                                    selectionMode="single"
+                                    selection="#{notaCreditoMb.facturaAdicionalSeleccionada}"
+                                    rowKey="#{detalleAdicional}"
+                                    >
+
+
+                                    <f:facet name="header">
+                                        Datos Adicionales
+                                    </f:facet>
+                                    <p:column headerText="Nombre">
+                                        <h:outputText value="#{detalleAdicional.campo}" />
+                                    </p:column>
+                                    <p:column headerText="Valor">
+                                        <h:outputText value="#{detalleAdicional.valor}" />
+                                    </p:column>
+                                </p:dataTable>
+
+                                <p:contextMenu for="tblDatosAdicional">
+                                    <!--<p:menuitem value="Ver" update="carDetail" icon="pi pi-search" oncomplete="PF('carDialog').show()"/>-->
+                                    <p:menuitem value="Eliminar" update="tblDatosAdicional" icon="pi pi-times" action="#{notaCreditoMb.eliminarDatoAdicional()}"/>
+                                </p:contextMenu>
+
+                            </p:panel>
+
+                        </p:panelGrid>                        
+
+                    </p:tab>
+                </p:tabView>
+
+                <p:dataTable 
+                    id="tblProductoDetalles" 
+                    var="detalle" 
+                    reflow="true"
+                    value="#{notaCreditoMb.notaCredito.detalles}" 
+                    editable="true"  
+                    style="margin-bottom:20px">
+
+                    <f:facet name="header">
+                        Detalles Nota Credito
+                    </f:facet>
+
+                    <p:ajax event="rowEdit" oncomplete="updateDataTable()"  listener="#{notaCreditoMb.filaEditaTablaEvent}"  />
+
+                    <p:column headerText="Descripción" style="width: 50%">
+                        <p:cellEditor>
+                            <f:facet name="output"><h:outputText value="#{detalle.descripcion}" /></f:facet>
+                            <f:facet name="input"><p:inputText id="modelInput2" value="#{detalle.descripcion}" style="width:100%"/></f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+
+                    <p:column headerText="Valor Unit">
+                        <p:cellEditor>
+                            <f:facet name="output"><h:outputText value="#{detalle.precioUnitario}" /></f:facet>
+                            <f:facet name="input"><p:inputText id="modelInput3" value="#{detalle.precioUnitario}" style="width:100%"/></f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="Cantidad">
+                        <p:cellEditor>
+                            <f:facet name="output"><h:outputText value="#{detalle.cantidad}" /></f:facet>
+                            <f:facet name="input"><p:inputText id="modelInput6" value="#{detalle.cantidad}" style="width:100%"/></f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="Descuento">
+                        <p:cellEditor>
+                            <f:facet name="output"><h:outputText value="#{detalle.descuento}" /></f:facet>
+                            <f:facet name="input"><p:inputText  id="modelInput19" value="#{detalle.descuento}" style="width:100%"/></f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+                    <p:column headerText="Total">
+                        <p:cellEditor>
+                            <f:facet name="output"><h:outputText value="#{detalle.total}" /></f:facet>
+                            <f:facet name="input"><p:inputText disabled="true" id="modelInput5" value="#{detalle.total}" style="width:100%"/></f:facet>
+                        </p:cellEditor>
+                    </p:column>
+
+
+                    <p:column style="width:35px">
+                        <p:rowEditor />
+                    </p:column>
+
+                    <p:column style="width:35px">
+                        <p:commandButton ajax="true" icon=" fa fa-close" label="Eliminar item" action="#{notaCreditoMb.eliminarFilaProducto(detalle)}" update="tblProductoDetalles" />
+                    </p:column>
+
+
+
+                    <f:facet name="footer">
+                        <div class="p-grid div-resposive"  >
+                            <div class="p-col-6 p-md-3 p-lg-3" >
+                                <h:outputLabel style="font-weight: bold">Subtotal 12: </h:outputLabel>
+                                <h:outputLabel style="font-weight: normal" value="#{notaCreditoMb.notaCredito.subtotalImpuestos}" />
+                            </div>
+
+                            <div class="p-col-6 p-md-3 p-lg-3" >
+                                <h:outputLabel style="font-weight: bold">Subtotal 0: </h:outputLabel>
+                                <h:outputLabel style="font-weight: normal" value="#{notaCreditoMb.notaCredito.subtotalSinImpuestos}" />
+                            </div>
+
+                            <div class="p-col-6 p-md-3 p-lg-3" >
+                                <h:outputLabel style="font-weight: bold">Descuento: </h:outputLabel>
+                                <h:outputLabel style="font-weight: normal" value="#{notaCreditoMb.notaCredito.descuentoImpuestos}" />
+                            </div>
+
+                            <div class="p-col-6 p-md-3 p-lg-3" >
+                                <h:outputLabel style="font-weight: bold">ICE: </h:outputLabel>
+                                <h:outputLabel style="font-weight: normal" value="" />
+                            </div>
+
+                        </div>
+
+                        <div class="p-grid div-resposive"  >
+
+                            <div class="p-col-12 p-md-6 p-lg-6" >
+                                <h:outputLabel style="font-weight: bold">IVA: </h:outputLabel>
+                                <h:outputLabel style="font-weight: normal" value="#{notaCreditoMb.notaCredito.iva}" />
+                            </div>
+                            <div class="p-col-12 p-md-6 p-lg-6" >
+                                <h:outputLabel style="font-weight: bold;font-size: 18px">Total: </h:outputLabel>
+                                <h:outputLabel style="font-weight: normal;font-size: 18px" value="#{notaCreditoMb.notaCredito.total}" />
+                            </div>
+
+                        </div>
+
+                    </f:facet>
+                </p:dataTable>
+            </p:panel>
+
+        </ui:define>
+    </ui:composition>
+
+</html>
+

@@ -1,0 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ec.com.codesoft.codefaclite.main.interfaces;
+
+import ec.com.codesoft.codefaclite.corecodefaclite.excepcion.ExcepcionCodefacLite;
+
+/**
+ *
+ * @author Carlos
+ */
+public interface BusquedaCodefacInterface {
+    public void buscar() throws ExcepcionCodefacLite;
+}

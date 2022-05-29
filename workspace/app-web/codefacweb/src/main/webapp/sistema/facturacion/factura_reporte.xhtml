@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:c="http://xmlns.jcp.org/jsf/composite/componentes">
+
+    <ui:composition  template="/template/codefac_template.xhtml">
+
+        <ui:define name="contenido" >
+
+            <f:event listener="#{controllerCodefacMb.agregarVista(facturaReporteMb)}" type="preRenderView" />
+            <!--<p:remoteCommand process="@this" name="panelDatos" update="@form"/>-->
+
+            <div class="p-grid div-resposive"  >
+
+                <!--- FECHA INICIAL -->
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <p:outputLabel for="fechaInicial" value="Fecha Inicial:" class="label-responsive"/>                    
+                    <div class="p-grid div-resposive" >
+                        <div class="p-col-fixed" >
+                            <p:datePicker size="" id="fechaInicial" value="#{facturaReporteMb.fechaInicial}" showIcon="true" />
+                        </div>
+                        <div class="p-col" >
+                            <p:button  icon="fa fa-fw fa-trash" >
+                                <f:param name="limpiarFechaInicial"/>
+                            </p:button>               
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--- FECHA FINAL -->
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <p:outputLabel for="fechaFinal" value="Fecha Final:" class="label-responsive" />
+
+                    <div class="p-grid div-resposive" >
+                        <div class="p-col-fixed" >
+                            <p:datePicker id="fechaFinal" value="#{facturaReporteMb.fechaFinal}" showIcon="true" />
+                        </div>
+                        <div class="p-col" >
+                            <p:button  icon="fa fa-fw fa-trash" >
+                                <f:param name="limpiarFechaFinal"/>
+                            </p:button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <div class="ui-inputgroup">
+                        <p:selectBooleanCheckbox value="#{facturaReporteMb.notaCreditoCheck}" />
+                        <h:outputLabel style="float: right;padding-left: 10px" value="Afectar Notas de Crédito"/>
+                    </div>
+                    <div class="ui-inputgroup">
+                        <p:selectBooleanCheckbox value="#{facturaReporteMb.notaDebitoCheck}" />
+                        <h:outputLabel style="float: right;padding-left: 10px" value="Afectar Notas de Débito"/>
+                    </div>
+                </div>
+
+
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <div>
+                        <p:outputLabel for="txtCliente" value="Cliente:" class="label-responsive"/>
+                    </div>
+                    <div class="p-grid div-resposive" >
+                        <div class="p-col-fixed" >
+                            <p:inputText id="txtCliente" placeholder="" value="#{facturaReporteMb.clienteDatos}" />                                        
+                        </div>
+                        <div class="p-col-fixed" >
+                            <p:commandButton process="@this" class="componente-responsive" icon="fa fa-search"  styleClass="white-button" action="#{facturaReporteMb.abrirDialogoBuscarCliente}">
+                                <p:ajax event="dialogReturn" listener="#{facturaReporteMb.seleccionarCliente}" update="txtCliente"/>
+                            </p:commandButton>
+                        </div>
+                        <div class="p-col" >
+                            <p:selectBooleanCheckbox value="#{facturaReporteMb.clienteCheckTodos}" itemLabel="Todos">
+                                <p:ajax update="txtCliente" listener="#{facturaReporteMb.seleccionarClienteTodos()}" />
+                            </p:selectBooleanCheckbox>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <div><h:outputLabel for="console" value="Documento:" class="label-responsive" /></div>
+                    <p:selectOneMenu id="console" value="#{facturaReporteMb.documentoSeleccionado}" converter="documentoEnumConverter" class="componente-responsive" >
+                        <f:selectItems var="documento" value="#{facturaReporteMb.documentos}" itemValue="#{documento.codigo}"/>
+                    </p:selectOneMenu>
+                </div>
+
+
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <div><h:outputLabel for="console1" value="Estado:" class="label-responsive"/></div>
+                    <p:selectOneMenu id="console1" value="#{facturaReporteMb.comprobanteEstadoSeleccionado}" converter="comprobanteEnumConverter" class="componente-responsive" >
+                        <f:selectItems var="estado" value="#{facturaReporteMb.comprobanteEstados}" itemValue="#{estado.estado}"/>
+                    </p:selectOneMenu>
+                </div>
+
+
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <div><h:outputLabel for="console2" value="Punto Emisión:" class="label-responsive"/></div>
+                    <div class="p-grid div-resposive" >
+                        <div class="p-col-fixed" >
+                            <p:selectOneMenu id="console2" value="#{facturaReporteMb.puntoEmisionSeleccionado}" converter="puntoEmisionConverter" class="componente-responsive">
+                                <f:selectItems var="puntoEmision" value="#{facturaReporteMb.puntosEmision}" itemValue="#{puntoEmision.id.toString()}"/>
+                            </p:selectOneMenu>
+                        </div>
+                        <div class="p-col" >
+                            <p:selectBooleanCheckbox value="#{facturaReporteMb.puntoEmisionCheckTodos}" itemLabel="Todos"  />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <div><h:outputLabel for="console3" value="Tipo de reporte:" class="label-responsive" /></div>
+                    <p:selectOneMenu id="console3" value="#{facturaReporteMb.tipoReporteSeleccionado}" converter="tipoReporteEnumConverter" class="componente-responsive">
+                        <f:selectItems var="tipoReporte" value="#{facturaReporteMb.tiposReporte}" itemValue="#{tipoReporte.nombre}"/>
+                    </p:selectOneMenu>
+                </div>
+
+                <div class="p-col-12 p-md-6 p-lg-4" >
+                    <div><h:outputLabel for="console5" value="Sucursales" class="label-responsive" /></div>
+                    <div class="p-grid div-resposive" >
+                        <div class="p-col-fixed" >
+                            <p:selectOneMenu id="console5" value="#{facturaReporteMb.sucursalSeleccionada}" converter="sucursalConverter" class="componente-responsive">
+                                <f:selectItems var="sucursal" value="#{facturaReporteMb.sucursales}" itemValue="#{sucursal.id.toString()}"/>
+                            </p:selectOneMenu>    
+                        </div>
+                        <div class="p-col" >
+                            <p:selectBooleanCheckbox value="#{facturaReporteMb.sucursalCheck}" itemLabel="Todos"  />
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <div class="p-grid div-resposive"  >
+                <div class="p-col-12 p-md-4 p-md-offset-4 p-lg-2 p-lg-offset-5" >
+                    <p:commandButton icon="fa fa-search" value="Consultar " process="@form" update="tabla, subtotal, subtotal12, subtotal0, totalDescuento, iva12, valorTotal" action="#{facturaReporteMb.consultar}" styleClass="ui-priority-primary" class="componente-responsive" />                
+                </div>
+            </div>
+
+
+            <p:dataTable id="tabla" 
+                         value="#{facturaReporteMb.data}" 
+                         var="clientes"  
+                         rows="15" 
+                         paginator="true" 
+                         resizableColumns="true"
+                         reflow="true"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}" 
+                         rowsPerPageTemplate="5,10,15">
+                <p:columns value="#{facturaReporteMb.titulos}" var="columns">
+                    <f:facet name="header">
+                        <h:outputText value="#{columns.cabecera}" />
+                    </f:facet>
+                    <h:outputText value="#{clientes[columns.propiedad]}" />				       
+                </p:columns>
+            </p:dataTable>
+
+            <p:panelGrid id="panelDatosSumatoria" columns="3" layout="grid">
+                <p:panel style="border: 0px;margin: 0px;padding: 0px">
+
+                </p:panel>
+                <p:panel style="border: 0px;margin: 0px;padding: 0px">
+
+                </p:panel>
+                <p:panel style="border: 0px;margin: 0px;padding: 0px">
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="SUBTOTAL"/>
+                        <p:outputLabel id ="subtotal" value="#{facturaReporteMb.subtotal}" style="display: block; text-align:right;"/>
+                        <p:outputLabel value="SUBTOTAL 12%"/>
+                        <p:outputLabel id ="subtotal12" value="#{facturaReporteMb.subtotal12}" style="display: block; text-align:right;"/>
+                        <p:outputLabel value="SUBTOTAL 0%"/>
+                        <p:outputLabel id ="subtotal0" value="#{facturaReporteMb.subtotal0}" style="display: block; text-align:right;"/>
+                        <p:outputLabel value="TOTAL DESCUENTO"/>
+                        <p:outputLabel id ="totalDescuento" value="#{facturaReporteMb.totalDescuento}" style="display: block; text-align:right;"/>
+                        <p:outputLabel value="IVA 12%"/>
+                        <p:outputLabel id ="iva12" value="#{facturaReporteMb.iva12}" style="display: block; text-align:right;"/>
+                        <p:outputLabel value="VALOR TOTAL"/>
+                        <p:inputText id="valorTotal" value="#{facturaReporteMb.valorTotal}" style="text-align:right;"/>
+                    </p:panelGrid>
+                </p:panel>
+            </p:panelGrid>
+
+
+
+
+        </ui:define>
+    </ui:composition>
+
+</html>
+

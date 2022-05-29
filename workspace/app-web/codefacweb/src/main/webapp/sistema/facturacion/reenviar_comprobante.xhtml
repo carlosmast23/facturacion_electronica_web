@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:c="http://xmlns.jcp.org/jsf/composite/componentes">
+
+    <ui:composition  template="/template/codefac_template.xhtml">
+        
+        <ui:define name="opciones" >
+            <p:menuitem oncomplete="PF('btnCargarProforma').jq.click();" value="Cargar desde la proforma"  icon="pi pi-clone"  />
+        </ui:define>
+
+        <ui:define name="contenido" >
+            <h2>Ejemplo</h2>
+            <f:event listener="#{controllerCodefacMb.agregarVista(reenviarComprobanteMb)}" type="preRenderComponent" /> 
+            <!--<p:remoteCommand process="@this" name="panelDatos" update="@form"/>-->
+            
+            <p:dataTable id="checkboxDT" var="comprobante" value="#{reenviarComprobanteMb.comprobantesPendientes}" selection="#{reenviarComprobanteMb.comprobantesPendientesSeleccionados}" rowKey="#{comprobante.informacionTributaria.claveAcceso}" style="margin-bottom:0">
+                <f:facet name="header">
+                    Comprobantes No Autorizados
+                </f:facet>
+                <p:column selectionMode="multiple" style="width:16px;text-align:center"/>
+                <p:column headerText="Preimpreso">
+                    <h:outputText value="#{comprobante.preimpreso}" />
+                </p:column>
+                <p:column headerText="Identificación">
+                    <h:outputText value="#{comprobante.identificacion}" />
+                </p:column>                
+                <p:column headerText="Fecha Emisión">
+                    <h:outputText value="#{comprobante.fechaEmision}" />
+                </p:column>
+                <p:column headerText="Clave de Acceso">
+                    <h:outputText value="#{comprobante.informacionTributaria.claveAcceso}" />
+                </p:column>
+                <f:facet name="footer">
+                    <p:commandButton process="checkboxDT" update=":form:multiCarDetail" icon="pi pi-search" value="View" oncomplete="PF('multiCarDialog').show()" />
+                </f:facet>
+            </p:dataTable>
+
+        </ui:define>
+    </ui:composition>
+
+</html>
+

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui" 
+      xmlns:c="http://xmlns.jcp.org/jsf/composite/componentes">
+
+    <ui:composition  template="/template/codefac_template.xhtml">
+
+        <ui:define name="opciones" >
+            <p:menuitem oncomplete="PF('btnCargarProforma').jq.click();" value="Cargar desde la proforma"  icon="pi pi-clone"  />
+        </ui:define>
+
+        <ui:define name="contenido" >
+
+            <f:event listener="#{controllerCodefacMb.agregarVista(clienteMb)}" type="preRenderComponent" /> 
+            <!--<p:remoteCommand process="@this" name="panelDatos" update="@form"/>-->
+            <p:tabView>
+                <p:tab title="Datos Principales">
+                    <div class="p-grid" style="text-align: left" >
+                        <div class="p-col-12 p-md-6 p-lg-3" >
+                            <h:outputLabel id="txtIdentificacion"  value="Identificación:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">                            
+                            <h:inputText required="false" value="#{clienteMb.cliente.identificacion}" />
+                        </div> 
+
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel value="Pasaporte:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">                            
+                            <p:selectBooleanCheckbox value="#{clienteMb.identificacionPasaporte}" />
+                        </div>
+
+
+
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Nombres:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">                            
+                            <p:inputText required="false" value="#{clienteMb.cliente.nombres}" style="width: 90%" >
+                                <p:ajax update="txtRazonSocial" event="keyup"  listener="#{clienteMb.eventoNombreKeyUp()}" />
+                            </p:inputText>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Nacionalidad:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <p:selectOneMenu id="console1" value="#{clienteMb.nacionalidadSeleccionada}"  style="width:125px" converter="nacionalidadConverter">
+                                <f:selectItems var="nacionalidad" value="#{clienteMb.nacionalidadesList}" itemValue="#{nacionalidad.idNacionalidad.toString()}"    />
+                            </p:selectOneMenu>
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Apellidos:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <p:inputText required="false" value="#{clienteMb.cliente.apellidos}" style="width: 90%"  >
+                                <p:ajax update="txtRazonSocial"  event="keyup"  listener="#{clienteMb.eventoNombreKeyUp()}" />
+                            </p:inputText>
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Estado:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <p:selectOneMenu id="console2" value="#{clienteMb.estadoSeleccionada}"  style="width:125px" converter="estadoEnumConverter">
+                                <f:selectItems var="estado" value="#{clienteMb.estadosEnumList}" itemValue="#{estado.estado}"    />
+                            </p:selectOneMenu>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Razón Social:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <p:inputText id="txtRazonSocial" required="false" value="#{clienteMb.cliente.razonSocial}" style="width: 90%" />
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Nombre Legal:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText required="false" value="#{clienteMb.establecimientoDefecto.nombreComercial}" style="width: 90%" />
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Nombre Contacto:"/>
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText  required="false" value="#{clienteMb.cliente.contactoClienteNombre}" style="width: 90%" />
+                        </div>
+
+                        <div class="p-col-12 p-md-12 p-lg-6">
+                            <!--<h:outputLabel  value="Nombre Contacto:"/>-->
+                        </div>
+
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Dirección:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText required="false" value="#{clienteMb.establecimientoDefecto.direccion}"  style="width: 90%"/> 
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Referencia Dirección:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText required="false" value="#{clienteMb.establecimientoDefecto.referenciaDireccion}"  style="width: 90%"/> 
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Teléfono Convencional:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText required="false" value="#{clienteMb.establecimientoDefecto.telefonoConvencional}" />
+
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Extensión:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText required="false" value="#{clienteMb.establecimientoDefecto.extensionTelefono}" style="width: 50%" />
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Teléfono Celular:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText required="false" value="#{clienteMb.establecimientoDefecto.telefonoCelular}" />
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:outputLabel  value="Correo Electrónico:"/>
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <h:inputText  required="false" value="#{clienteMb.cliente.correoElectronico}" style="width: 80%" />
+                        </div>
+                        <div class="p-col-12 p-md-6 p-lg-3">
+                            <p:remoteCommand name="passToJSFMB"
+                                             action="#{clienteMb.remoteAction()}"
+                                             id="remote_action" 
+                                             process="@this"
+                                             update=""
+                                             />
+
+                            <script>
+                                function getLocation()
+                                {
+                                    //alert('ejecutando');
+                                    if (navigator.geolocation) {
+                                        navigator.geolocation.getCurrentPosition(showPosition,
+                                            function(error){
+                                                alert(error.message);
+                                            }, {
+                                                enableHighAccuracy: true
+                                                     ,timeout : 5000
+                                            });
+                                            
+                                    } else {
+                                        alert('Geolocation no soportada');
+                                        x.innerHTML = "Geolocation is not supported by this browser.";
+                                    }
+                                }
+
+                                function showPosition(position) {
+                                    //alert('x=' + position.coords.latitude + ',y=' + position.coords.longitude);
+
+                                    parametros = [
+                                        {
+                                            name: 'longitud',
+                                            value: position.coords.longitude
+                                        },
+                                        {
+                                            name: 'latitud',
+                                            value: position.coords.latitude
+                                        }
+                                    ];
+
+                                    passToJSFMB(parametros);
+
+                                    /*passToJSFMB([ {
+                                     name : 'longitud',
+                                     value : position.coords.latitude
+                                     } ]);
+                                     
+                                     passToJSFMB([ {
+                                     name : 'latitud',
+                                     value : position.coords.longitude
+                                     } ]);*/
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                    
+
+
+                </p:tab>
+                
+            </p:tabView>
+
+
+
+
+        </ui:define>
+    </ui:composition>
+
+
+</html>
+

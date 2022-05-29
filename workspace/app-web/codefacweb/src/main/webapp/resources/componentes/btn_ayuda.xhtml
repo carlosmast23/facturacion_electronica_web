@@ -1,0 +1,15 @@
+<html xmlns = "http://www.w3.org/1999/xhtml"   
+      xmlns:h = "http://java.sun.com/jsf/html"
+      xmlns:f = "http://java.sun.com/jsf/core"
+      xmlns:composite = "http://java.sun.com/jsf/composite"          
+      xmlns:p="http://primefaces.org/ui">
+
+    <composite:interface>
+        <composite:attribute name = "metodo" method-signature="void ayuda()" />        
+    </composite:interface>
+
+    <composite:implementation>
+        <p:commandButton icon="help-icon" class="button-menu" title="Ayuda" actionListener="#{cc.attrs.metodo}" process="@this" disabled="false" />
+    </composite:implementation>
+
+</html>

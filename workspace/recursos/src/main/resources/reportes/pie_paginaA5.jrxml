@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pie_pagina" pageWidth="405" pageHeight="595" whenNoDataType="AllSectionsNoDetail" columnWidth="405" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f53d2141-f2f6-49f7-92d8-b84d6335680c">
+	<property name="ireport.zoom" value="1.9487171000000127"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pl_img_facebook" class="java.lang.Object"/>
+	<parameter name="pl_img_whatsapp" class="java.lang.Object"/>
+	<parameter name="pl_img_telefono" class="java.lang.Object"/>
+	<parameter name="pl_img_logo_pie" class="java.lang.Object"/>
+	<parameter name="pl_telefonos" class="java.lang.String"/>
+	<parameter name="pl_celular" class="java.lang.String"/>
+	<parameter name="pl_adicional" class="java.lang.String"/>
+	<parameter name="pl_facebook" class="java.lang.String"/>
+	<pageFooter>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="30" width="385" height="10" forecolor="#CCCCCC" backcolor="#999999" uuid="9ba64dfd-6b70-4102-96d5-6cb1537b44f4"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="401" height="13" uuid="2493a00c-db4f-407e-8462-4afde06650b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_adicional}]]></textFieldExpression>
+			</textField>
+			<image isLazy="true">
+				<reportElement x="17" y="13" width="23" height="18" uuid="2f5a8d90-0aac-44a5-b6a6-2c9036ede6c2"/>
+				<imageExpression><![CDATA[$P{pl_img_facebook}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="320" y="15" width="70" height="15" uuid="1bddc1b7-413c-418e-afbe-e211bef8ac46"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_telefonos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="15" width="74" height="15" uuid="973d8834-2369-46c3-bcac-24e3a1c51816"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_celular}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="16" width="70" height="15" uuid="4977bff5-ebf7-4c9f-b1d7-0e2d50ecfac5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pl_facebook}]]></textFieldExpression>
+			</textField>
+			<image isLazy="true">
+				<reportElement x="293" y="13" width="27" height="18" uuid="15089e08-f78b-43be-84a9-1954807aadab"/>
+				<imageExpression><![CDATA[$P{pl_img_telefono}]]></imageExpression>
+			</image>
+			<image isLazy="true">
+				<reportElement x="165" y="13" width="24" height="18" uuid="75a5bd20-b40b-41c3-80a4-62828962a647"/>
+				<imageExpression><![CDATA[$P{pl_img_whatsapp}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="30" width="380" height="10" forecolor="#FFFFFF" uuid="a1cff309-4a3f-44a8-9673-82d3996920c5"/>
+				<box>
+					<pen lineStyle="Dotted"/>
+					<topPen lineWidth="0.5" lineStyle="Dotted"/>
+					<leftPen lineStyle="Dotted"/>
+					<bottomPen lineStyle="Dotted"/>
+					<rightPen lineStyle="Dotted"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Generado con CODEFAC Software de Facturación Electrónica, más información en www.cf.codesoft.com]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
