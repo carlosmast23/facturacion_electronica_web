@@ -13,6 +13,10 @@
 
         <ui:define name="contenido">
             <div style="text-align: center"><h2>Ingresar al Sistema</h2></div>
+            <div style="text-align: center">
+                <p:graphicImage library="img" name="logo.png" style="border-radius: 50%;height: 200px" /> 
+            </div>
+            
             <div class="p-grid" style="padding: 20px" >
                 <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
                     <div><h:outputLabel for="username" value="Usuario:"  /></div>
@@ -24,7 +28,7 @@
                     <p:password id="password"  required="true" label="password" value="#{loginMb.clave}" style="width: 100%"  />
                 </div>
 
-                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
+                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4" style="display: none"  >
                     <div><h:outputLabel for="password" value="Empresa:" /></div>
                     <p:selectOneMenu id="cmbEmpresa" value="#{loginMb.empresaSeleccionada}" style="width: 100%" converter="empresaConverter"  >
                         <f:selectItems value="#{loginMb.empresas}" var="empresa" itemValue="#{empresa.id.toString()}"/>                        
@@ -32,7 +36,7 @@
                     </p:selectOneMenu> 
                 </div>
 
-                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4"  >
+                <div class="p-col-12 p-md-6 p-lg-4 p-lg-offset-4" style="display: none"  >
                     <div><h:outputLabel for="password" value="Sucursales" /></div>
                     <p:selectOneMenu id="cmbSucursal" value="#{loginMb.sucursalSeleccionada}" converter="sucursalConverter" style="width: 100%" >                        
                         <f:selectItems value="#{loginMb.sucursales}" var="sucursal" itemValue="#{sucursal.id.toString()}" />
