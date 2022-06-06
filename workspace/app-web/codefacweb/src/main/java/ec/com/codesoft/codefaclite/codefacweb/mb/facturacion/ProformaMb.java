@@ -233,11 +233,11 @@ public class ProformaMb extends GeneralAbstractMb implements FacturaModelInterfa
     public void grabar() throws ExcepcionCodefacLite, UnsupportedOperationException {
         
         //Por el momento descativo estos datos        
-        if(true)
+        /*if(true)
         {
              MensajeMb.mensaje("Alerta","Pantalla en contrucción",FacesMessage.SEVERITY_WARN);
             throw new ExcepcionCodefacLite("Pantalla en contrucción");
-        }
+        }*/
         
         try {
             System.out.println("===========>INICIANDO PROCESO GRABAR <==============");     

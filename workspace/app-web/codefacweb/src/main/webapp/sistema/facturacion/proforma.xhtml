@@ -38,17 +38,19 @@
             <p:accordionPanel multiple="true" id="acordionCabecera">
                 <p:tab title="Datos Cabecera">
                     <div class="p-grid" style="text-align: left" >
+                        
                         <div class="p-col-12 p-md-6 p-lg-3" >
+                            <p:datePicker  id="button" value="#{proformaMb.fechaEmision}" showIcon="true" placeholder="Fecha Emisión" style="width: 70%" />
+                        </div>
+                        
+                        <div class="p-col-12 p-md-6 p-lg-3" style="visibility: hidden" >
                             <p:selectOneMenu id="cmbDocumento" value="#{proformaMb.documentoSeleccionado}" converter="documentoEnumConverter" style="width: 70%" >
                                 <f:selectItems value="#{proformaMb.documentos}" var="documento" itemValue="#{documento.codigo}" />
                             </p:selectOneMenu>
                         </div>
 
-                        <div class="p-col-12 p-md-6 p-lg-3" >
-                            <p:datePicker  id="button" value="#{proformaMb.fechaEmision}" showIcon="true" placeholder="Fecha Emisión" style="width: 70%" />
-                        </div>
 
-                        <div class="p-col-12 p-md-6 p-lg-3" >
+                        <div class="p-col-12 p-md-6 p-lg-3" style="visibility: hidden" >
                             <div class="p-grid" style="text-align: left" >
                                 <div class="p-col-12 p-md-3 p-lg-6" >
                                     <p:outputLabel value="Punto Emisión:" />

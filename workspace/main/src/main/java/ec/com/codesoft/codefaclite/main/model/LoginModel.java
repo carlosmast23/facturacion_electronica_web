@@ -70,9 +70,6 @@ public class LoginModel extends LoginFormDialog{
         
         //Image fondoImg = new javax.swing.ImageIcon(getClass().getResource("/img/general/fondoInicial.jpg")).getImage();
         //getPanelPrincipal().setBorder(new Fondo2(fondoImg));
-        
-        //Setear la versión del sistema
-        getLblVersion().setText("Versión:"+ParametrosSistemaCodefac.VERSION+"   ");        
                
     }
 

@@ -57,17 +57,15 @@ public class LoginFormDialog extends javax.swing.JDialog {
         btnSalir = new javax.swing.JButton();
         lblPiePagina = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        lblVersion = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         cmbEmpresa = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         cmbSucursal = new javax.swing.JComboBox<>();
-        jButtonModoAplicativo = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -153,7 +151,7 @@ public class LoginFormDialog extends javax.swing.JDialog {
 
         lblPiePagina.setFont(new java.awt.Font("Arial", 2, 11)); // NOI18N
         lblPiePagina.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblPiePagina.setText("Codefac software de facturación electrónica @ Codesoft 2017");
+        lblPiePagina.setText("Software de facturación electrónica @ Factulab 2022");
         lblPiePagina.setAlignmentY(0.6F);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -165,7 +163,7 @@ public class LoginFormDialog extends javax.swing.JDialog {
         gridBagConstraints.insets = new java.awt.Insets(15, 0, 0, 0);
         panelPrincipal.add(lblPiePagina, gridBagConstraints);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/general/ejecutiva.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/general/logo.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -174,19 +172,6 @@ public class LoginFormDialog extends javax.swing.JDialog {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LAST_LINE_END;
         gridBagConstraints.weightx = 0.1;
         panelPrincipal.add(jLabel5, gridBagConstraints);
-
-        lblVersion.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
-        lblVersion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblVersion.setText("Versión: 1.2.3.4   ");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.ipadx = 2;
-        gridBagConstraints.ipady = 7;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.weightx = 0.1;
-        panelPrincipal.add(lblVersion, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 7;
@@ -224,19 +209,12 @@ public class LoginFormDialog extends javax.swing.JDialog {
         gridBagConstraints.weightx = 0.1;
         panelPrincipal.add(jLabel7, gridBagConstraints);
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/general/codefac-logotipo-2.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/general/factuLab.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 1;
         gridBagConstraints.gridwidth = 3;
         panelPrincipal.add(jLabel8, gridBagConstraints);
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/general/ecuador.png"))); // NOI18N
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
-        gridBagConstraints.gridy = 5;
-        gridBagConstraints.gridheight = 6;
-        panelPrincipal.add(jLabel9, gridBagConstraints);
 
         jLabel10.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -257,18 +235,13 @@ public class LoginFormDialog extends javax.swing.JDialog {
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
         panelPrincipal.add(cmbSucursal, gridBagConstraints);
 
-        jButtonModoAplicativo.setFont(new java.awt.Font("Arial", 0, 9)); // NOI18N
-        jButtonModoAplicativo.setText("Modo");
-        jButtonModoAplicativo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonModoAplicativoActionPerformed(evt);
-            }
-        });
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setText("aa");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 1;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTH;
-        panelPrincipal.add(jButtonModoAplicativo, gridBagConstraints);
+        gridBagConstraints.ipadx = 30;
+        panelPrincipal.add(jLabel9, gridBagConstraints);
 
         getContentPane().add(panelPrincipal, java.awt.BorderLayout.CENTER);
 
@@ -282,14 +255,6 @@ public class LoginFormDialog extends javax.swing.JDialog {
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
-
-    private void jButtonModoAplicativoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModoAplicativoActionPerformed
-        // TODO add your handling code here:
-        Main.iniciarModoAplicativo(false);
-        JOptionPane.showMessageDialog(null, "Para completar la configuración necesita cerrar el aplicativo y volver abrir");
-        System.exit(0);
-        
-    }//GEN-LAST:event_jButtonModoAplicativoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -338,7 +303,6 @@ public class LoginFormDialog extends javax.swing.JDialog {
     private javax.swing.JButton btnSalir;
     private javax.swing.JComboBox<Empresa> cmbEmpresa;
     private javax.swing.JComboBox<Sucursal> cmbSucursal;
-    private javax.swing.JButton jButtonModoAplicativo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -350,7 +314,6 @@ public class LoginFormDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblPiePagina;
-    private javax.swing.JLabel lblVersion;
     private javax.swing.JPanel panelPrincipal;
     private javax.swing.JPasswordField txtClave;
     private javax.swing.JTextField txtUsuario;
@@ -404,13 +367,6 @@ public class LoginFormDialog extends javax.swing.JDialog {
         this.lblPiePagina = lblPiePagina;
     }
 
-    public JLabel getLblVersion() {
-        return lblVersion;
-    }
-
-    public void setLblVersion(JLabel lblVersion) {
-        this.lblVersion = lblVersion;
-    }
 
     public JComboBox<Empresa> getCmbEmpresa() {
         return cmbEmpresa;
