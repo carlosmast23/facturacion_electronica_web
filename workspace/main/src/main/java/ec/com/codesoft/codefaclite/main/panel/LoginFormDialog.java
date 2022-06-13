@@ -50,7 +50,7 @@ public class LoginFormDialog extends javax.swing.JDialog {
 
         panelPrincipal = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblEmpresa = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         txtClave = new javax.swing.JPasswordField();
         btnIngresar = new javax.swing.JButton();
@@ -63,7 +63,7 @@ public class LoginFormDialog extends javax.swing.JDialog {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        lblSucursal = new javax.swing.JLabel();
         cmbSucursal = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
 
@@ -86,15 +86,16 @@ public class LoginFormDialog extends javax.swing.JDialog {
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
         panelPrincipal.add(jLabel2, gridBagConstraints);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("Empresa:");
+        lblEmpresa.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        lblEmpresa.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblEmpresa.setText("Empresa:");
+        lblEmpresa.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
-        panelPrincipal.add(jLabel3, gridBagConstraints);
+        panelPrincipal.add(lblEmpresa, gridBagConstraints);
 
         txtUsuario.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -216,15 +217,15 @@ public class LoginFormDialog extends javax.swing.JDialog {
         gridBagConstraints.gridwidth = 3;
         panelPrincipal.add(jLabel8, gridBagConstraints);
 
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel10.setText("Sucursal:");
+        lblSucursal.setFont(new java.awt.Font("Arial", 1, 13)); // NOI18N
+        lblSucursal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblSucursal.setText("Sucursal:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.LINE_END;
         gridBagConstraints.insets = new java.awt.Insets(3, 5, 3, 5);
-        panelPrincipal.add(jLabel10, gridBagConstraints);
+        panelPrincipal.add(lblSucursal, gridBagConstraints);
 
         cmbSucursal.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -304,16 +305,16 @@ public class LoginFormDialog extends javax.swing.JDialog {
     private javax.swing.JComboBox<Empresa> cmbEmpresa;
     private javax.swing.JComboBox<Sucursal> cmbSucursal;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lblEmpresa;
     private javax.swing.JLabel lblPiePagina;
+    private javax.swing.JLabel lblSucursal;
     private javax.swing.JPanel panelPrincipal;
     private javax.swing.JPasswordField txtClave;
     private javax.swing.JTextField txtUsuario;
@@ -375,11 +376,22 @@ public class LoginFormDialog extends javax.swing.JDialog {
     public JComboBox<Sucursal> getCmbSucursal() {
         return cmbSucursal;
     }
-    
-    
-    
 
+    public JLabel getLblEmpresa() {
+        return lblEmpresa;
+    }
+
+    public void setLblEmpresa(JLabel lblEmpresa) {
+        this.lblEmpresa = lblEmpresa;
+    }
+
+    public JLabel getLblSucursal() {
+        return lblSucursal;
+    }
+
+    public void setLblSucursal(JLabel lblSucursal) {
+        this.lblSucursal = lblSucursal;
+    }
     
-    
-    
+        
 }

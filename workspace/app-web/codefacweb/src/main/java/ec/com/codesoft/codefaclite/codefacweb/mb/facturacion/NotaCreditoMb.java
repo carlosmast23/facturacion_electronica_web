@@ -207,6 +207,13 @@ public class NotaCreditoMb  extends GeneralAbstractMb implements Serializable,No
 
     @Override
     public void grabar() throws ExcepcionCodefacLite, UnsupportedOperationException {
+        
+        if(true)
+        {
+            MensajeMb.mensaje("Error al grabar", "Formulario en construcción", FacesMessage.SEVERITY_WARN);
+            throw new ExcepcionCodefacLite("Error grabando el producto");
+        }
+        
         controlador.grabar();
         UtilidadesWeb.ejecutarJavascript("mostrarComprobantesRC();");
         /*try {

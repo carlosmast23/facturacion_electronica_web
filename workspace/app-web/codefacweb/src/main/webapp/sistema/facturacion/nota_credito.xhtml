@@ -43,7 +43,7 @@
                             <p:datePicker  id="button" value="#{notaCreditoMb.fechaEmision}" showIcon="true" placeholder="Fecha Emisión" class="componente-responsive" />
                         </div>
 
-                        <div class="p-col-12 p-md-6 p-lg-3" >
+                        <div class="p-col-12 p-md-6 p-lg-3" style="display: none" >
                             <div>
                                 <p:outputLabel value="Documento:" class="label-responsive"/>                            
                             </div>
@@ -52,7 +52,7 @@
                             </p:selectOneMenu>
                         </div>
 
-                        <div class="p-col-12 p-md-6 p-lg-3" >
+                        <div class="p-col-12 p-md-6 p-lg-3" style="display: none" >
                             <div>
                                 <p:outputLabel value="Punto Emisión:" class="label-responsive" />
                             </div>
@@ -91,7 +91,7 @@
 
 
             <p:panel id="pnlDatosFactura">
-                <p:tabView id="tabDatosFactura">
+                <p:tabView id="tabDatosFactura" style="display: none">
                     <p:tab title="Productos" >
                         <div class="p-grid div-resposive"  >
                             <div class="p-col-12 p-md-6 p-lg-3" >

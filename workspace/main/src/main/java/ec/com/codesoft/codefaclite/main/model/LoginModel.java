@@ -240,7 +240,7 @@ public class LoginModel extends LoginFormDialog{
 
     private void valoresIniciales() {
         String anioActualStr=UtilidadesFecha.obtenerAnioStr(UtilidadesFecha.getFechaHoy());
-        getLblPiePagina().setText("Codefac software de facturación electrónica @ Codesoft "+anioActualStr);
+        getLblPiePagina().setText("FactuLab software de facturación electrónica @ Factulab "+anioActualStr);
         
         try {
             UtilidadesComboBox.llenarComboBox(getCmbEmpresa(),ServiceFactory.getFactory().getEmpresaServiceIf().obtenerTodosActivos(OrdenarEnum.ASCEDENTE));
@@ -255,6 +255,12 @@ public class LoginModel extends LoginFormDialog{
         }
         
         cargarSucursalesPorEmpresa();        
+        
+        getCmbEmpresa().setVisible(false);
+        getCmbSucursal().setVisible(false);
+        getLblEmpresa().setVisible(false);
+        getLblSucursal().setVisible(false);
+        
         
     }
     
