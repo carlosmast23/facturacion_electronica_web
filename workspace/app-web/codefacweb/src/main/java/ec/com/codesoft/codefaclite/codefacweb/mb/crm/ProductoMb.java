@@ -68,7 +68,7 @@ public class ProductoMb extends GeneralAbstractMb implements Serializable,Produc
 
     @Override
     public void eliminar() throws ExcepcionCodefacLite, UnsupportedOperationException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

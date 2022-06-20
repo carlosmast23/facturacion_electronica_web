@@ -284,17 +284,19 @@ public class ProductoModelControlador extends ModelControladorAbstract<ProductoM
         //if (estadoFormulario.equals(GeneralPanelInterface.ESTADO_EDITAR)) 
         //{
             try {
-                Boolean respuesta =dialogoPregunta(new CodefacMsj("Estas seguro que desea eliminar el producto?", CodefacMsj.TipoMensajeEnum.ADVERTENCIA));
+                //Boolean respuesta =dialogoPregunta(new CodefacMsj("Estas seguro que desea eliminar el producto?", CodefacMsj.TipoMensajeEnum.ADVERTENCIA));
                 //Boolean respuesta = DialogoCodefac.dialogoPregunta("Alerta", "Estas seguro que desea eliminar el producto?", DialogoCodefac.MENSAJE_ADVERTENCIA);
-                if (!respuesta) {
-                    throw new ExcepcionCodefacLite("Cancelacion usuario");
-                }
+                //if (!respuesta) {
+                //    throw new ExcepcionCodefacLite("Cancelacion usuario");
+                //}
                 ServiceFactory.getFactory().getProductoServiceIf().eliminarProducto(producto);
-                DialogoCodefac.mensaje("Datos correctos", "El producto se elimino correctamente", DialogoCodefac.MENSAJE_CORRECTO);
+                //DialogoCodefac.mensaje("Datos correctos", "El producto se elimino correctamente", DialogoCodefac.MENSAJE_CORRECTO);
+                mostrarMensaje(new CodefacMsj("El producto se elimino correctamente", CodefacMsj.TipoMensajeEnum.CORRECTO));
             } catch (RemoteException ex) {
                 Logger.getLogger(ProductoModelControlador.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ServicioCodefacException ex) {
-                DialogoCodefac.mensaje("Error",ex.getMessage(),DialogoCodefac.MENSAJE_INCORRECTO);
+            } catch (ServicioCodefacException ex) { 
+                //DialogoCodefac.mensaje("Error",ex.getMessage(),DialogoCodefac.MENSAJE_INCORRECTO);
+                mostrarMensaje(new CodefacMsj(ex.getMessage(), CodefacMsj.TipoMensajeEnum.ERROR));
                 Logger.getLogger(ProductoModelControlador.class.getName()).log(Level.SEVERE, null, ex);
                 throw new ExcepcionCodefacLite(ex.getMessage());
             }

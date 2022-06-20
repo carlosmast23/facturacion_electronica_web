@@ -291,7 +291,7 @@ public class ProductoService extends ServiceAbstract<Producto,ProductoFacade> im
             public void transaccion() throws ServicioCodefacException, RemoteException {
 
                 //Hacer validaciones mas complicadas si sale que el producto maneja inventario
-                if(p.getManejarInventarioEnum().equals(EnumSiNo.SI))
+                /*if(p.getManejarInventarioEnum().equals(EnumSiNo.SI))
                 {
                     //Si el producto no maneja inventario lo puede eliminar directamente
                     KardexService kardexService = new KardexService();
@@ -322,7 +322,7 @@ public class ProductoService extends ServiceAbstract<Producto,ProductoFacade> im
                     if (stockPositivoBodega.size() > 0) {
                         throw new ServicioCodefacException("No se puede eliminar el producto porque tiene stock en las bodegas: " + UtilidadesLista.castListToString(stockPositivoBodega, ","));
                     }
-                }
+                }*/
 
                 //============================================//
                 // SI NO TIENEN NINGUNA RESTRICCION ENTONCES ELIMINO EL PRODUCTO Y EL KARDEX //

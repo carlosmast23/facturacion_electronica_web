@@ -234,8 +234,15 @@ public class ControllerCodefacMb implements Serializable {
         try {
             System.err.println("Metodo para eliminar desde el controlador");
             generalAbstractMb.eliminar();
+            VistaCodefacIf controladorVista = UtilidadesCoreCodefac.getControladorTodoVista(generalAbstractMb);
+            if (controladorVista != null) {
+                controladorVista.eliminar();
+            }
+            iniciar();
             estadoEnum = EstadoFormEnum.GRABAR;
         } catch (ExcepcionCodefacLite ex) {
+            Logger.getLogger(ControllerCodefacMb.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (RemoteException ex) {
             Logger.getLogger(ControllerCodefacMb.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

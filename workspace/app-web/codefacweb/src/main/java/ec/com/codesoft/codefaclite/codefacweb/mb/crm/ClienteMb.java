@@ -158,7 +158,16 @@ public class ClienteMb extends GeneralAbstractMb implements DialogoWeb<Persona>,
 
     @Override
     public void eliminar() throws ExcepcionCodefacLite, UnsupportedOperationException {
-
+        try {
+            ServiceFactory.getFactory().getPersonaServiceIf().eliminar(cliente);
+            MensajeMb.mensaje(MensajeCodefacSistema.AccionesFormulario.ELIMINADO_CORRECTAMENTE);
+            nuevo();
+        } catch (ServicioCodefacException ex) {
+            MensajeMb.mensaje(new CodefacMsj(ex.getMessage(), CodefacMsj.TipoMensajeEnum.ERROR));
+            Logger.getLogger(ClienteMb.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (RemoteException ex) {
+            Logger.getLogger(ClienteMb.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override
