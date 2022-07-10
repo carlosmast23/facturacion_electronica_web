@@ -209,7 +209,7 @@ public class FacturaReporteMb  extends GeneralAbstractMb implements DialogoWeb<F
         //Tipos de documentos
         this.documentos = new ArrayList<DocumentoEnum>();
         this.documentos.add(DocumentoEnum.FACTURA);
-        this.documentos.add(DocumentoEnum.NOTA_VENTA_INTERNA);
+        //this.documentos.add(DocumentoEnum.NOTA_VENTA_INTERNA);
         this.documentos.add(DocumentoEnum.NOTA_CREDITO);
  
         //Punto de emision
@@ -225,7 +225,8 @@ public class FacturaReporteMb  extends GeneralAbstractMb implements DialogoWeb<F
         this.puntosEmision=puntosEmision;
         
         //Tipo Reporte
-        this.tiposReporte = TipoReporteEnum.values();
+        //this.tiposReporte = TipoReporteEnum.values();
+        this.tiposReporte=new TipoReporteEnum[]{TipoReporteEnum.NORMAL,TipoReporteEnum.AGRUPADO_POR_PRODUCTO,TipoReporteEnum.AGRUPADO_POR_FORMA_PAGO};
     }
     
     // Abrir Dialogo Busqueda Cliente
@@ -298,10 +299,10 @@ public class FacturaReporteMb  extends GeneralAbstractMb implements DialogoWeb<F
             }
             
             Sucursal sucursalTmp=null;
-            if(!sucursalCheck)
+            /*if(!sucursalCheck)
             {
                 sucursalTmp=sucursalSeleccionada;
-            }
+            }*/
  
             //Seteando datos para el controlador         
             controladorReporte =crearControlador();

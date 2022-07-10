@@ -48,16 +48,6 @@
                 </div>
 
 
-                <div class="p-col-12 p-md-6 p-lg-4" >
-                    <div class="ui-inputgroup">
-                        <p:selectBooleanCheckbox value="#{facturaReporteMb.notaCreditoCheck}" />
-                        <h:outputLabel style="float: right;padding-left: 10px" value="Afectar Notas de Crédito"/>
-                    </div>
-                    <div class="ui-inputgroup">
-                        <p:selectBooleanCheckbox value="#{facturaReporteMb.notaDebitoCheck}" />
-                        <h:outputLabel style="float: right;padding-left: 10px" value="Afectar Notas de Débito"/>
-                    </div>
-                </div>
 
 
                 <div class="p-col-12 p-md-6 p-lg-4" >
@@ -98,19 +88,7 @@
                 </div>
 
 
-                <div class="p-col-12 p-md-6 p-lg-4" >
-                    <div><h:outputLabel for="console2" value="Punto Emisión:" class="label-responsive"/></div>
-                    <div class="p-grid div-resposive" >
-                        <div class="p-col-fixed" >
-                            <p:selectOneMenu id="console2" value="#{facturaReporteMb.puntoEmisionSeleccionado}" converter="puntoEmisionConverter" class="componente-responsive">
-                                <f:selectItems var="puntoEmision" value="#{facturaReporteMb.puntosEmision}" itemValue="#{puntoEmision.id.toString()}"/>
-                            </p:selectOneMenu>
-                        </div>
-                        <div class="p-col" >
-                            <p:selectBooleanCheckbox value="#{facturaReporteMb.puntoEmisionCheckTodos}" itemLabel="Todos"  />
-                        </div>
-                    </div>
-                </div>
+                
 
 
                 <div class="p-col-12 p-md-6 p-lg-4" >
@@ -120,21 +98,7 @@
                     </p:selectOneMenu>
                 </div>
 
-                <div class="p-col-12 p-md-6 p-lg-4" >
-                    <div><h:outputLabel for="console5" value="Sucursales" class="label-responsive" /></div>
-                    <div class="p-grid div-resposive" >
-                        <div class="p-col-fixed" >
-                            <p:selectOneMenu id="console5" value="#{facturaReporteMb.sucursalSeleccionada}" converter="sucursalConverter" class="componente-responsive">
-                                <f:selectItems var="sucursal" value="#{facturaReporteMb.sucursales}" itemValue="#{sucursal.id.toString()}"/>
-                            </p:selectOneMenu>    
-                        </div>
-                        <div class="p-col" >
-                            <p:selectBooleanCheckbox value="#{facturaReporteMb.sucursalCheck}" itemLabel="Todos"  />
-                        </div>
-                    </div>
-
-                </div>
-
+                
 
 
             </div>

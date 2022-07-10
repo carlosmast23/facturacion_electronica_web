@@ -471,7 +471,7 @@ public class ReporteCodefac {
             inputStream=RemoteInputStreamClient.wrap(service.getResourceInputStream(RecursoCodefac.IMAGENES_REDES_SOCIALES, "telefono.png"));
             parametros.put("pl_img_telefono",UtilidadImagen.castInputStreamToImage(inputStream));
             
-            inputStream=RemoteInputStreamClient.wrap(service.getResourceInputStream(RecursoCodefac.IMAGENES_GENERAL, "codefac-logotipo.png"));
+            inputStream=RemoteInputStreamClient.wrap(service.getResourceInputStream(RecursoCodefac.IMAGENES_GENERAL, "factuLab.png"));
             //parametros.put("pl_img_logo_pie",UtilidadImagen.castInputStreamToImage(inputStream));
             parametros.put("pl_img_logo_pie",null);
             
