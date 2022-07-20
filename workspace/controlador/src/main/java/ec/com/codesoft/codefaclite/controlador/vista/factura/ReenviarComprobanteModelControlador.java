@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ReenviarComprobanteModelControlador extends ModelControladorAbstract<CommonIf,CommonIf,CommonIf> {
 

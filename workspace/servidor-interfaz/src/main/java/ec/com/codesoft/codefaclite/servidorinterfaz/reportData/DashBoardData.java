@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class DashBoardData implements Serializable{
     

@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class GestorTareasProgramadas 
 {

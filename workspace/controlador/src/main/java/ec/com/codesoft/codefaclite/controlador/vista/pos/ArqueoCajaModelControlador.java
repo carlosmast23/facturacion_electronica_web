@@ -31,7 +31,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class ArqueoCajaModelControlador extends ModelControladorAbstract<ArqueoCajaModelControlador.CommonIf, ArqueoCajaModelControlador.SwingIf, ArqueoCajaModelControlador.WebIf> implements VistaCodefacIf
 {

@@ -25,7 +25,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class RutaModel extends RutaForm implements ControladorVistaIf,RutaModelControlador.SwingIf{
 

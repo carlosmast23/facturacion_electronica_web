@@ -26,7 +26,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class EjemploModelControlador extends ModelControladorAbstract<CommonIf,SwingIf,WebIf> implements VistaCodefacIf{
     

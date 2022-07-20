@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.controlador.vistas.core.ConverterSwingMvvc;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class StringToIntegerConverter extends ConverterSwingMvvc<Integer,String>{
 

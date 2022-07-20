@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @FacesConverter("marcaConverter")
 public class MarcaConverter extends AbstractConverter implements Converter{

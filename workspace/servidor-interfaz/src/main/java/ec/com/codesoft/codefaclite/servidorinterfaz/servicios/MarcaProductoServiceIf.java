@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface MarcaProductoServiceIf extends ServiceAbstractIf<MarcaProducto>{
     public List<MarcaProducto> obtenerActivosPorEmpresa(Empresa empresa) throws ServicioCodefacException, RemoteException;

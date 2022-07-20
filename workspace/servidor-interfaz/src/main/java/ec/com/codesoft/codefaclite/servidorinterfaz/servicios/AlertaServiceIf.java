@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface AlertaServiceIf extends Remote {
     

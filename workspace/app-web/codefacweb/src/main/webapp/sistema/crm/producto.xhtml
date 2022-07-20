@@ -76,7 +76,7 @@
                                 <f:selectItems value="#{productoMb.controlador.tipoProductosList}" var="opcion" itemValue="#{opcion.letra}" />
                             </p:selectOneMenu>
                         </div> 
-                        <div class="p-col-12 p-md-6 p-lg-6">                            
+                        <div class="p-col-12 p-md-6 p-lg-6" style="visibility: hidden" >                            
                             <div><h:outputLabel   value="Categoria :"/></div>
                             <p:selectOneMenu   value="#{productoMb.controlador.categoriaSeleccionada}" converter="categoriaProductoConverter" >
                                 <f:selectItem itemLabel="Seleccione un valor" itemValue="" />

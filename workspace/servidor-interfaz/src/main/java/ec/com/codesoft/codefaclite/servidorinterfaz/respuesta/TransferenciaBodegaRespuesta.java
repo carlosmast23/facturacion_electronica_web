@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TransferenciaBodegaRespuesta implements Serializable{
     public KardexDetalle kardexDetalle;

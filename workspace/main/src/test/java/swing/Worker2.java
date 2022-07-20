@@ -11,7 +11,7 @@ import javax.swing.SwingWorker;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class Worker2 extends SwingWorker<Double, Integer> {
     // Esta JProgressBar la recibiremos en el constructor o en

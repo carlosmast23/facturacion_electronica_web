@@ -26,7 +26,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class TurnoModelControlador extends ModelControladorAbstract<TurnoModelControlador.CommonIf, TurnoModelControlador.SwingIf, TurnoModelControlador.WebIf> implements  VistaCodefacIf
 {

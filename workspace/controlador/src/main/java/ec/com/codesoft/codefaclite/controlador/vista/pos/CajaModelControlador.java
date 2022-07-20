@@ -39,7 +39,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class CajaModelControlador extends ModelControladorAbstract<CajaModelControlador.CommonIf, CajaModelControlador.SwingIf, CajaModelControlador.WebIf> implements VistaCodefacIf
 {

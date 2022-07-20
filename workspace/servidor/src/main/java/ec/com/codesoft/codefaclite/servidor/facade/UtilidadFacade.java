@@ -10,7 +10,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class UtilidadFacade extends AbstractFacade<Object>
 {

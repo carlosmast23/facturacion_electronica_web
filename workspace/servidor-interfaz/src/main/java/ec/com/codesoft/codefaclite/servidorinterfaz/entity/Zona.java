@@ -18,7 +18,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @Entity
 @Table(name = "ZONA")

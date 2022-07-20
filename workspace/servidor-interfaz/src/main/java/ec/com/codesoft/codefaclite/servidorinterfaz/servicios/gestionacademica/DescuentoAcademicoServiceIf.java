@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface DescuentoAcademicoServiceIf extends ServiceAbstractIf<DescuentoAcademico>{
     public List<DescuentoAcademico> obtenerDescuentoActivosPorPeriodoActivo()throws ServicioCodefacException, RemoteException;

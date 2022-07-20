@@ -15,7 +15,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class TurnoAsignadoService extends ServiceAbstract<TurnoAsignado, TurnoAsignadoFacade> implements TurnoAsignadoServiceIf
 {

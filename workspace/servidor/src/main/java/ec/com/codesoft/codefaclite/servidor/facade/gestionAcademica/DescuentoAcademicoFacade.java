@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.DescuentoAcademico;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class DescuentoAcademicoFacade extends AbstractFacade<DescuentoAcademico>{
 

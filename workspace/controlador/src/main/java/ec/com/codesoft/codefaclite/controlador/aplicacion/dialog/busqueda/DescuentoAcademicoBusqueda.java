@@ -17,7 +17,7 @@ import java.util.Vector;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class DescuentoAcademicoBusqueda implements InterfaceModelFind<DescuentoAcademico>, InterfacesPropertisFindWeb  {
 

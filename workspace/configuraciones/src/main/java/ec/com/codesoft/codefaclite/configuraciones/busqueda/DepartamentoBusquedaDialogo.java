@@ -15,7 +15,7 @@ import ec.com.codesoft.codefaclite.corecodefaclite.dialog.InterfaceModelFind;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class DepartamentoBusquedaDialogo implements InterfaceModelFind<Departamento>
 {

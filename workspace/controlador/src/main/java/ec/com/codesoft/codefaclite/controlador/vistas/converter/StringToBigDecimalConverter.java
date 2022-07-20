@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class StringToBigDecimalConverter extends ConverterSwingMvvc<BigDecimal,String>{
 

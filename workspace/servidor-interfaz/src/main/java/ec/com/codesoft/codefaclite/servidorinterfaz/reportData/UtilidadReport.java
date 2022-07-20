@@ -11,7 +11,7 @@ import java.util.Vector;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class UtilidadReport extends ReportDataAbstract<UtilidadResult>
 {

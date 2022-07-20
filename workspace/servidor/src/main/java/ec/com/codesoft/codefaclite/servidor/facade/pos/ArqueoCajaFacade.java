@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.ArqueoCaja;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class ArqueoCajaFacade extends AbstractFacade<ArqueoCaja>{
 

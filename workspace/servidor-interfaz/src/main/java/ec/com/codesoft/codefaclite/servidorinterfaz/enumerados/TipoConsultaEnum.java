@@ -8,7 +8,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.enumerados;
 
 /**
  * Enum que tiene como objetivo especificar el tipo de consulta si son datos o totales
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public enum TipoConsultaEnum {
     DATOS,

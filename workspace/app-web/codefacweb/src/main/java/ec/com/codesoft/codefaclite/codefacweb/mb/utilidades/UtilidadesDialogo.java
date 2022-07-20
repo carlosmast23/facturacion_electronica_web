@@ -15,7 +15,7 @@ import org.primefaces.PrimeFaces;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesDialogo {
     

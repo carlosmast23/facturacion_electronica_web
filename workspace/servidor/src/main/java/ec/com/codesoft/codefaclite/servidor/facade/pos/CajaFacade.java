@@ -14,7 +14,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class CajaFacade extends AbstractFacade<Caja>{
 

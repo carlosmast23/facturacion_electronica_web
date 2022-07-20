@@ -20,7 +20,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesLicencia {
 

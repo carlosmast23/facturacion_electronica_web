@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.entity.excepciones;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ModoForzadoException extends Exception 
 {

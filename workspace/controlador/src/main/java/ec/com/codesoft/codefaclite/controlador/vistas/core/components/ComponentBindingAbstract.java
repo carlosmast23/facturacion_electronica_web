@@ -22,7 +22,7 @@ import javax.swing.JTextField;
  *Las 2 implemntacion genericas son 
  * T=componente de la vista ejemplo: jtextField
  * A= corresponde al tipo de la anotacion
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class ComponentBindingAbstract<T,A> {
     /**

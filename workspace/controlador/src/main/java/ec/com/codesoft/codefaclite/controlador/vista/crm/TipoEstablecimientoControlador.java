@@ -27,7 +27,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TipoEstablecimientoControlador extends ModelControladorAbstract<TipoEstablecimientoControlador.ICommon, TipoEstablecimientoControlador.ISwing,TipoEstablecimientoControlador.IWeb> implements VistaCodefacIf{
 

@@ -21,7 +21,7 @@ import java.util.Map;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class EjemploModel extends EjemploForm implements ControladorVistaIf{
 

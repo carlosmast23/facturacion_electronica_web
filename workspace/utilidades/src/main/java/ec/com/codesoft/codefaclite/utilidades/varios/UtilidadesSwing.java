@@ -14,7 +14,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesSwing {
     

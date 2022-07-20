@@ -22,7 +22,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public abstract class EmpresaForm extends ControladorCodefacInterface{
     /**

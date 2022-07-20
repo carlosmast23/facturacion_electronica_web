@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.controlador.comprobante.reporte.ReporteFactur
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 /**
  * Interfaz que tiene que tener como propiedad en los ENUMS que van a establecer como se debe ordenar los enums

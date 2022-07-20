@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @FacesConverter("siNoEnumConverter")
 public class SiNoEnumConverter extends AbstractConverter implements Converter {

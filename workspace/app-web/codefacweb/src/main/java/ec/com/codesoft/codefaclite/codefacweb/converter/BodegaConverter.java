@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @FacesConverter("bodegaConverter")
 public class BodegaConverter  extends AbstractConverter implements Converter  {

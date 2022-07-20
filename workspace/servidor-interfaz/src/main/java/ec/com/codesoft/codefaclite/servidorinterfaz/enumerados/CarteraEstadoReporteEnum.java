@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.enumerados;
 
 /**
  * Enum que me permite conocer el filtro para consultar la cartera
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public enum CarteraEstadoReporteEnum {
     TODO("Todo"),

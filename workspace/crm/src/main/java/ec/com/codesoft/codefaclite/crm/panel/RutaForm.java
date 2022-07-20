@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class RutaForm extends ControladorCodefacInterface {
 

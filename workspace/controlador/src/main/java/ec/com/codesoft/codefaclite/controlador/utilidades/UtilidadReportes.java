@@ -18,7 +18,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class UtilidadReportes {
     public static JasperPrint unificarReportes(List<JasperPrint> jasperList)

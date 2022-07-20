@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface TipoEstablecimientoServiceIf extends ServiceAbstractIf<TipoEstablecimiento> {
     public List<TipoEstablecimiento> obtenerActivos(OperadorNegocioEnum operadorNegocio) throws ServicioCodefacException, RemoteException;

@@ -29,7 +29,7 @@ import javax.faces.bean.ViewScoped;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @ManagedBean
 @ViewScoped

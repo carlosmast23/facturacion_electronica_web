@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.servicios.ServiceAbstractIf;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public interface TurnoAsignadoServiceIf extends ServiceAbstractIf<TurnoAsignado>{
     

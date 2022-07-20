@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TipoEstablecimientoModel extends TipoEstablecimientoForm implements ControladorVistaIf,TipoEstablecimientoControlador.ISwing{
 

@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.RutaDetalle;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface RutaDetalleServiceIf extends ServiceAbstractIf<RutaDetalle> {
     

@@ -7,7 +7,7 @@ package swing;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class PantallaEspera extends javax.swing.JDialog {
 

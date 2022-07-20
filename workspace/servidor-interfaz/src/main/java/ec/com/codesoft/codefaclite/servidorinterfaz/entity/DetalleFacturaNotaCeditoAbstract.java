@@ -19,7 +19,7 @@ import javax.persistence.MappedSuperclass;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @MappedSuperclass
 public class DetalleFacturaNotaCeditoAbstract implements Serializable {

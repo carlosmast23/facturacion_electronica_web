@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesExpresionesRegulares 
 {

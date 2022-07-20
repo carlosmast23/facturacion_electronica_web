@@ -13,7 +13,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class TurnoService extends ServiceAbstract<Turno, TurnoFacade> implements TurnoServiceIf{
 

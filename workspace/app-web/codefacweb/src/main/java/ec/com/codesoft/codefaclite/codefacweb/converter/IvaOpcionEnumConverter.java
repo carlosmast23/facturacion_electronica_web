@@ -13,7 +13,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @FacesConverter("ivaOpcionEnumConverter")
 public class IvaOpcionEnumConverter extends AbstractConverter implements Converter {

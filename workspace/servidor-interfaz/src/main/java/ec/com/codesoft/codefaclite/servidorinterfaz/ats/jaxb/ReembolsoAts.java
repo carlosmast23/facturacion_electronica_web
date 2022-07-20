@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  *TODO: Poner los mismo nombrs y etiquetas de xml y de la clase
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @XmlType(propOrder = {
     "tipoComprobanteRemb",

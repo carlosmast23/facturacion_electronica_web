@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.reportes;
 
 /**
  * Clase que debe implementar la clase data que va a mandar la lista de datos al reporte
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface AgrupadoReporteIf {
 

@@ -11,7 +11,7 @@ import javax.faces.context.FacesContext;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadRecursosWeb {
 

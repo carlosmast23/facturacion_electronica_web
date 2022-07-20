@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 /**
  *TODO: Talvez utilizar otra nomenclatura denombres de clases para diferenciar que utilidades estan relacionadas con el sistema codefac
  * y las otras que tiene un ambito general
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesFirmaElectronica {
     

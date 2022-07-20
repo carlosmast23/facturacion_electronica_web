@@ -735,7 +735,7 @@ public class ConfiguracionDefectoModel extends ConfiguracionDefectoPanel {
         agregarParametroEditar(ParametroCodefac.AliasNombresDocumentos.NOTA_VENTA_INTERNA_ALIAS);    
 
         /**
-         * @author Carlos Sanchez
+         * @auhor
          */        
         enumSiNo = (EnumSiNo) getCmbDatoAdicionalRideDireccionEmpledo().getSelectedItem();
         agregarParametro(ParametroCodefac.FACTURACION_RIDE_DIRECCION_EMPLEADO, (enumSiNo != null) ? enumSiNo.getLetra() : null);

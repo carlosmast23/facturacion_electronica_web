@@ -42,7 +42,7 @@ import javax.mail.Session;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class AlertaService extends UnicastRemoteObject implements Serializable,AlertaServiceIf {
 

@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class GestionRetencionRentaControlador extends ModelControladorAbstract<GestionRetencionRentaControlador.CommonIf,GestionRetencionRentaControlador.SwingIf,GestionRetencionRentaControlador.WebIf> implements VistaCodefacIf{
     

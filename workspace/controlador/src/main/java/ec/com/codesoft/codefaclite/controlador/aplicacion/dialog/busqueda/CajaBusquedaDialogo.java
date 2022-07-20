@@ -19,7 +19,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class CajaBusquedaDialogo implements InterfaceModelFind<Caja>
 {

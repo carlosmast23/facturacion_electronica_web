@@ -15,7 +15,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class TurnoAsignadoBusquedaDialogo implements InterfaceModelFind<TurnoAsignado>
 {

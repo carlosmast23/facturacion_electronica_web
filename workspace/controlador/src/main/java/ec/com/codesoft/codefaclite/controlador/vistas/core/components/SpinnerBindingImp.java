@@ -14,7 +14,7 @@ import javax.swing.event.ChangeListener;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class SpinnerBindingImp extends ComponentBindingAbstract<JSpinner, SpinnerBinding>{
 

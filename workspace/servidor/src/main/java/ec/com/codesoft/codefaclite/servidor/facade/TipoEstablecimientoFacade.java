@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.Zona;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TipoEstablecimientoFacade extends AbstractFacade<TipoEstablecimiento> {
 

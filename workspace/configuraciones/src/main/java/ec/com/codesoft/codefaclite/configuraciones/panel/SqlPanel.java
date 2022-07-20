@@ -15,7 +15,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class SqlPanel extends ControladorCodefacInterface {
 

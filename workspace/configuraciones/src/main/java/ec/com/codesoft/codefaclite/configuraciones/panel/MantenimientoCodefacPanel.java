@@ -14,7 +14,7 @@ import javax.swing.JComboBox;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class MantenimientoCodefacPanel extends ControladorCodefacInterface {
 

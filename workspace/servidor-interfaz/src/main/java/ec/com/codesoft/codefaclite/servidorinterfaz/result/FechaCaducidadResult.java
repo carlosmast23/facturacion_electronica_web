@@ -12,7 +12,7 @@ import java.sql.Timestamp;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class FechaCaducidadResult extends AbstractResult{
     

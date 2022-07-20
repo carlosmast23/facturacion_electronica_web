@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class DescuentoAcademicoService extends ServiceAbstract<DescuentoAcademico, DescuentoAcademicoFacade> implements DescuentoAcademicoServiceIf {
 

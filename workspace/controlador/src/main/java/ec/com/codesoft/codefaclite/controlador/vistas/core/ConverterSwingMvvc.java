@@ -12,7 +12,7 @@ package ec.com.codesoft.codefaclite.controlador.vistas.core;
  *  C= tipode de dato del componente de swing que esta enlazado 
  *  P= tipo de dato de la propiedad a la cual esta enlaza
  *  
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class ConverterSwingMvvc<C,P> {
     

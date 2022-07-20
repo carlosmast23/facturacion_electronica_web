@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.reportes;
 
 /**
  * Metodo que permite establecer un dominio de los campos que se pueden usar y estan configurados para usar en los reportes agrupados
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface NombreCampoAgrupadoIf {
     public String getNombreCampoAgrupado();

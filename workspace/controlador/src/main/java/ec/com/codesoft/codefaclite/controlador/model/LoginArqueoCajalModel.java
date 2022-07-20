@@ -25,7 +25,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class LoginArqueoCajalModel extends LoginArqueoCajaDialog{
     

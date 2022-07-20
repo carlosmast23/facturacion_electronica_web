@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.util.ParametroUtilidades;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public enum ConfiguracionImpresoraEnum implements ParametroUtilidades.ComparadorInterface<ConfiguracionImpresoraEnum>{
     NINGUNA("n","Ninguna"),

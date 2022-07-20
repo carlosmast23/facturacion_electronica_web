@@ -17,7 +17,7 @@ import org.jdesktop.swingx.JXDatePicker;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class DateComboBindingImp  extends ComponentBindingAbstract<JXDatePicker,DateComboBinding>{
 

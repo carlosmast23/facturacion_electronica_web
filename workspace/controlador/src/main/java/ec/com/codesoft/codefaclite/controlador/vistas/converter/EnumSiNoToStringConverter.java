@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.enumerados.EnumSiNo;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class EnumSiNoToStringConverter extends ConverterSwingMvvc<String,EnumSiNo>{
     

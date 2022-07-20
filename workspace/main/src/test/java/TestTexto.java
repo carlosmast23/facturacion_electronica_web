@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TestTexto {
     public static void main(String[] args) {        

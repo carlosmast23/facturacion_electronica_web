@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.Mesa;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class MesaFacade extends AbstractFacade<Mesa>{
 

@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface CajaServiceIf extends ServiceAbstractIf<Caja>{
     public List<Caja> buscarCajasAutorizadasPorUsuario(Usuario usuario) throws RemoteException;

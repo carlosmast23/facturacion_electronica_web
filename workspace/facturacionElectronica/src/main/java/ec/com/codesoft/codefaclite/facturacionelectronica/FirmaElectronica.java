@@ -308,7 +308,7 @@ public class FirmaElectronica {
      * Metodo para corregir problema con el certificado x509 correcto que exige el
      * Sri desde el 08/01/2020
      *
-     * @author CARLOS SANCHEZ
+     * @auhor
      * @param storeManager
      * @return
      * @throws Exception

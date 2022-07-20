@@ -2970,7 +2970,7 @@ public class GeneralPanelModel extends GeneralPanelForm implements InterfazComun
 //        
 //        /**
 //         * Agregado valdación cuando no llenen ningun dato que salgo información del sistema cuando el usuario tiene una licencia gratuita
-//         * @author Carlos Sanchez
+//         * @auhor
 //         * @fecha 03/11/2018
 //         */
 //        if(sessionCodefac.getTipoLicenciaEnum().equals(TipoLicenciaEnum.GRATIS))

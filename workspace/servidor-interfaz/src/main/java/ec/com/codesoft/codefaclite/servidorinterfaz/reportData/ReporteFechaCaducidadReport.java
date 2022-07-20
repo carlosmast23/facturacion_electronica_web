@@ -10,7 +10,7 @@ import java.util.Vector;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ReporteFechaCaducidadReport extends ReportDataAbstract<FechaCaducidadData>{
     

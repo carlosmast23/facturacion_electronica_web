@@ -23,7 +23,7 @@ import javax.faces.bean.ViewScoped;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 @ManagedBean
 @ViewScoped

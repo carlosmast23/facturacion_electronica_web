@@ -33,7 +33,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class CajaPermisoModelControlador extends ModelControladorAbstract<CajaPermisoModelControlador.CommonIf, CajaPermisoModelControlador.SwingIf, CajaPermisoModelControlador.WebIf> implements VistaCodefacIf
 {

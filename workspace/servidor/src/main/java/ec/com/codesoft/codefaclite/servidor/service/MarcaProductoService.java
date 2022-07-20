@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class MarcaProductoService extends ServiceAbstract<MarcaProducto,MarcaProductoFacade> implements MarcaProductoServiceIf{
 

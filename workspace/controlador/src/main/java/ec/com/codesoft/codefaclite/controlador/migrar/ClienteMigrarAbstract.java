@@ -32,7 +32,7 @@ import javax.swing.JCheckBox;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class ClienteMigrarAbstract extends MigrarModel {
     private JCheckBox chkValidarCedula;

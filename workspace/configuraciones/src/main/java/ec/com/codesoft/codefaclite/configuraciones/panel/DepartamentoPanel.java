@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public abstract class DepartamentoPanel extends ControladorCodefacInterface {
 

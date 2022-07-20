@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.codefacweb.core;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class ParametroCodefacWeb {
    public static String logoCodefacWeb="logoCodefac.png" ;

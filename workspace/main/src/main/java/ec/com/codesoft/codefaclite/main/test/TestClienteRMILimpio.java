@@ -20,7 +20,7 @@ import java.rmi.registry.Registry;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TestClienteRMILimpio {
 

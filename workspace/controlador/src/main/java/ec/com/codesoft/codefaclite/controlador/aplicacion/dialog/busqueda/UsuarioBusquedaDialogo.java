@@ -16,7 +16,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class UsuarioBusquedaDialogo implements InterfaceModelFind<Usuario>, InterfacesPropertisFindWeb
 {

@@ -34,7 +34,7 @@ import javax.swing.JFileChooser;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class AsistenteConfiguracionRapidaModel  extends AsistenteConfiguracionRapidaPanel implements AsistenteConfiguracionRapidaControlador.SwingIf,ControladorVistaIf{
 

@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesNumeros {
     

@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class LoginArqueoCajaDialog extends javax.swing.JDialog {
 

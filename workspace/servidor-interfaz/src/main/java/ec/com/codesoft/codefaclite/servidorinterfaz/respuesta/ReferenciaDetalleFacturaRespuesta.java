@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ReferenciaDetalleFacturaRespuesta implements Serializable{
     public CatalogoProducto catalogoProducto;

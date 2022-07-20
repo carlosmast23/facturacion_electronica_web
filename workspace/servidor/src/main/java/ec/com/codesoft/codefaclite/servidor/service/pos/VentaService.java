@@ -13,7 +13,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class VentaService extends ServiceAbstract<Venta, VentaFacade> implements VentaServiceIf{
 

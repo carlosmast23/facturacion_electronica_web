@@ -27,7 +27,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class SqlModel extends SqlPanel {
 

@@ -33,7 +33,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class RutaModelControlador extends ModelControladorAbstract<RutaModelControlador.CommonIf,RutaModelControlador.SwingIf,RutaModelControlador.WebIf> implements VistaCodefacIf  {
 

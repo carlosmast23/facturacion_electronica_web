@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 /**
  * Anotacion que permite especificar que estos datos van a estar
  * asociados con jTextField
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @Target(value={ElementType.FIELD} )
 @Retention(RetentionPolicy.RUNTIME)

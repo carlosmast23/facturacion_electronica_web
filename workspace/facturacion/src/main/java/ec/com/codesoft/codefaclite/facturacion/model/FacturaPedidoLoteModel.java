@@ -48,7 +48,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class FacturaPedidoLoteModel extends FacturaPedidoLotePanel implements ControladorVistaIf,FacturaPedidoLoteModelControlador.SwingIf {
 

@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class NotaCreditoCompraModel extends NotaCreditoModel
 {

@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @FacesConverter("impuestoDetalleConverter")
 public class ImpuestoDetalleConverter extends AbstractConverter implements Converter  {

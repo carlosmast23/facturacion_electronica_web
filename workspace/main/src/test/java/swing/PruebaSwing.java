@@ -17,7 +17,7 @@ import javax.swing.JProgressBar;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class PruebaSwing {
 

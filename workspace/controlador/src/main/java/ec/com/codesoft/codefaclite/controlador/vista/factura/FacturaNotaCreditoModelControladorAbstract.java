@@ -12,7 +12,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.other.session.SessionCodefac
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class FacturaNotaCreditoModelControladorAbstract extends ModelControladorAbstract {
     public SessionCodefacInterface session;

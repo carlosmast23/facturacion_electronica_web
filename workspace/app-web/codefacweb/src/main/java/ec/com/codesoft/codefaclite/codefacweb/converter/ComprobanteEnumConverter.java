@@ -15,7 +15,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 @FacesConverter("comprobanteEnumConverter")
 public class ComprobanteEnumConverter  extends AbstractConverter implements Converter {

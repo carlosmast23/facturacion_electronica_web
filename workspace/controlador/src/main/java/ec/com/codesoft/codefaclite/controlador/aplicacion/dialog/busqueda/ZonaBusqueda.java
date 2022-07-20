@@ -16,7 +16,7 @@ import java.util.Vector;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ZonaBusqueda implements InterfaceModelFind<Zona>
 {

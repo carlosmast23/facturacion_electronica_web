@@ -17,7 +17,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @Entity
 @Table(name = "RUTA_DETALLE")

@@ -6,7 +6,7 @@
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TestString {
     public static void main(String[] args)

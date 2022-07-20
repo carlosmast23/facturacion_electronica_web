@@ -16,7 +16,7 @@ import java.util.Map;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class IngresoCajaModelControlador extends ModelControladorAbstract<IngresoCajaModelControlador.CommonIf, IngresoCajaModelControlador.SwingIf, IngresoCajaModelControlador.WebIf> implements VistaCodefacIf
 {

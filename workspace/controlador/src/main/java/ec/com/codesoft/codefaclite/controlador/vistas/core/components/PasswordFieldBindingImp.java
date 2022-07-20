@@ -14,7 +14,7 @@ import javax.swing.event.DocumentListener;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class PasswordFieldBindingImp extends ComponentBindingAbstract<JPasswordField,PasswordFieldBinding>{
     

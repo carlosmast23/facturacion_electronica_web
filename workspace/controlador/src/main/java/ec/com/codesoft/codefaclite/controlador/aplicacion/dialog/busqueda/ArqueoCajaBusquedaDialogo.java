@@ -14,7 +14,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class ArqueoCajaBusquedaDialogo implements InterfaceModelFind<ArqueoCaja>
 {

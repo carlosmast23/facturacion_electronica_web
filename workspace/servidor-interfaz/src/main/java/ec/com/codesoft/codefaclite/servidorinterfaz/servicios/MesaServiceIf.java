@@ -14,7 +14,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface MesaServiceIf extends ServiceAbstractIf<Mesa>{    
     public Mesa grabar(Mesa mesa,Empresa empresa,Usuario usuarioCreacion) throws ServicioCodefacException, RemoteException;

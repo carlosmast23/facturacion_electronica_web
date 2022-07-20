@@ -29,7 +29,7 @@ import org.bouncycastle.asn1.DEROctetString;
  * TODO: Hacer una metodo que me devuelva todos los OID 
  * Objetos Identificadores Únicos de los Certificados
 
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class X509Utils
 {

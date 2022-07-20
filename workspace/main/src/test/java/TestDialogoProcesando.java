@@ -23,7 +23,7 @@ import javax.swing.SwingWorker;
  */
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TestDialogoProcesando {
 

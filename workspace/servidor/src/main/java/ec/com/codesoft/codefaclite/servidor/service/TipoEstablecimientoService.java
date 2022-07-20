@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TipoEstablecimientoService extends ServiceAbstract<TipoEstablecimiento,TipoEstablecimientoFacade> implements TipoEstablecimientoServiceIf{
 

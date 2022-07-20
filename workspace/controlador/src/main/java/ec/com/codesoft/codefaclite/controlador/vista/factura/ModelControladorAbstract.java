@@ -16,7 +16,7 @@ import java.io.Serializable;
 
 /**
  *TODO: Hacer un metodo generico que me permita saber el estado si creando o editando
- * @author CARLOS_CODESOFT
+ * @auhor
  * T= interfaz base
  * E= interfaz de escririo
  * W= interaz web

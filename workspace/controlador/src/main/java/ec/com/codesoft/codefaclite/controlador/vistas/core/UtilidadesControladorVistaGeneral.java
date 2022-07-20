@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class UtilidadesControladorVistaGeneral {
     

@@ -16,7 +16,7 @@ import javax.swing.JComboBox;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ButtonBindingImp extends ComponentBindingAbstract<JButton,ButtonBinding> {
     

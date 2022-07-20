@@ -40,7 +40,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class GuiaRemisionLoteControlador extends ModelControladorAbstract<GuiaRemisionLoteControlador.CommonIf,GuiaRemisionLoteControlador.SwingIf,GuiaRemisionLoteControlador.WebIf> implements VistaCodefacIf {
 

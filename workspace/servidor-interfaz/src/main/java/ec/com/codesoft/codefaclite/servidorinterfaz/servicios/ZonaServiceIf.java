@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface ZonaServiceIf extends ServiceAbstractIf<Zona>{
     public List<Zona> obtenerActivos() throws ServicioCodefacException, RemoteException;

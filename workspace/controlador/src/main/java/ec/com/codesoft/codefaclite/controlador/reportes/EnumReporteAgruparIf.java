@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.reportes;
 
 /**
  * Interfaz que tiene que implementar los enum que va a realizar agupaciones generica
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface EnumReporteAgruparIf {
     

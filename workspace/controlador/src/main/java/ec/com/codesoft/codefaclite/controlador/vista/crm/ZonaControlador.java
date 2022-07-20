@@ -24,7 +24,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ZonaControlador extends ModelControladorAbstract<ZonaControlador.ICommon, ZonaControlador.ISwing,ZonaControlador.IWeb> implements VistaCodefacIf{
 

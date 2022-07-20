@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public interface ArqueoCajaServiceIf extends ServiceAbstractIf<ArqueoCaja>{
     public List<ArqueoCaja> obtenerArqueoCajaPorCaja(Caja caja) throws RemoteException;

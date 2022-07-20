@@ -29,7 +29,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class GestionEmpleadosModel extends GestionEmpleadosPanel
 {

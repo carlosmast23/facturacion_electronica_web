@@ -10,7 +10,7 @@ import java.math.RoundingMode;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TestRedondear {
     public static void main(String args[])

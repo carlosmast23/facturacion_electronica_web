@@ -37,7 +37,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class ReporteInventarioStockControlador extends ModelControladorAbstract<ReporteInventarioStockControlador.CommonIf, ReporteInventarioStockControlador.SwingIf, ReporteInventarioStockControlador.WebIf> implements VistaCodefacIf
 {

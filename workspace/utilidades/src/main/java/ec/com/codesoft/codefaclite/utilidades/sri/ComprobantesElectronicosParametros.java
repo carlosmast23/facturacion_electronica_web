@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.utilidades.sri;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class ComprobantesElectronicosParametros {
     public static final Integer TAMANIO_MAXIMO_AUTORIZACION=49;

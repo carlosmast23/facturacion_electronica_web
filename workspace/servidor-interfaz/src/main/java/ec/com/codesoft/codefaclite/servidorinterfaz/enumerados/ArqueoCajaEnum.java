@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.enumerados;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public enum ArqueoCajaEnum {
     

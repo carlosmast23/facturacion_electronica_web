@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface MetodoInterfaceTransaccionResultado {
     

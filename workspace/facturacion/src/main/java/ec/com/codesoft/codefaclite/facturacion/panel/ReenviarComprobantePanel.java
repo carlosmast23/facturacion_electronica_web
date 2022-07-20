@@ -11,7 +11,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class ReenviarComprobantePanel extends ControladorCodefacInterface {
 

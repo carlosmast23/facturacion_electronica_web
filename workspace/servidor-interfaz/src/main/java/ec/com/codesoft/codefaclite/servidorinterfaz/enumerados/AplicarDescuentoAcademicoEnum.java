@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.enumerados;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public enum AplicarDescuentoAcademicoEnum {
 

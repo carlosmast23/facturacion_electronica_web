@@ -22,7 +22,7 @@ import org.jdesktop.swingx.JXDatePicker;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class FacturaPedidoLotePanel extends ControladorCodefacInterface {
 

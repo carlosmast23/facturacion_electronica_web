@@ -17,7 +17,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class CajaSessionBusquedaDialogo implements InterfaceModelFind<CajaSession>
 {

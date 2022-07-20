@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class GeneralPublicoAbstractMb implements Serializable{
     public static final String EJEMPLO="hola";

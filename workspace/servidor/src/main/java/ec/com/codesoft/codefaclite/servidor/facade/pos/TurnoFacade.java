@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.Turno;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class TurnoFacade extends AbstractFacade<Turno>
 {

@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.RutaDetalle;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class RutaDetalleFacade extends AbstractFacade<RutaDetalle> {
 

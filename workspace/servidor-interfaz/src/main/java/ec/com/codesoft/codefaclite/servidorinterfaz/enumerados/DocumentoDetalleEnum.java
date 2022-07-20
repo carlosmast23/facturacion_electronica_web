@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public enum DocumentoDetalleEnum {
     RETENCION_IVA("Retención Renta","RRR",DocumentoEnum.RETENCIONES),

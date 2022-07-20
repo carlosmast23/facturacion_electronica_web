@@ -26,7 +26,7 @@ import javax.faces.bean.ViewScoped;
  * Controlador que me permite contralar el comportamiento de funcionalidad
  * reutilizable en las pantallas que no requieren acceso al sistema
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  * TODO: Cambiar nombre a Controller
  */
 @ManagedBean(name = "controllerPublicoMb")

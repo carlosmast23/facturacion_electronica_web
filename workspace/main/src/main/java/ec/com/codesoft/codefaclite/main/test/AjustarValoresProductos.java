@@ -28,7 +28,7 @@ import javax.persistence.PersistenceException;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class AjustarValoresProductos {
 

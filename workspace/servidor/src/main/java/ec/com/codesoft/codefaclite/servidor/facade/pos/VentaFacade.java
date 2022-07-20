@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.pos.Venta;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class VentaFacade extends AbstractFacade<Venta>
 {

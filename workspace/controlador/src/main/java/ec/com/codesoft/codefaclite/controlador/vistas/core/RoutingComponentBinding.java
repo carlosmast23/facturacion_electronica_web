@@ -23,7 +23,7 @@ import java.util.Map;
 
 /**
  * Lista donde se tienen que agregar todos los binding MVC que van a interactuar con los formularios SWING
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class RoutingComponentBinding {
     

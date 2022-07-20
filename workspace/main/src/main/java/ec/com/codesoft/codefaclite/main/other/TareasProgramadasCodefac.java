@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 /**
  * Clase donde confinguro todos los metodos relacionados con las tareas programadas
  * para no tener mucho codigo en la clase del main
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TareasProgramadasCodefac {
     

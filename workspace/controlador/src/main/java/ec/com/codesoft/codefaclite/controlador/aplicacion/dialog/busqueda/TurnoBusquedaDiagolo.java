@@ -15,7 +15,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class TurnoBusquedaDiagolo implements InterfaceModelFind<Turno>
 {

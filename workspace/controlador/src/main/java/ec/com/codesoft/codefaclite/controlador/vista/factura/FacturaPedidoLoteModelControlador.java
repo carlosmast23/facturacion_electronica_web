@@ -50,7 +50,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class FacturaPedidoLoteModelControlador extends ModelControladorAbstract<FacturaPedidoLoteModelControlador.CommonIf,FacturaPedidoLoteModelControlador.SwingIf,FacturaPedidoLoteModelControlador.WebIf> implements VistaCodefacIf {
 

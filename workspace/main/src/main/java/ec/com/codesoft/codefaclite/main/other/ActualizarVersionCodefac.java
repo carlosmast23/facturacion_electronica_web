@@ -31,7 +31,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ActualizarVersionCodefac {
     

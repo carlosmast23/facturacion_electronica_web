@@ -15,7 +15,7 @@ import java.util.Vector;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class MarcaProductoDialogo implements InterfaceModelFind<MarcaProducto>{
     

@@ -12,7 +12,7 @@ import javax.swing.SwingWorker;
 /**
  *TODO: Tener en cuenta cuando se utilicen varaibles de ambito general de la clase , toca pasar por parametro por que tiene un compartamiento extraño
  * Preocurar que la clase interna que va a implementar la interfaz EsperaSwingWorkerIf sea lo menos dependiente posible como una funcion
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class EsperaSwingWorker extends SwingWorker<Integer, Integer> {
     private DialogoCargando dialogo;

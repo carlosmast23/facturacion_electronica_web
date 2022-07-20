@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.codefacweb.mb.utilidades;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class TablaNombreColumna 
 {

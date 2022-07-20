@@ -20,7 +20,7 @@ import javafx.util.converter.LocalDateTimeStringConverter;
  */
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class TestCronos implements Serializable {
 

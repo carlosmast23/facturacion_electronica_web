@@ -36,7 +36,7 @@ import java.util.stream.Collectors;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class MantenimientoCodefacModel extends MantenimientoCodefacPanel{
     

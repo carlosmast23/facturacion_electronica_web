@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.utilidades.validadores;
 
 /**
  * TODO: Convertir Esta clase en Enum y cambiar de nombre por que realmente solo es una clase para almacenar datos
- * @author robert
+ * @auhor
  */
 public final class ExpresionRegular 
 {

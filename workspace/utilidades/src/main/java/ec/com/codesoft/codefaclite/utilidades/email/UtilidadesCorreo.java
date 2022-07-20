@@ -14,7 +14,7 @@ import javax.mail.MessagingException;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesCorreo {
     

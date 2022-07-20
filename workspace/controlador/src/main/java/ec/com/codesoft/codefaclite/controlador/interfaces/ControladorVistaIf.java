@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.controlador.vista.factura.ModelControladorAbs
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface ControladorVistaIf {
     /**

@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author robert
+ * @auhor
  */
 public class OpcionMenuListener implements ActionListener
 {

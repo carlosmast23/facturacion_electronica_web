@@ -14,7 +14,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class IngresoCajaService extends ServiceAbstract<IngresoCaja, IngresoCajaFacade> implements IngresoCajaServiceIf{
 

@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public interface CajaPermisoServiceIf extends ServiceAbstractIf<CajaPermiso>
 {

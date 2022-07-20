@@ -31,7 +31,7 @@ import org.jdesktop.swingx.JXDatePicker;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class AsistenteConfiguracionRapidaPanel extends ControladorCodefacInterface {
 

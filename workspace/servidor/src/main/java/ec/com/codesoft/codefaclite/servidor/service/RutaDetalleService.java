@@ -13,7 +13,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class RutaDetalleService extends ServiceAbstract<RutaDetalle,RutaDetalleFacade> implements RutaDetalleServiceIf{
 

@@ -45,7 +45,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class AsistenteConfiguracionRapidaControlador extends ModelControladorAbstract<AsistenteConfiguracionRapidaControlador.CommonIf, AsistenteConfiguracionRapidaControlador.SwingIf, AsistenteConfiguracionRapidaControlador.WebIf> implements VistaCodefacIf {
 

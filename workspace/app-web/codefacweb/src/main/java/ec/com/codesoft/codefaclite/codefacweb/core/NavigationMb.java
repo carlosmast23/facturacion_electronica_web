@@ -11,7 +11,7 @@ import javax.faces.bean.ManagedBean;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @ManagedBean(name = "navigationMb")
 @ApplicationScoped

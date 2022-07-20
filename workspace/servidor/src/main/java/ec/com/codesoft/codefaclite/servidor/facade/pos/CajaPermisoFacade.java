@@ -18,7 +18,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class CajaPermisoFacade extends AbstractFacade<CajaPermiso>
 {

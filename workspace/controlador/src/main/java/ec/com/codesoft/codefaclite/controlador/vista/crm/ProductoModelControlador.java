@@ -46,7 +46,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ProductoModelControlador extends ModelControladorAbstract<ProductoModelControlador.CommonIf,ProductoModelControlador.SwingIf,ProductoModelControlador.WebIf> implements VistaCodefacIf{
     

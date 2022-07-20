@@ -9,7 +9,7 @@ import javax.swing.JFileChooser;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesDirectorios {
     public static String buscarDirectorio()

@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface HerramientasCodefacServiceIf extends ServiceAbstractIf<Object>{
 

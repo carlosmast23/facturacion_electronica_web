@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.dialogos;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface EsperaSwingWorkerIf {
     

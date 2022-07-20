@@ -11,7 +11,7 @@ import java.util.List;
 /**
  *Metodo que me permite establecer variables generales de configuracion y
  * la lista de todos los binding que se pueden usar
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class BindingFactoryComponents {
     

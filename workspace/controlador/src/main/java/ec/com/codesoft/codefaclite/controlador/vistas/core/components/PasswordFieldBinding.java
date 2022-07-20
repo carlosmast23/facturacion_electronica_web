@@ -13,7 +13,7 @@ import javax.swing.JPasswordField;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @Target(value={ElementType.METHOD} )
 @Retention(RetentionPolicy.RUNTIME)

@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.vistas.core.components;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public interface ITableBindingAddData<T> {
     public Object[] addData(T value);

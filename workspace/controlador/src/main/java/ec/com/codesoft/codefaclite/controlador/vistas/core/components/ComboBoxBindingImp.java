@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ComboBoxBindingImp extends ComponentBindingAbstract<JComboBox,ComboBoxBinding>{
 

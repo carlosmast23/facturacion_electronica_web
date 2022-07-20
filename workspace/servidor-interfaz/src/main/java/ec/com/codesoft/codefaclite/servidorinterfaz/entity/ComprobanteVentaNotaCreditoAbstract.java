@@ -25,7 +25,7 @@ import javax.persistence.MappedSuperclass;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 @MappedSuperclass
 public abstract class ComprobanteVentaNotaCreditoAbstract<T extends ComprobanteAdicional> extends ComprobanteEntity<T> {

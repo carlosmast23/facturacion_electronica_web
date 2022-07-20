@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ReenviarComprobanteModel extends ReenviarComprobantePanel implements ReenviarComprobanteModelControlador.CommonIf{
 

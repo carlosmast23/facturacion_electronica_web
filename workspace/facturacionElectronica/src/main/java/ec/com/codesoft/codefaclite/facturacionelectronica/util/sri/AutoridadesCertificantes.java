@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.facturacionelectronica.util.sri;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 
 public enum AutoridadesCertificantes

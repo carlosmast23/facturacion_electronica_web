@@ -23,7 +23,7 @@ import javax.persistence.EntityManager;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class HerramientasCodefacService extends ServiceAbstract<Object,HerramientasCodefacFacade> implements HerramientasCodefacServiceIf{
 

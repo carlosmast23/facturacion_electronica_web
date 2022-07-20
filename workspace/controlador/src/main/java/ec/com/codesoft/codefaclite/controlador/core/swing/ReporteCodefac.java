@@ -425,7 +425,7 @@ public class ReporteCodefac {
         
         /**
          * Agregado valdación cuando no llenen ningun dato que salgo información del sistema cuando el usuario tiene una licencia gratuita
-         * @author Carlos Sanchez
+         * @auhor
          * @fecha 03/11/2018
          */
         if(sessionCodefac.getTipoLicenciaEnum().equals(TipoLicenciaEnum.GRATIS))
@@ -588,7 +588,7 @@ public class ReporteCodefac {
 
             /**
              * Agregado valdación cuando no llenen ningun dato que salgo información del sistema cuando el usuario tiene una licencia gratuita
-             * @author Carlos Sanchez
+             * @auhor
              * @fecha 03/11/2018
              */
             UtilidadesServiceIf utilidadesService = ServiceFactory.getFactory().getUtilidadesServiceIf();

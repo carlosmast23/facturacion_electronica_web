@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class ArqueoCajaService extends ServiceAbstract<ArqueoCaja, ArqueoCajaFacade> implements ArqueoCajaServiceIf
 {

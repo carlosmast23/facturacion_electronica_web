@@ -32,7 +32,7 @@ import org.apache.commons.io.FileUtils;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class RespaldosModelUtilidades {
     

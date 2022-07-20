@@ -18,7 +18,7 @@ import java.util.Vector;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class ProductoInventarioEspecificoDialogo implements InterfaceModelFind<KardexItemEspecifico> , InterfacesPropertisFindWeb {
 

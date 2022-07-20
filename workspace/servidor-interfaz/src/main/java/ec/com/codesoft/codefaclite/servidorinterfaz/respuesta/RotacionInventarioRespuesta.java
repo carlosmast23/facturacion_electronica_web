@@ -11,7 +11,7 @@ import java.math.RoundingMode;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class RotacionInventarioRespuesta {
     public Producto producto;

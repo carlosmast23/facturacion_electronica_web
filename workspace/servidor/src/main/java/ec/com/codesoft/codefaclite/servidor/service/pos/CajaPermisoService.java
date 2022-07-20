@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  *
- * @author Robert
+ * @auhor
  */
 public class CajaPermisoService extends ServiceAbstract<CajaPermiso, CajaPermisoFacade> implements CajaPermisoServiceIf
 {

@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.utilidades.reporte;
 
 /**
  * TODO: Falta las referencias de Jasper para poder implentar en este proyecto
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class UtilidadesJasper {
     

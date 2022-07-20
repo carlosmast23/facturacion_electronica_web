@@ -41,7 +41,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public abstract class ComprobanteDataFacturaNotaCreditoAbstract implements ComprobanteDataInterface ,Serializable{
  

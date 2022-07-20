@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.MarcaProducto;
 
 /**
  *
- * @author CARLOS_CODESOFT
+ * @auhor
  */
 public class MarcaProductoFacade extends AbstractFacade<MarcaProducto>{
 
