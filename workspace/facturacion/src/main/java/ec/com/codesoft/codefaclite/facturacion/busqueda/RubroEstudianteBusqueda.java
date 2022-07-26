@@ -15,7 +15,7 @@ import ec.com.codesoft.codefaclite.corecodefaclite.dialog.InterfaceModelFind;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class RubroEstudianteBusqueda implements InterfaceModelFind<RubroEstudiante>{
 

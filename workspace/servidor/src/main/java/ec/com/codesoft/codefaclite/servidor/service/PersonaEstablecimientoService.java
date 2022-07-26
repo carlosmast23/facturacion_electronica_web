@@ -26,7 +26,7 @@ import org.apache.commons.collections.map.HashedMap;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PersonaEstablecimientoService extends ServiceAbstract<PersonaEstablecimiento,PersonaEstablecimientoFacade> implements PersonaEstablecimientoServiceIf {
 

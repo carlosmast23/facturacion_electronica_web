@@ -34,7 +34,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class KardexFacade extends AbstractFacade<Kardex> {
 

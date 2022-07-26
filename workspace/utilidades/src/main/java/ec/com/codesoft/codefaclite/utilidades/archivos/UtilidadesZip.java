@@ -19,7 +19,7 @@ import java.util.zip.ZipOutputStream;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesZip {
     

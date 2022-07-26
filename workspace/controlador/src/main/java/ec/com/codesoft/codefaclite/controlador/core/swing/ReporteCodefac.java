@@ -56,7 +56,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ReporteCodefac {
     public static void generarReporte(String pathReporte,Map parametros,Collection datos)

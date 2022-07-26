@@ -18,7 +18,7 @@ import java.util.logging.SimpleFormatter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class LogControlador {
     //Paquete Raiz de todas las clases para gestionar los Logs

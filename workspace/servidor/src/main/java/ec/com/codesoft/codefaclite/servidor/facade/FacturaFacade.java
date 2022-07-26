@@ -38,7 +38,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaFacade extends AbstractFacade<Factura> {
 

@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CarteraCruceService extends ServiceAbstract<CarteraCruce,CarteraCruceFacade> implements CarteraCruceServiceIf
 {

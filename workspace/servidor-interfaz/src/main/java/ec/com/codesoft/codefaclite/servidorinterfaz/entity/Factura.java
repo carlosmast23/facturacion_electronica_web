@@ -43,7 +43,7 @@ import javax.persistence.Transient;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = Factura.NOMBRE_TABLA)

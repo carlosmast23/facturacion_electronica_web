@@ -43,7 +43,7 @@ import org.eclipse.persistence.exceptions.DatabaseException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UsuarioServicio extends ServiceAbstract<Usuario,UsuarioFacade> implements UsuarioServicioIf{
 

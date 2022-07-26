@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 
 /**
  * Clase que contiene los parametros generales del sistema 
- * @author Carlos
+ * @author
  */
 public abstract class ParametrosSistemaCodefac {
     /**

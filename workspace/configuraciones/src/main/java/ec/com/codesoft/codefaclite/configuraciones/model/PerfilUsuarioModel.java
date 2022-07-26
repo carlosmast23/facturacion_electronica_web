@@ -50,7 +50,7 @@ import javax.swing.event.ListSelectionListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PerfilUsuarioModel extends PerfilUsuarioPanel{
     

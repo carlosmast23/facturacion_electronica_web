@@ -13,7 +13,7 @@ import ec.com.codesoft.codefaclite.facturacionelectronica.jaxb.retencion.Retenci
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum ComprobanteEnum {
     FACTURA("FACTURA","01","FAC",FacturaComprobante.class),

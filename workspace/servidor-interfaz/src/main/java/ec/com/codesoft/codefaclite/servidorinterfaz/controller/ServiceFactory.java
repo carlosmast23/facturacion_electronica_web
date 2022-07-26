@@ -114,7 +114,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.servicios.pos.VentaServiceIf
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ServiceFactory {
     

@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.Usuario;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UsuarioResponse {
     private String nick;

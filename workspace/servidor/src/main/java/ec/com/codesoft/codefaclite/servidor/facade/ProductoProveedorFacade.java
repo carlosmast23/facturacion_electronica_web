@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.ProductoProveedor;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ProductoProveedorFacade extends AbstractFacade<ProductoProveedor>{
 

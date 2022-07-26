@@ -9,7 +9,7 @@ import java.awt.event.MouseListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class PanelSecundarioAbstract extends javax.swing.JPanel {
     public static final String PANEL_AYUDA="Ayuda";

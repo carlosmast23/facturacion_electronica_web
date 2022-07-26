@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesImpuestos {
     /**

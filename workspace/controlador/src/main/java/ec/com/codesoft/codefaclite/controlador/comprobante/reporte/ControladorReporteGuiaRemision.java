@@ -47,7 +47,7 @@ import net.sf.jasperreports.engine.JasperReport;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ControladorReporteGuiaRemision {
     

@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.utilidades.texto.UtilidadesTextos;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ComprobantesUtilidades {
     

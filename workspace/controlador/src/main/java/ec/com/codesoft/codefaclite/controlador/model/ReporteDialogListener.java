@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.model;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ReporteDialogListener {
     

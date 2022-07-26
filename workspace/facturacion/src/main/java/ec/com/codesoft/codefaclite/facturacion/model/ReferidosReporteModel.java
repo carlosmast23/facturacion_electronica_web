@@ -20,7 +20,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ReferidosReporteModel extends FacturaReporteModel{
 

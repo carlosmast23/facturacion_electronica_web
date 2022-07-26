@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.PuntoEmisionUsuario;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PuntoEmisionUsuarioFacade extends AbstractFacade<PuntoEmisionUsuario> {
         

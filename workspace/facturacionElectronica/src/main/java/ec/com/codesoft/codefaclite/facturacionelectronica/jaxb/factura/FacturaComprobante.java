@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @XmlRootElement(name = ComprobanteElectronico.FACTURA)
 @XmlType(propOrder = {"informacionTributaria","informacionFactura","detalles","informacionAdicional"})

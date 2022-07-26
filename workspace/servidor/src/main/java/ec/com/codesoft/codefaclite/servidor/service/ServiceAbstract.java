@@ -31,7 +31,7 @@ import org.eclipse.persistence.exceptions.DatabaseException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ServiceAbstract<Entity,Facade> extends UnicastRemoteObject implements Serializable
 {

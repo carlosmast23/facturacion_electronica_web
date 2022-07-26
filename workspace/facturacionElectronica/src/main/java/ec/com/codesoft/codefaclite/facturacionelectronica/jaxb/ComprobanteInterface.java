@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ComprobanteInterface {
     public String getTipoDocumento();

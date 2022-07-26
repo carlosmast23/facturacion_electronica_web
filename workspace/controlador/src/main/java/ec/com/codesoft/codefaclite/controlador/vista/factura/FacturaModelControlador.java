@@ -78,7 +78,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaModelControlador extends FacturaNotaCreditoModelControladorAbstract{
     
@@ -376,7 +376,7 @@ public class FacturaModelControlador extends FacturaNotaCreditoModelControladorA
     
     
     /**
-     * @author Carlos
+     * @author
      * Validacion de la la logica dependiendo el modulo
      * @return 
      */

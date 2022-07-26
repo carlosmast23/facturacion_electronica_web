@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.KardexDetalle;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class KardexDetalleFacade extends AbstractFacade<KardexDetalle>{
     

@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.enumerados.OperadorNegocioEn
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ClienteFinalModel extends ClienteModel{ 
 

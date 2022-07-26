@@ -40,7 +40,7 @@ import javax.persistence.EntityTransaction;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class RetencionService extends ServiceAbstract<Retencion, RetencionFacade> implements RetencionServiceIf {
 

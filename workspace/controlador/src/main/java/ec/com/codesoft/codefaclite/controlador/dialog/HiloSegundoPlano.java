@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class HiloSegundoPlano extends Thread{
     private ProcesoSegundoPlano proceso;

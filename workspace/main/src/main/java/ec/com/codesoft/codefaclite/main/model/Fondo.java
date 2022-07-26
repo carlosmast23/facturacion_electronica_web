@@ -17,7 +17,7 @@ import javax.swing.border.Border;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class Fondo implements Border
 {

@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.utilidades.varios;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PreimpresoFormato {
     public String establecimiento;

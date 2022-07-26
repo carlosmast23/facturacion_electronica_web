@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.SriRetencion;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SriRetencionFacade extends AbstractFacade<SriRetencion>{
     

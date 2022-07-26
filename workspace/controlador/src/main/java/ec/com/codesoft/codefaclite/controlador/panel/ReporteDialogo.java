@@ -9,7 +9,7 @@ import javax.swing.JButton;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ReporteDialogo extends javax.swing.JDialog {
 

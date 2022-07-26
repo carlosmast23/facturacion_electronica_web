@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ProductoEnsambleService extends ServiceAbstract<ProductoEnsamble,ProductoEnsambleFacade> implements  ProductoEnsambleServiceIf
 {

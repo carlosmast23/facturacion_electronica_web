@@ -15,7 +15,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class OrdenCompraDetalleService extends ServiceAbstract<OrdenCompraDetalle,OrdenCompraDetalleFacade> implements OrdenCompraDetalleServiceIf{
 

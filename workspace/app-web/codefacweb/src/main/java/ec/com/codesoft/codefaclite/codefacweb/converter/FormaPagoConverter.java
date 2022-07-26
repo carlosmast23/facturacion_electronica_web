@@ -13,7 +13,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("formaPagoConverter")
 public class FormaPagoConverter extends AbstractConverter implements Converter {

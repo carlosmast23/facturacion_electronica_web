@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidor.service.interfacePanel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ServidorMonitorUpdateInterface {
     /**

@@ -14,7 +14,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SriFormaPagoFacade extends AbstractFacade<SriFormaPago> {
     

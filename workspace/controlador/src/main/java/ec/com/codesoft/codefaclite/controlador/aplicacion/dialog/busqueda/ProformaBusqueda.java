@@ -27,7 +27,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ProformaBusqueda implements InterfaceModelFind<Factura>, InterfacesPropertisFindWeb,Serializable {
     

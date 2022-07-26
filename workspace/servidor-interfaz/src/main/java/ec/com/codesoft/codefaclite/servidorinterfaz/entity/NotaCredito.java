@@ -29,7 +29,7 @@ import javax.persistence.Table;
 
 /**
  * TODO: Corregir que existen propiedades duplicadas tanto en NotaCredito como en ComprobanteVentaNotaCreditoAbstract
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = "NOTA_CREDITO")

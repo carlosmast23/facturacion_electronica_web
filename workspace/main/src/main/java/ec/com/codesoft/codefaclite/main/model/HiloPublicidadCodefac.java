@@ -23,7 +23,7 @@ import javax.swing.JFrame;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class HiloPublicidadCodefac extends Thread{
     

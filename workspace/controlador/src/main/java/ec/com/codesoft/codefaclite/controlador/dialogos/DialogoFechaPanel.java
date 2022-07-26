@@ -15,7 +15,7 @@ import org.jdesktop.swingx.JXDatePicker;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DialogoFechaPanel extends javax.swing.JDialog {
 

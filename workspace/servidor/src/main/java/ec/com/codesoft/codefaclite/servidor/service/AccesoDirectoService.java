@@ -16,7 +16,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AccesoDirectoService extends ServiceAbstract<AccesoDirecto,AccesoDirectoFacade> implements AccesoDirectoServiceIf{
     

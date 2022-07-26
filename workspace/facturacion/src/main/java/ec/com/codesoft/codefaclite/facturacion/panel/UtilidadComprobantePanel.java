@@ -15,7 +15,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadComprobantePanel extends ControladorCodefacInterface {
 

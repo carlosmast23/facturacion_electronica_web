@@ -20,7 +20,7 @@ import org.krysalis.barcode4j.tools.UnitConv;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadCodigoBarras {
     

@@ -16,7 +16,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class FacturaAcademicoLotePanel extends ControladorCodefacInterface {
 

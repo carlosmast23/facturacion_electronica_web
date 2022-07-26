@@ -39,7 +39,7 @@ import java.util.Properties;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @ManagedBean
 @ViewScoped

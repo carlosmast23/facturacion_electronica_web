@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.PrestamoTabla
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PrestamoTablaInteresFacade extends AbstractFacade<PrestamoTablaInteres> 
 {

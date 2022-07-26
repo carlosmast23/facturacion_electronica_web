@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.CarteraCruce;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CarteraCruceFacade extends AbstractFacade<CarteraCruce>{
     

@@ -13,7 +13,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PrestamoCuotaService extends ServiceAbstract<PrestamoCuota,PrestamoCuotaFacade> implements PrestamoCuotaServiceIf {
 

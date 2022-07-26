@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.enumerados;
 
 /**
  * Enumerador util en especial para trabajar con los modos de crear o editar
- * @author Carlos
+ * @author
  */
 public enum CrudEnum {
     CREAR,

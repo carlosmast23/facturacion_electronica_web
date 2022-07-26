@@ -30,7 +30,7 @@ import javax.swing.JCheckBox;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class MigrarClientesModel extends ClienteMigrarAbstract
 {

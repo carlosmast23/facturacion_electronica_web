@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Carlos
+ * @author
  * @url https://codenotfound.com/jsf-login-servlet-filter-example.html
  */
 @WebFilter("/sistema/*")

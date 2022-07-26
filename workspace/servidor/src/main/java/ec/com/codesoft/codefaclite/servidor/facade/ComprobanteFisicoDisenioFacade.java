@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.ComprobanteFisicoDise
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteFisicoDisenioFacade extends AbstractFacade<ComprobanteFisicoDisenio>{
     

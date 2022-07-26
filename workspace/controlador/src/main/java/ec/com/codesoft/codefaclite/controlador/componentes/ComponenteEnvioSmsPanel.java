@@ -33,7 +33,7 @@ import javax.swing.JTextArea;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComponenteEnvioSmsPanel extends javax.swing.JPanel {
 

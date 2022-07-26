@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.PermisoVentana;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface PermisoVentanaServiceIf extends ServiceAbstractIf<PermisoVentana> 
 {

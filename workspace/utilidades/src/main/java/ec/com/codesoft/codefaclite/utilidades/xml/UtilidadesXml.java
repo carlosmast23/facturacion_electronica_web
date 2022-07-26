@@ -22,7 +22,7 @@ import javax.xml.bind.Marshaller;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadesXml {
     

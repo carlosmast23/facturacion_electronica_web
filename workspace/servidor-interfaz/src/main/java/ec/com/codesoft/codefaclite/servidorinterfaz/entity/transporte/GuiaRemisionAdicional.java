@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = "GUIA_REMISION_ADICIONAL")

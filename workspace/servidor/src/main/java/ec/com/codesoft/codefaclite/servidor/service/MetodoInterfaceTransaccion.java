@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface MetodoInterfaceTransaccion {
     public void transaccion() throws ServicioCodefacException,RemoteException;

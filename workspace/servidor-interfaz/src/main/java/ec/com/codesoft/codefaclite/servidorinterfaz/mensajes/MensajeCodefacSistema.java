@@ -16,7 +16,7 @@ import static ec.com.codesoft.codefaclite.servidorinterfaz.mensajes.CodefacMsj.T
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class MensajeCodefacSistema {
     

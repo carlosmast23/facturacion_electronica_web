@@ -72,7 +72,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestPruebaRMI {
     public static void main(String[] args) {

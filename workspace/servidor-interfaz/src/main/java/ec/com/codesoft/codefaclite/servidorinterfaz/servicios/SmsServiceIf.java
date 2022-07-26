@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface SmsServiceIf extends Remote {
     public void enviarMensaje(String numero , String mensaje)throws RemoteException,ServicioCodefacException;

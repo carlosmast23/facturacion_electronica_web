@@ -19,7 +19,7 @@ import org.jdesktop.swingx.JXTaskPane;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface InterfazComunicacionPanel 
 {

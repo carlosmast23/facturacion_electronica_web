@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.reportData;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class InformacionAdicionalData {
     private String nombre;

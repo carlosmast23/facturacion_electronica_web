@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = "RUBROS_NIVEL")

@@ -16,7 +16,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ClienteInterfaceComprobanteLote extends Remote{
     

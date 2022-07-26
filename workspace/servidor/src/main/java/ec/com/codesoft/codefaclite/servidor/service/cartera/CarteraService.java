@@ -61,7 +61,7 @@ import org.apache.commons.net.ntp.TimeStamp;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CarteraService extends ServiceAbstract<Cartera,CarteraFacade> implements CarteraServiceIf{
     

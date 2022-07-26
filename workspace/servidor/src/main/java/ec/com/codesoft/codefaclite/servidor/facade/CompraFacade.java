@@ -20,7 +20,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CompraFacade extends AbstractFacade<Compra>{
     

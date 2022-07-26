@@ -18,7 +18,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PrestamoTablaInteresDialogo implements InterfaceModelFind<PrestamoTablaInteres>,InterfacesPropertisFindWeb {
     

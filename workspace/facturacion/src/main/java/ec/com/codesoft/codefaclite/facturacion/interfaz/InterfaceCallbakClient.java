@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface InterfaceCallbakClient {
     public void terminoProceso(List<ComprobanteData> comprobantes);

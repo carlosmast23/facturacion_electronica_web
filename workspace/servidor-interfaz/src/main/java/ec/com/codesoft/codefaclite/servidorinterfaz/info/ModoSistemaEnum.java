@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.info;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum ModoSistemaEnum {
     PRODUCCION,DESARROLLO;

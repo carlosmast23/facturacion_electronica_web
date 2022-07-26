@@ -25,7 +25,7 @@ import javax.imageio.ImageIO;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum DirectorioCodefac {
     CONFIGURACION("configuracion"),

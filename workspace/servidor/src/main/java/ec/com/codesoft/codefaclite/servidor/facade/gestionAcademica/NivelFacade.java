@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NivelFacade extends AbstractFacade<Nivel>{
 

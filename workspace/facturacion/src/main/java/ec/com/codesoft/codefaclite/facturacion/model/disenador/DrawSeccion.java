@@ -19,7 +19,7 @@ import javafx.geometry.Rectangle2D;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DrawSeccion implements DrawInterface{
     

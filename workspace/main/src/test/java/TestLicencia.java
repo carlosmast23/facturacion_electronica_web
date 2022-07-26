@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.utilidades.varios.UtilidadVarios;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestLicencia {
     public static void main(String[] args)

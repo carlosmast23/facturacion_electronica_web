@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface SriRetencionServiceIf extends ServiceAbstractIf<SriRetencion>{
     public SriRetencion consultarPorNombre(String nombre) throws RemoteException;

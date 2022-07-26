@@ -56,7 +56,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ClienteFacturaImplComprobante extends UnicastRemoteObject implements ClienteInterfaceComprobante {
 

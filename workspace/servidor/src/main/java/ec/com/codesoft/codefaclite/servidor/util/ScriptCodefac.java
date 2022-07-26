@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidor.util;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ScriptCodefac {
     private String query;

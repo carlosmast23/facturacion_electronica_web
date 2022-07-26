@@ -21,7 +21,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = "TIPO_PRODUCTO")

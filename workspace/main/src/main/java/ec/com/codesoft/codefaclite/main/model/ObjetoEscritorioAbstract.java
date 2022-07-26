@@ -17,7 +17,7 @@ import org.jdesktop.swingx.JXTitledPanel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ObjetoEscritorioAbstract extends JPanel{
     

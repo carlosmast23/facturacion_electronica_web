@@ -20,7 +20,7 @@ import org.apache.commons.codec.binary.Base64;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesEncriptar {
         public static String encriptar(String texto,String llave) {

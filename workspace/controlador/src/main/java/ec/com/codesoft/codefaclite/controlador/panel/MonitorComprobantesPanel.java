@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class MonitorComprobantesPanel extends PanelSecundarioAbstract{
 

@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.ActualizarSistema;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ActualizarSistemaFacade extends AbstractFacade<ActualizarSistema> {
     

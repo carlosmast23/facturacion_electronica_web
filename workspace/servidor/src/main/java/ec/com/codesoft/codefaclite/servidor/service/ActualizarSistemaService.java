@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ActualizarSistemaService extends ServiceAbstract<ActualizarSistema,ActualizarSistemaFacade> implements ActualizarSistemaServiceIf{
 

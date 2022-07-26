@@ -42,7 +42,7 @@ import org.w3c.dom.Document;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FirmaElectronica {
     private String almacenCertificadoClave;

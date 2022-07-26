@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.CarteraDetall
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CarteraDetalleFacade extends AbstractFacade<CarteraDetalle>{
     

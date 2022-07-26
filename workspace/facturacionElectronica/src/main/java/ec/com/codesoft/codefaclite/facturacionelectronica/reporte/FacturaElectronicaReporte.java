@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaElectronicaReporte extends FacturaLiquidacionCompraAbstractReport{
     private FacturaComprobante facturaComprobante;

@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
 
 /**
  * Anotacion que me sirve para que puedan especificar cual es el campo que por defecto debe tener seteado el cursor, despues de limpiar la pantalla
- * @author Carlos
+ * @author
  */
 @Target(value={ElementType.METHOD} )
 @Retention(RetentionPolicy.RUNTIME)

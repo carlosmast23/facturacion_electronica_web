@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface SriRetencionRentaServiceIf extends ServiceAbstractIf<SriRetencionRenta>{
     public List<SriRetencionRenta> obtenerTodosOrdenadoPorCodigo() throws RemoteException;

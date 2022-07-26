@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaDetalleService extends ServiceAbstract<FacturaDetalle, FacturaDetalleFacade> implements FacturaDetalleServiceIf {
 

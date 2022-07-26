@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface CarteraCruceServiceIf extends ServiceAbstractIf<CarteraCruce>{
     public List<CarteraCruce>  buscarPorCarteraDetalle(CarteraDetalle carteraDetalle) throws ServicioCodefacException, java.rmi.RemoteException;

@@ -13,7 +13,7 @@ import java.awt.Rectangle;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DrawCanvas{
 

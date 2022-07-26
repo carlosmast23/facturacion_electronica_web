@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestReflexion {
     public static void main(String[] args) {

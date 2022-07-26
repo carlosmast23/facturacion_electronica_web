@@ -40,7 +40,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ClienteNotaCreditoImplComprobante extends UnicastRemoteObject implements ClienteInterfaceComprobante {
 

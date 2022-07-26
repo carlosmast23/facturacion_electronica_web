@@ -12,7 +12,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum CategoriaMenuEnum implements Serializable{
     GESTIONAR("Gestionar",RecursoCodefac.IMAGENES_ICONOS.getResourceURL("categoriamenu/gestionar.png")),

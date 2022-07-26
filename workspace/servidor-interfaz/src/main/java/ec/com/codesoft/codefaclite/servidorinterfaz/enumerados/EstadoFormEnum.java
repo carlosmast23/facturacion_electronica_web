@@ -8,7 +8,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.enumerados;
 /**
  * Enum que permite distinguir en los formularios en que tipo de estado nos encontramos
  * si podemos grabar o editar
- * @author Carlos
+ * @author
  */
 public enum EstadoFormEnum {
     GRABAR("grabar","G"),

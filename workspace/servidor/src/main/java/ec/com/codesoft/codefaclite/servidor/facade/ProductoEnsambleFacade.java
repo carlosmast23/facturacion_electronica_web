@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.ProductoEnsamble;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ProductoEnsambleFacade extends AbstractFacade<ProductoEnsamble>{
 

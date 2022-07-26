@@ -21,7 +21,7 @@ import javax.imageio.stream.ImageInputStream;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadImagen {
     public static InputStream castImputStreamForReport(InputStream input) {

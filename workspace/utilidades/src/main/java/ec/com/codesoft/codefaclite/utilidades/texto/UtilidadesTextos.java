@@ -31,7 +31,7 @@ import org.w3c.dom.Document;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadesTextos {
     

@@ -19,7 +19,7 @@ import org.jdesktop.swingx.JXDatePicker;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadEnvioReportesPanel extends ControladorCodefacInterface {
 

@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.codefacweb.mb.facturacion;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class BarraProgreso <T> {
     private String mensajeAlerta;

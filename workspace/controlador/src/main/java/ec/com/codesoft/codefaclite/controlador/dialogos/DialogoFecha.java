@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DialogoFecha extends DialogoFechaPanel{
     /**

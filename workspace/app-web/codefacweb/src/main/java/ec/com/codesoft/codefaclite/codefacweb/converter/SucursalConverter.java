@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("sucursalConverter")
 public class SucursalConverter extends AbstractConverter implements Converter {

@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.SriFormaPago;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface SriFormaPagoServiceIf extends ServiceAbstractIf<SriFormaPago>{
     

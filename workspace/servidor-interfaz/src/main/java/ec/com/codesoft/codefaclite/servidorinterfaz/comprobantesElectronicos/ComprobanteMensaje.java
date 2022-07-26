@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteMensaje implements Serializable{
     private String identificador;

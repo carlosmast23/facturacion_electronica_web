@@ -23,7 +23,7 @@ import javax.swing.SpinnerNumberModel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class FacturaDisenoPanel extends ControladorCodefacInterface {
     protected RepaintInterface repaintInterface;

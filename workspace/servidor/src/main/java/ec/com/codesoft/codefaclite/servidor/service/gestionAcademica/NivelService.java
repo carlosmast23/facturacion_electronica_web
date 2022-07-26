@@ -22,7 +22,7 @@ import org.eclipse.persistence.exceptions.DatabaseException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NivelService extends ServiceAbstract<Nivel, NivelFacade> implements NivelServiceIf {
 

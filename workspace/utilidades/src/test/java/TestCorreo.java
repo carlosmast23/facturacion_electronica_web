@@ -18,7 +18,7 @@ import javax.mail.internet.MimeMessage;
  */
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestCorreo {
 

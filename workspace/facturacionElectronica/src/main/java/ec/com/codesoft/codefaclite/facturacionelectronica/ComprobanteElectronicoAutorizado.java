@@ -20,7 +20,7 @@ import org.xml.sax.SAXException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteElectronicoAutorizado {
     

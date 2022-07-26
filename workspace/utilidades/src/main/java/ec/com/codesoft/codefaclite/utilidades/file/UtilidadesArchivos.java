@@ -25,7 +25,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesArchivos {
     public static void crearRuta(String path)

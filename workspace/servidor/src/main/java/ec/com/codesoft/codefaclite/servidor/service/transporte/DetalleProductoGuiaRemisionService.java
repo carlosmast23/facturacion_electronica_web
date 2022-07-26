@@ -13,7 +13,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DetalleProductoGuiaRemisionService extends ServiceAbstract<DetalleProductoGuiaRemision,DetalleProductoGuiaRemisionFacade> implements DetalleProductoGuiaRemisionServiceIf{
 

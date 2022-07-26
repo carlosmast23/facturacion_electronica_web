@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class BaseDatosCredenciales {
     private static BaseDatosCredenciales entity;

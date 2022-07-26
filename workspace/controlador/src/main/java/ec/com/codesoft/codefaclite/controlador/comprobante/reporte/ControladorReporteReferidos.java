@@ -17,7 +17,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ControladorReporteReferidos extends ControladorReporteFactura{
 

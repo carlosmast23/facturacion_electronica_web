@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class RubroPlantillaEstudianteService extends ServiceAbstract<RubroPlantillaEstudiante, RubroPlantillaEstudianteFacade> implements RubroPlantillaEstudianteServiceIf{
 

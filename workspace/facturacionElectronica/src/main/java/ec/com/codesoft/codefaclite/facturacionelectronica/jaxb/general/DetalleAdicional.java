@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DetalleAdicional implements Serializable{
 

@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class EstudianteService extends ServiceAbstract<Estudiante, EstudianteFacade> implements EstudianteServiceIf {
 

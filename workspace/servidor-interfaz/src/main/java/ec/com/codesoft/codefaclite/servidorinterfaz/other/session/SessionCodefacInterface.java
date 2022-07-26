@@ -19,7 +19,7 @@ import org.jfree.ui.about.Licences;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface SessionCodefacInterface {
     /**

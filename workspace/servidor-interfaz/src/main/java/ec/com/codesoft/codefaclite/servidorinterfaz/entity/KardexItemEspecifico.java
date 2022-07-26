@@ -18,7 +18,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = "KARDEX_ITEM_ESPECIFICO")

@@ -21,7 +21,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface RetencionServiceIf extends ServiceAbstractIf<Retencion> {
 

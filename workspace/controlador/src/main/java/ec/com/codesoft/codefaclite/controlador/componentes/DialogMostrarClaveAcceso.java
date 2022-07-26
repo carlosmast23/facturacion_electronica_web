@@ -14,7 +14,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DialogMostrarClaveAcceso extends javax.swing.JDialog {
 

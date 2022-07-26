@@ -19,7 +19,7 @@ import com.thoughtworks.xstream.io.HierarchicalStreamReader;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 /**
  *
- * @author Carlos
+ * @author
  */
 public class RespuestaDateConverter implements Converter
 {

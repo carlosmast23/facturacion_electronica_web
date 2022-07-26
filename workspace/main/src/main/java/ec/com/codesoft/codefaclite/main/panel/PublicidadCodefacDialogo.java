@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PublicidadCodefacDialogo extends javax.swing.JDialog {
 

@@ -26,7 +26,7 @@ import org.primefaces.model.mindmap.MindmapNode;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @ManagedBean
 @ViewScoped

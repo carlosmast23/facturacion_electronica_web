@@ -9,7 +9,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Deprecated 
 public interface InterfacesPropertisFindWeb {

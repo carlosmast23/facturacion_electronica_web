@@ -9,7 +9,7 @@ import java.util.Iterator;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum EstiloCodefacEnum {
     DEFAULT("Default","javax.swing.plaf.metal.MetalLookAndFeel"),

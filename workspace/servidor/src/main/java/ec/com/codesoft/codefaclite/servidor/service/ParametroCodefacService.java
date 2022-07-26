@@ -31,7 +31,7 @@ import org.eclipse.persistence.exceptions.DatabaseException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ParametroCodefacService extends ServiceAbstract<ParametroCodefac,ParametroCodefacFacade> implements ParametroCodefacServiceIf{
 

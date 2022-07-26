@@ -13,7 +13,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class MonitorComprobanteData {
     private static final Color COLOR_BARRA_CARGA=new Color(128, 223, 255); 

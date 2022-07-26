@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.corecodefaclite.excepcion.ExcepcionCodefacLit
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface BusquedaCodefacInterface {
     public void buscar() throws ExcepcionCodefacLite;

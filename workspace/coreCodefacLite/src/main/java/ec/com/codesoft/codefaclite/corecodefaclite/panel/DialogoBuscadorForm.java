@@ -14,7 +14,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DialogoBuscadorForm extends javax.swing.JDialog {
 

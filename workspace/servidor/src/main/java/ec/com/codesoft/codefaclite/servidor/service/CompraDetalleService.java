@@ -12,7 +12,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CompraDetalleService extends ServiceAbstract<CompraDetalle, CompraDetalleFacade> implements CompraDetalleServiceIf{
     

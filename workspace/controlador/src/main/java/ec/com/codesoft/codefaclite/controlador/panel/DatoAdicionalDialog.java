@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DatoAdicionalDialog extends javax.swing.JDialog {
 

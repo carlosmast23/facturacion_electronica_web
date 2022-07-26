@@ -18,7 +18,7 @@ import javax.persistence.EntityTransaction;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestConectarBaseDatos {
     public static void main(String[] args) {

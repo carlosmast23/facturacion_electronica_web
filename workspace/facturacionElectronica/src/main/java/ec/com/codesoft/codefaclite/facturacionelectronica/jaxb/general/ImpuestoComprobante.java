@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @XmlType(propOrder = {"codigo","codigoPorcentaje","tarifa","baseImponible","valor"})
 public class ImpuestoComprobante implements Serializable{

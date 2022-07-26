@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.utilidades.email;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PropiedadCorreo {
     

@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class GuiaTransporteData implements ExcelDatosInterface{
     //String[] titulos={"Preimpreso","Transportista","Identificación","Estado","FechaInicio","FechaFin","Dir Partida","Placa"};

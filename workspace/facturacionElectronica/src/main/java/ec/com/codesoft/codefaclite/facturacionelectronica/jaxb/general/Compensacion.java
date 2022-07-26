@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlElement;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class Compensacion implements Serializable{
     private String codigo;

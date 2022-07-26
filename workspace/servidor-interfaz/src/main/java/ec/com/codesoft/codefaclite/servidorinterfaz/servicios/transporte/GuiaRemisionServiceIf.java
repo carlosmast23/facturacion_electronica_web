@@ -20,7 +20,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface GuiaRemisionServiceIf extends ServiceAbstractIf<GuiaRemision> {
     public List<GuiaRemision> obtenerConsulta(Date fechaInicial,Date fechaFinal,ComprobanteEntity.ComprobanteEnumEstado estado,Transportista transportista,Persona destinatario,String codigoProducto,Empresa empresa) throws ServicioCodefacException, RemoteException;

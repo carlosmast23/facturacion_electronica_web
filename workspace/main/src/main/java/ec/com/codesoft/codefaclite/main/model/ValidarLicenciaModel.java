@@ -57,7 +57,7 @@ import sun.applet.Main;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ValidarLicenciaModel extends ValidarLicenciaDialog{
     

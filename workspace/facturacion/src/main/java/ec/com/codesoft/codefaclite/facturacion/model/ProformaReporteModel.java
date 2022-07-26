@@ -47,7 +47,7 @@ import org.apache.xalan.xsltc.compiler.util.StringStack;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ProformaReporteModel extends ProformaReportePanel {
 

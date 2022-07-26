@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ColumnaDialogo implements Serializable{
     private String Nombre;

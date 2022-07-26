@@ -36,7 +36,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.servicios.PerfilServiceIf;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PerfilModel extends PerfilPanel{
     

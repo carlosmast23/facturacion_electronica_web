@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.crm.reportdata;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DataEjemploReporte {
      public String nombre;

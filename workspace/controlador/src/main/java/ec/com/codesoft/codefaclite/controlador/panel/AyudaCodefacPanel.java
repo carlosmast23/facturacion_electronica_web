@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.controlador.panelessecundariomodel.PanelSecun
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class AyudaCodefacPanel extends PanelSecundarioAbstract{
 

@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum PlantillaSmsEnum {
     LIBRE("Libre","",new VentanaEnum[]{VentanaEnum.CLIENTE,VentanaEnum.ESTUDIANTES}),

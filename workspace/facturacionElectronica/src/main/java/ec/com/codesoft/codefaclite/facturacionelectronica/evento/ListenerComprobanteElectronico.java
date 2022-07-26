@@ -13,7 +13,7 @@ import ec.com.codesoft.codefaclite.facturacionelectronica.jaxb.ComprobanteElectr
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ListenerComprobanteElectronico {
     public abstract void termino();

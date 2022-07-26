@@ -20,7 +20,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ValidarLicenciaDialog extends javax.swing.JDialog {
 

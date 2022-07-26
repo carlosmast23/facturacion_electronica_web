@@ -13,7 +13,7 @@ import javax.script.ScriptException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadesCalculo {
     

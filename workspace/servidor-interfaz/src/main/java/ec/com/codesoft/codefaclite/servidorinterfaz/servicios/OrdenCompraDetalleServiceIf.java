@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.compra.OrdenCompraDet
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface OrdenCompraDetalleServiceIf extends ServiceAbstractIf<OrdenCompraDetalle> {
     

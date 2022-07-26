@@ -26,7 +26,7 @@ import org.jdom.output.XMLOutputter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ManagerReporteFacturaFisica {
     

@@ -23,7 +23,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesFecha {
     

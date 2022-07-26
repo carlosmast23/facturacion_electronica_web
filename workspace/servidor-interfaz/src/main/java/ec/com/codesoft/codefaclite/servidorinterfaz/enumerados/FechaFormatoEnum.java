@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum FechaFormatoEnum {
     ANIO_MES_DIA("yyyy-MM-dd");

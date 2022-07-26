@@ -15,7 +15,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PrestamoDialogo implements InterfaceModelFind<Prestamo> {
 

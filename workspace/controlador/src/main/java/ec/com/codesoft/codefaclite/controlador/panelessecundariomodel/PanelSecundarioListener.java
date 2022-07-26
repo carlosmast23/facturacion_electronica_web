@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.panelessecundariomodel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface PanelSecundarioListener {
     public void mostrar();

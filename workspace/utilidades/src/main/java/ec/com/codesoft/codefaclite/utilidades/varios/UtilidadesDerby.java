@@ -10,7 +10,7 @@ import static ec.com.codesoft.codefaclite.utilidades.validadores.UtilidadValidad
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesDerby {
     

@@ -13,7 +13,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class WidgetNotificacionesCodefac extends ObjetoEscritorioAbstract {
 

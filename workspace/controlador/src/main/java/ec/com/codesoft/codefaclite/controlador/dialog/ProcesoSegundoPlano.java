@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.corecodefaclite.excepcion.ExcepcionCodefacLit
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ProcesoSegundoPlano {
     public void procesar() throws ExcepcionCodefacLite;

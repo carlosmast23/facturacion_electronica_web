@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.transporte.DetallePro
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DetalleProductoGuiaRemisionFacade extends AbstractFacade<DetalleProductoGuiaRemision> {
     

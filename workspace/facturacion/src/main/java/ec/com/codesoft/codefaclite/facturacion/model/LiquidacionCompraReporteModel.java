@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.enumerados.VentanaEnum;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class LiquidacionCompraReporteModel extends FacturaReporteModel{
 

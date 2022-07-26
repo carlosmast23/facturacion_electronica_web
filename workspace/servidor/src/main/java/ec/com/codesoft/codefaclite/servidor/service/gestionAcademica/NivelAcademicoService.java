@@ -25,7 +25,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NivelAcademicoService extends ServiceAbstract<NivelAcademico, NivelAcademicoFacade> implements NivelAcademicoServiceIf {
 

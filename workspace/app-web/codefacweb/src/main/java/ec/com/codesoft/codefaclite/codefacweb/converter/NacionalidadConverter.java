@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("nacionalidadConverter")
 public class NacionalidadConverter extends AbstractConverter implements Converter {

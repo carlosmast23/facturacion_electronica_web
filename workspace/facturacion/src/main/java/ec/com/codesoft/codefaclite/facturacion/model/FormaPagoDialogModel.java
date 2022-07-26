@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FormaPagoDialogModel extends FormaPagoDialog{
     private final String[] categoriaTiempo={"ninguno","Dias","Meses","Años"};

@@ -26,7 +26,7 @@ import javax.swing.JToolBar;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class NotaCreditoPanel extends ControladorCodefacInterface {
 

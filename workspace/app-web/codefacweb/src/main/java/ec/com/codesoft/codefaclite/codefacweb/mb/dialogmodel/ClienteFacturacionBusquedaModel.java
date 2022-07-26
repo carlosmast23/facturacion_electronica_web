@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ClienteFacturacionBusquedaModel implements Serializable{
     public String identificacion;

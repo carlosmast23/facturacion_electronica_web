@@ -15,7 +15,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.Empresa;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PerfilBusquedaDialogo implements InterfaceModelFind<Perfil>{
 

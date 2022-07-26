@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TipoDocumentoFacade extends AbstractFacade<TipoDocumento> implements Serializable{
 

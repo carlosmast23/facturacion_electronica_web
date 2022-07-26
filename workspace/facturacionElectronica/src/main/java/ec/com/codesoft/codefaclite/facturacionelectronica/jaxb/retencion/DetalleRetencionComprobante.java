@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
             "fechaEmisionDocSustento"})
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DetalleRetencionComprobante implements Serializable{
     /**

@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *Clase que va a contener funciones o metodos comunes para todo el sistema
- * @author Carlos
+ * @author
  */
 public abstract class FuncionesSistemaCodefac {
     public static void servidorConexionPerdida() {

@@ -14,7 +14,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class EjemploDialogo implements InterfaceModelFind<Empleado>,InterfacesPropertisFindWeb {
     public Vector<ColumnaDialogo> getColumnas() {

@@ -31,7 +31,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @ManagedBean
 @ViewScoped

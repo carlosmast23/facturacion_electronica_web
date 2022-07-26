@@ -22,7 +22,7 @@ import javax.persistence.EntityTransaction;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class RubroPlantillaService extends ServiceAbstract<RubroPlantilla,RubroPlantillaFacade> implements RubroPlantillaServiceIf{
 

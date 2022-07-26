@@ -31,7 +31,7 @@ import javax.persistence.EntityTransaction;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class EstudianteInscritoService extends ServiceAbstract<EstudianteInscrito, EstudianteInscritoFacade> implements EstudianteInscritoServiceIf {
 

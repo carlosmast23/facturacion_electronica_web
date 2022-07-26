@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DestinatarioGuiaRemisionService extends ServiceAbstract<DestinatarioGuiaRemision,DestinatarioGuiaRemisionFacade> implements DestinatarioGuiaRemisionServiceIf{
     

@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestTipoDocumento {
     public static void main(String[] args)

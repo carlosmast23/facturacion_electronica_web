@@ -12,7 +12,7 @@ import org.jdesktop.swingx.prompt.PromptSupport;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesSwingX {
     

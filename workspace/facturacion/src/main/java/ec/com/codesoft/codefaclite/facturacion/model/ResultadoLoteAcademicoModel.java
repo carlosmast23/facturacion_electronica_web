@@ -36,7 +36,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ResultadoLoteAcademicoModel extends ResultadoLoteAcademicoPanel{
     

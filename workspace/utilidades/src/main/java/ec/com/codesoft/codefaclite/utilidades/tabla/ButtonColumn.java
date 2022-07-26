@@ -12,7 +12,7 @@ import javax.swing.table.*;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ButtonColumn extends AbstractCellEditor
 	implements TableCellRenderer, TableCellEditor, ActionListener, MouseListener

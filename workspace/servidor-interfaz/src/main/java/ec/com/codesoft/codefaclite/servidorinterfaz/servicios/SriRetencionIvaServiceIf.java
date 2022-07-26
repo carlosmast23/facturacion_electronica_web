@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface SriRetencionIvaServiceIf extends ServiceAbstractIf<SriRetencionIva> {
     

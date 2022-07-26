@@ -13,7 +13,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("documentoEnumConverter")
 public class DocumentoEnumConverter implements Converter {

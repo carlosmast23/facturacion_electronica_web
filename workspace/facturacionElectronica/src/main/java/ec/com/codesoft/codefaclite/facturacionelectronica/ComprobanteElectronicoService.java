@@ -80,7 +80,7 @@ import org.w3c.dom.Document;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteElectronicoService implements Runnable {
     
@@ -1320,7 +1320,7 @@ public class ComprobanteElectronicoService implements Runnable {
     
     /**
      * Agregado intentos porque muchas veces el Sri esta funcionando de manera iregular porque va y viene la conexion
-     * @author Carlos 
+     * @author 
      * @param intentos
      * @return 
      */

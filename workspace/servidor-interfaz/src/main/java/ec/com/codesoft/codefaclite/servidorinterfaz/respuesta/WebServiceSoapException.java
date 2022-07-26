@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.respuesta;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class WebServiceSoapException extends Exception {
     public WebServiceSoapException(String message) {

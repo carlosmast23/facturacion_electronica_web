@@ -13,7 +13,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ParametroCodefacFacade extends AbstractFacade<ParametroCodefac>
 {

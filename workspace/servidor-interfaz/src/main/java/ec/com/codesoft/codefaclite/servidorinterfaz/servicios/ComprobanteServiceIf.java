@@ -26,7 +26,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ComprobanteServiceIf extends Remote {
     

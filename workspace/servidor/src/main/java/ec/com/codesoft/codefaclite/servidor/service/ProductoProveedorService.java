@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ProductoProveedorService extends ServiceAbstract<ProductoProveedor, ProductoProveedorFacade> implements ProductoProveedorServiceIf {
 

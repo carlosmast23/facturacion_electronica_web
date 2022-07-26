@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.corecodefaclite.excepcion;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ExcepcionCodefacLite extends Exception {
     

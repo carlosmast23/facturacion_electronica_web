@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidor.service;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class DialogoService {
     //public static 

@@ -8,7 +8,7 @@ package ec.com.codesoft.codefaclite.corecodefaclite.views;
 /**
  * Interfaz que permite establecer un constructor adicional despues de cargar la pantalla cuando se necesite
  * abrir la pantalla desde otra pantalla y enviar parametros para que se abra o carga con una logica en particular
- * @author Carlos
+ * @author
  */
 public interface InterfazPostConstructPanel {
     public void postConstructorExterno(Object[] parametros);

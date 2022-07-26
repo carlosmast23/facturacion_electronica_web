@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.vista.factura;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteVentaData {
     private String codigo;

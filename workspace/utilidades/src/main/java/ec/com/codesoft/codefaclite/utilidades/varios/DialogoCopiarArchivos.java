@@ -16,7 +16,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DialogoCopiarArchivos {
     

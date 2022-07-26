@@ -13,7 +13,7 @@ import java.awt.Point;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DrawComponente implements DrawInterface{
     

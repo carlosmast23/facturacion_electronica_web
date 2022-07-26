@@ -24,7 +24,7 @@ import javax.persistence.PersistenceException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestGrabarFechaValidacion {
 

@@ -12,7 +12,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SriFormaPagoService extends ServiceAbstract<SriFormaPago, SriFormaPagoFacade> implements SriFormaPagoServiceIf
 {

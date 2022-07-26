@@ -35,7 +35,7 @@ import org.jdesktop.swingx.JXDatePicker;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class FacturacionPanel extends ControladorCodefacInterface {
     

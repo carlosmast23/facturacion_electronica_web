@@ -15,7 +15,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("selectOneMenuConverter")
 public class SelectOneMenuConverter implements Converter {

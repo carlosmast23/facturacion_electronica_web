@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PerfilUsuarioService extends ServiceAbstract<PerfilUsuario,PerfilUsuarioFacade> implements PerfilUsuarioServiceIf{
 

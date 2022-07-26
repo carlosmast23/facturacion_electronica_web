@@ -43,7 +43,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteDataNotaCredito extends ComprobanteDataFacturaNotaCreditoAbstract {
     private NotaCredito notaCredito;

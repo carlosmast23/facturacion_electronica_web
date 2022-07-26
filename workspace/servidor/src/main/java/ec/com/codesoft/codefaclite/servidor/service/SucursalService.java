@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SucursalService extends ServiceAbstract<Sucursal, SucursalFacade> implements SucursalServiceIf{
 

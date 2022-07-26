@@ -13,7 +13,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestXmlLeerAutorizado {
     public static void main(String args[])

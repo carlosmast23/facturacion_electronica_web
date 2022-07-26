@@ -43,7 +43,7 @@ import net.sf.jasperreports.engine.JasperReport;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ControladorReporteRetencion {
     private Persona proveedor;

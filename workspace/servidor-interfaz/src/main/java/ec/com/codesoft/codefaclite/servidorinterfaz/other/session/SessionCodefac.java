@@ -26,7 +26,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SessionCodefac implements SessionCodefacInterface,Serializable{
     

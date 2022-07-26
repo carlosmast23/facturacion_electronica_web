@@ -23,7 +23,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class EjemploCrm {
     public static void main(String[] args) {

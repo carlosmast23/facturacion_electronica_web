@@ -17,7 +17,7 @@ import javax.persistence.Persistence;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class Main {
     private static EntityManagerFactory factory;

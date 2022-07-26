@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.FacturaDetalle;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaDetalleFacade extends AbstractFacade<FacturaDetalle>
 {

@@ -16,7 +16,7 @@ import javax.persistence.MappedSuperclass;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @MappedSuperclass
 public class ComprobanteAdicional implements Serializable{

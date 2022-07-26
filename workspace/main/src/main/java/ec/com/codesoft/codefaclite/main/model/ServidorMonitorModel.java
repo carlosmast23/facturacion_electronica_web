@@ -21,7 +21,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ServidorMonitorModel extends ServidorMonitorPanel implements ServidorMonitorUpdateInterface{
                 

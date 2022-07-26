@@ -19,7 +19,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadesLista {
     public static String castListToString(List lista,String caracter)

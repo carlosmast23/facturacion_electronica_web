@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum RecursoCodefac {
     IMAGENES_ICONOS("img/iconos"),

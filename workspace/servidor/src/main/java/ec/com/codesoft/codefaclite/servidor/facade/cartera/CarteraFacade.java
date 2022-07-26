@@ -29,7 +29,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CarteraFacade extends AbstractFacade<Cartera>
 {    

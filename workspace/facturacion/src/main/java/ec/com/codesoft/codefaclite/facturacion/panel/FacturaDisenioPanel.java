@@ -19,7 +19,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class FacturaDisenioPanel extends ControladorCodefacInterface {
 

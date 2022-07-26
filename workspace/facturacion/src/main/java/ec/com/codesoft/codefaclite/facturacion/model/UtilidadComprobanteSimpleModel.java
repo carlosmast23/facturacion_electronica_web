@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.facturacionelectronica.ComprobanteElectronico
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadComprobanteSimpleModel extends UtilidadComprobanteAvanzadoModel{
 

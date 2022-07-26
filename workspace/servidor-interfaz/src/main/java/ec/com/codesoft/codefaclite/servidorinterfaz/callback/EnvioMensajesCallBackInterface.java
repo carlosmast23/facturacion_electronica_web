@@ -10,7 +10,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface EnvioMensajesCallBackInterface extends Remote {
     public void procesando(Integer porcentaje) throws RemoteException;

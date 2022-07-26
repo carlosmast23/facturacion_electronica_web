@@ -18,7 +18,7 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class GuiaRemisionReporte extends ComprobanteElectronicoReporte {
 

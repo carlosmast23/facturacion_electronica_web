@@ -27,7 +27,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.Usuario;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaBusqueda implements InterfaceModelFind<Factura>,InterfacesPropertisFindWeb {   
     private Persona cliente;

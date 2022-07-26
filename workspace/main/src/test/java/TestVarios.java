@@ -13,7 +13,7 @@ import org.apache.commons.net.ntp.TimeStamp;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestVarios {
     public static void main(String[] args) {

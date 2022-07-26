@@ -21,7 +21,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = NombresEntidadesJPA.PRESTAMO_TABLA_INTERES)

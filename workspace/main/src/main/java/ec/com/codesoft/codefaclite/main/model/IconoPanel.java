@@ -21,7 +21,7 @@ import javax.swing.plaf.DesktopPaneUI;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class IconoPanel extends JPanel{
     

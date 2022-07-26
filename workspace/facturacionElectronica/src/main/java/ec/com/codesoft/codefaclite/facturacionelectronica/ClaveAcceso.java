@@ -14,7 +14,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ClaveAcceso implements Serializable{
     

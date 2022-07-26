@@ -26,7 +26,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PrestamoService extends ServiceAbstract<Prestamo,PrestamoFacade> implements PrestamoServiceIf  {
 

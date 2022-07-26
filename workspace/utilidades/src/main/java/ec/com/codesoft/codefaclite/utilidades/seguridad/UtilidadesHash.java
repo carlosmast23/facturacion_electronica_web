@@ -9,7 +9,7 @@ import org.mindrot.jbcrypt.BCrypt;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesHash {
     

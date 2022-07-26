@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.NivelAcadem
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NivelAcademicoFacade extends AbstractFacade<NivelAcademico>{
 

@@ -13,7 +13,7 @@ import javax.swing.JProgressBar;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SplashScreenFrame extends javax.swing.JFrame {
     

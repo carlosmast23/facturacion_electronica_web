@@ -28,7 +28,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class MonitorComprobanteModel extends MonitorComprobantesPanel {
 

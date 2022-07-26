@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ReporteProformaData extends ReporteFacturaData{
  

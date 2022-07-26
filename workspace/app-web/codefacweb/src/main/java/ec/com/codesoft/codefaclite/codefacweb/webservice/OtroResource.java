@@ -26,7 +26,7 @@ import javax.ws.rs.core.Response;
 /**
  * REST Web Service
  *
- * @author Carlos
+ * @author
  */
 @Path("otro")
 public class OtroResource {

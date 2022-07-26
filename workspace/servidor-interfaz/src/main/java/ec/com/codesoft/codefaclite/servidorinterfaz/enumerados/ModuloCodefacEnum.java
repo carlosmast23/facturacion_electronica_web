@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum ModuloCodefacEnum implements Serializable{
     CONTABILIDAD("Contabilidad","CONT",

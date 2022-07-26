@@ -107,7 +107,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NotaCreditoModel extends NotaCreditoPanel implements ComponenteDatosComprobanteElectronicosInterface,NotaCreditoModelInterface{
 

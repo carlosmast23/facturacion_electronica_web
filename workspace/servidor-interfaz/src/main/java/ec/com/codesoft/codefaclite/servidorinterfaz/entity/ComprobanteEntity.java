@@ -23,7 +23,7 @@ import javax.persistence.TemporalType;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @MappedSuperclass
 public abstract class ComprobanteEntity<T extends ComprobanteAdicional> implements Serializable {

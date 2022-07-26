@@ -14,7 +14,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DatoAdicionalModel extends DatoAdicionalDialog{
     

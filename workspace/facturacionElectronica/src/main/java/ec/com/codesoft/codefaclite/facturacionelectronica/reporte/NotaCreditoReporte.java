@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NotaCreditoReporte extends ComprobanteElectronicoReporte{
     

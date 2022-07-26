@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.corecodefaclite.excepcion.ExcepcionCodefacLit
 
 /**
  *
- * @author Carlos
+ * @author
  * Funcion que proporciona un interfaz para pasar una referencia de un objeto y permitir
  * utilizar como una pantalla de dialogo relacionada con otra para pasar un valor al
  * formulario principal

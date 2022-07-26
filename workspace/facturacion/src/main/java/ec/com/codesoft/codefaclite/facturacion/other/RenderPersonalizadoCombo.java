@@ -13,7 +13,7 @@ import javax.swing.ListCellRenderer;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class RenderPersonalizadoCombo implements ListCellRenderer {
 

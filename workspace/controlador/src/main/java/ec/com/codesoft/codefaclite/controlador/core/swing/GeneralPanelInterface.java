@@ -44,7 +44,7 @@ import org.jdesktop.swingx.VerticalLayout;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class GeneralPanelInterface extends javax.swing.JInternalFrame implements VistaCodefacIf
 {

@@ -12,7 +12,7 @@ import org.apache.commons.net.ntp.TimeInfo;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ObtenerFecha {
     //Declaramos el servidor de donde obtendremos la fecha

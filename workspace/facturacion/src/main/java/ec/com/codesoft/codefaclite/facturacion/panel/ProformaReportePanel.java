@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ProformaReportePanel extends ControladorCodefacInterface {
 

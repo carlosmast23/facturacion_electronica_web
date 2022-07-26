@@ -12,7 +12,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.servicios.ServiceAbstractIf;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface PrestamoCuotaCargoServiceIf extends ServiceAbstractIf<PrestamoCuotaCargo>{
     

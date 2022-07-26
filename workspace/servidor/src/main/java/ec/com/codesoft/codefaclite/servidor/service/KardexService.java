@@ -53,7 +53,7 @@ import javax.persistence.EntityTransaction;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class KardexService extends ServiceAbstract<Kardex,KardexFacade> implements KardexServiceIf
 {

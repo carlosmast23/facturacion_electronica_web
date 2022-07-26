@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.entity;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class NombresEntidadesJPA {
     public static final String CARTERA="cartera";

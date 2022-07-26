@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface PerfilUsuarioServiceIf extends ServiceAbstractIf<PerfilUsuario> {
     public List<PerfilUsuario> buscarPorPerfil(Perfil perfil) throws java.rmi.RemoteException;

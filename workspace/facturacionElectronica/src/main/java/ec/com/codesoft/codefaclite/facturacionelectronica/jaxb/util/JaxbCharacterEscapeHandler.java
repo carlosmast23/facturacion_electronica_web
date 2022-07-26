@@ -11,7 +11,7 @@ import java.io.Writer;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class JaxbCharacterEscapeHandler implements CharacterEscapeHandler {
 

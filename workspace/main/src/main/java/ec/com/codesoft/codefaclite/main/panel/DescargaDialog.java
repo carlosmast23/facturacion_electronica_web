@@ -11,7 +11,7 @@ import javax.swing.JProgressBar;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public  class DescargaDialog extends javax.swing.JDialog {
 

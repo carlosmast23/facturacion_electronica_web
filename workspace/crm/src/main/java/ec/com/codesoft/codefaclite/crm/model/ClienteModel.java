@@ -481,7 +481,7 @@ public class ClienteModel extends ClienteForm implements DialogInterfacePanel<Pe
              * Seleccionando valores por defecto que se deben seleccionar
              * despues de limpiar
              *
-             * @author carlos
+             * @author
              */
 
             SriIdentificacionServiceIf service = ServiceFactory.getFactory().getSriIdentificacionServiceIf();

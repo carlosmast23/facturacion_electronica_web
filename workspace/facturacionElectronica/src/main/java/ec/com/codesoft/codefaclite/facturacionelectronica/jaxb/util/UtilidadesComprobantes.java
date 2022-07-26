@@ -54,7 +54,7 @@ import org.xml.sax.SAXException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadesComprobantes {
 

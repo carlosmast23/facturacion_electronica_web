@@ -120,7 +120,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class Main {
     

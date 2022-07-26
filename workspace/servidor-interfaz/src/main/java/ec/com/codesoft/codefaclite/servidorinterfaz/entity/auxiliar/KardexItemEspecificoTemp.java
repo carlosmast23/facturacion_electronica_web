@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.KardexItemEspecifico;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class KardexItemEspecificoTemp extends KardexItemEspecifico{
     public boolean seleccion;

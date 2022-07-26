@@ -13,7 +13,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.enumerados.DocumentoEnum;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class LiquidacionCompraBusqueda extends FacturaBusqueda{
     

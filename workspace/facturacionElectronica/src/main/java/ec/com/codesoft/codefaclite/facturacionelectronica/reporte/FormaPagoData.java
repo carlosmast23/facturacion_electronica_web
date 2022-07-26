@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.facturacionelectronica.reporte;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FormaPagoData {
     private String nombre;

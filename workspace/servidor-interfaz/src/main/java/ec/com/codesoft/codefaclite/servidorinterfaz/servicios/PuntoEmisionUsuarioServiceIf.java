@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */ 
 public interface PuntoEmisionUsuarioServiceIf extends ServiceAbstractIf<PuntoEmisionUsuario> {
     public List<PuntoEmisionUsuario> obtenerActivoPorUsuario(Usuario usuario,Sucursal sucursal) throws ServicioCodefacException, RemoteException;

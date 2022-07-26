@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteFisicoDisenioService extends ServiceAbstract<ComprobanteFisicoDisenio,ComprobanteFisicoDisenioFacade> implements ComprobanteFisicoDisenioServiceIf{
     

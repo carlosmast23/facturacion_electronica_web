@@ -23,7 +23,7 @@ import org.jdesktop.swingx.JXComboBox;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadesTablas {
     

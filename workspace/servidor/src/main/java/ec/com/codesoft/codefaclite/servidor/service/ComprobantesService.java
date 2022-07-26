@@ -129,7 +129,7 @@ import org.w3c.dom.NodeList;
 
 /**UtilidadesRmi.deserializar(byteReporte);
  *
- * @author Carlos
+ * @author
  */
 public class ComprobantesService extends ServiceAbstract<ComprobanteEntity,ComprobanteEntityFacade> implements ComprobanteServiceIf{
 

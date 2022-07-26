@@ -34,7 +34,7 @@ import org.jfree.util.Log;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ValidacionLicenciaCodefac{
 

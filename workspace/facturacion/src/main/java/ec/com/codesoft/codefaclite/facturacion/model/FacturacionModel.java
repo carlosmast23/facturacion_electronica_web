@@ -205,7 +205,7 @@ import org.jdesktop.swingx.JXTaskPane;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturacionModel extends FacturacionPanel implements InterfazPostConstructPanel,ComponenteDatosComprobanteElectronicosInterface,FacturaModelInterface,Serializable{
 

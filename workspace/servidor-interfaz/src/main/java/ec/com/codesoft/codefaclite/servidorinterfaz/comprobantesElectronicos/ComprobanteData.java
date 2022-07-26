@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteData implements Serializable{
     private String estado;

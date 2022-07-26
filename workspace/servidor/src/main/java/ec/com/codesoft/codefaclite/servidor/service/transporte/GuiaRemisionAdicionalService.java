@@ -13,7 +13,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class GuiaRemisionAdicionalService extends ServiceAbstract<GuiaRemisionAdicional,GuiaRemisionAdicionalFacade> implements GuiaRemisionAdicionalServiceIf{
 

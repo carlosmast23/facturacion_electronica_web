@@ -12,7 +12,7 @@ import javax.swing.JToggleButton;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ServidorMonitorPanel extends javax.swing.JFrame {
 

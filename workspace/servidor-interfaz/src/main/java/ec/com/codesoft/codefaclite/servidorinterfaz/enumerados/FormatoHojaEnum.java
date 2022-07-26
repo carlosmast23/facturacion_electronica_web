@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.enumerados;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum FormatoHojaEnum {
     

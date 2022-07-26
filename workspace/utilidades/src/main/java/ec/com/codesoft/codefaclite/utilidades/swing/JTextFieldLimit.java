@@ -11,7 +11,7 @@ import javax.swing.text.PlainDocument;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class JTextFieldLimit extends PlainDocument {
 

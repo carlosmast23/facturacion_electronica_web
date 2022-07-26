@@ -34,7 +34,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteDataGuiaRemision implements ComprobanteDataInterface,Serializable {
     

@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.excepciones.ServicioC
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface FacturaDetalleServiceIf extends ServiceAbstractIf<FacturaDetalle> {
     public Object getReferenciaDetalle(FacturaDetalle facturaDetalle) throws ServicioCodefacException,java.rmi.RemoteException;

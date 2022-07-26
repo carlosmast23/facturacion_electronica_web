@@ -19,7 +19,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = "PRODUCTO_ENSAMBLE")

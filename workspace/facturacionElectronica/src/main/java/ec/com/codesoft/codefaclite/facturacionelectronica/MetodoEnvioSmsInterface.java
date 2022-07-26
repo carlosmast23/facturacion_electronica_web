@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface MetodoEnvioSmsInterface {
     public abstract void enviarMensaje(List<String> numeros,String mensaje) throws Exception;

@@ -18,7 +18,7 @@ import javax.swing.text.JTextComponent;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ConsolaGeneral {
     private String[] titulo={"Componente","Observacion"};

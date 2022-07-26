@@ -41,7 +41,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NotaCreditoModelControlador extends FacturaNotaCreditoModelControladorAbstract{
     

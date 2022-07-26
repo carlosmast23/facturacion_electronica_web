@@ -73,7 +73,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobantesConfiguracionModel extends ComprobantesConfiguracionPanel {
 

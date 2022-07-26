@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestFacturacionElectronica {
     public static void main(String[] args) {

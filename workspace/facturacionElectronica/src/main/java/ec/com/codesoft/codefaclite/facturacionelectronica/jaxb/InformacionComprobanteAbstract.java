@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @XmlTransient
 public abstract class InformacionComprobanteAbstract implements Serializable{

@@ -28,7 +28,7 @@ import javax.persistence.PersistenceException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestBaseDatos {
     public static void main(String[] args) {

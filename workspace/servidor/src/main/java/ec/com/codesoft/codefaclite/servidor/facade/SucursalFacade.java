@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SucursalFacade extends AbstractFacade<Sucursal> implements Serializable{
 

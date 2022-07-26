@@ -23,7 +23,7 @@ import java.util.Properties;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface UtilidadesServiceIf extends Remote
 {

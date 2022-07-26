@@ -11,7 +11,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.cartera.PrestamoCuota
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PrestamoCuotaCargoFacade extends AbstractFacade<PrestamoCuotaCargo> {
 

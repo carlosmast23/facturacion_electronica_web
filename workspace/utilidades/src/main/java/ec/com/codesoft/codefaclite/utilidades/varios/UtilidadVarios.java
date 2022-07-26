@@ -25,7 +25,7 @@ import java.util.logging.Logger;
 
 /**
  *TODO:Cambiar el nombre de esta clase y dale un solo objetico que es para temas de la tarjeta de Red
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadVarios {
     

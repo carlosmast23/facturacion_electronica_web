@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.BandaComprobante;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class BandaComprobanteFacade extends AbstractFacade<BandaComprobante>{
     

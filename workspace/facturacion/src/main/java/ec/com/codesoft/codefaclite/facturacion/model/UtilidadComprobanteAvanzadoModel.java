@@ -51,7 +51,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadComprobanteAvanzadoModel extends UtilidadComprobantePanel {
     

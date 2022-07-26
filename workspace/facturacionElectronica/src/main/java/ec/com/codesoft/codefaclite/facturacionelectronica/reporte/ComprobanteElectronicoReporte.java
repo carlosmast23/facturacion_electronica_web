@@ -23,7 +23,7 @@ import org.apache.commons.io.IOUtils;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ComprobanteElectronicoReporte 
 {

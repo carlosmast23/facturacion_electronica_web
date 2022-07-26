@@ -12,7 +12,7 @@ import javax.swing.JTextArea;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class CalculadoraPanel extends ControladorCodefacInterface {
 

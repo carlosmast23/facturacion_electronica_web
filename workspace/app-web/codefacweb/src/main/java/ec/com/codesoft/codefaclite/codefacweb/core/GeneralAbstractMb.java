@@ -17,7 +17,7 @@ import javax.faces.bean.ManagedProperty;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class GeneralAbstractMb implements Serializable,VistaCodefacIf {
 

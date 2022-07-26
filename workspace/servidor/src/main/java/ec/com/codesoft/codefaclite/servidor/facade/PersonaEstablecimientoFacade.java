@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.PersonaEstablecimient
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PersonaEstablecimientoFacade extends AbstractFacade<PersonaEstablecimiento> {
 

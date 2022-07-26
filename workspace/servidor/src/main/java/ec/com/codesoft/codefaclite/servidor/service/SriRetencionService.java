@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SriRetencionService extends ServiceAbstract<SriRetencion,SriRetencionFacade> implements SriRetencionServiceIf{
 

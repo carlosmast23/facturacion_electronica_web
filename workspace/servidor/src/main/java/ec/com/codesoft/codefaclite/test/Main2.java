@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class Main2 {
     public static void main(String[] args) {

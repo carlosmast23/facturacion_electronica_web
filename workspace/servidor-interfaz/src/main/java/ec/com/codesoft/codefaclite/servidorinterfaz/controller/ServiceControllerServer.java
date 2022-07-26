@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ServiceControllerServer {
 

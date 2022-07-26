@@ -9,7 +9,7 @@ import java.sql.Date;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface CarteraInterface {
     public String getCodigoDocumento();

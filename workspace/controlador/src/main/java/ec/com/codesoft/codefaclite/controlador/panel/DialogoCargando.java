@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DialogoCargando extends javax.swing.JDialog {
 

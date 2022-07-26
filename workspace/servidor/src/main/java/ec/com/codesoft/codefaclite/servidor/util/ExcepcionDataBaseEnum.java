@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidor.util;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum ExcepcionDataBaseEnum {
     CLAVE_DUPLICADO("Ya existe un dato guardado con el código principal que intenta ingresar"),

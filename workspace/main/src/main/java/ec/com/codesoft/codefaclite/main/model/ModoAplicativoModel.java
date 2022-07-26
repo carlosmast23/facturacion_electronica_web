@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ModoAplicativoModel extends ModoAplicativoDialog{
     

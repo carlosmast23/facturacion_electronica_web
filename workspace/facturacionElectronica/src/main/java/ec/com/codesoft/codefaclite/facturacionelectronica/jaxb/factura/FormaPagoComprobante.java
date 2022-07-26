@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @XmlType(propOrder = {"formaPago","total","plazo","unidadTiempo"})
 public class FormaPagoComprobante implements Serializable{    

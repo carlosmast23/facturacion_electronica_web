@@ -9,7 +9,7 @@ import java.awt.Point;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface IconoInterfaz {
     public abstract void doubleClick();

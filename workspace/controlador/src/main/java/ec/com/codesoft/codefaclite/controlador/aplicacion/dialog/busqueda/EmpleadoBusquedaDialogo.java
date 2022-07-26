@@ -16,7 +16,7 @@ import ec.com.codesoft.codefaclite.corecodefaclite.dialog.InterfaceModelFind;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class EmpleadoBusquedaDialogo implements InterfaceModelFind<Empleado>,InterfacesPropertisFindWeb
 {

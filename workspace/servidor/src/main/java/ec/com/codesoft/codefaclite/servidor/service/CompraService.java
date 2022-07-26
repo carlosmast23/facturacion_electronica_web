@@ -74,7 +74,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CompraService extends ServiceAbstract<Compra,CompraFacade> implements CompraServiceIf{
     

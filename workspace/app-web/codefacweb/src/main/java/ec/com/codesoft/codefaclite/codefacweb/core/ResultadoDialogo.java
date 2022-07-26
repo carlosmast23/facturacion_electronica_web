@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ResultadoDialogo implements Serializable{
     private String titulo;

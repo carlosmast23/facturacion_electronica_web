@@ -33,7 +33,7 @@ import javax.swing.JLabel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteElectronicoComponente {
 

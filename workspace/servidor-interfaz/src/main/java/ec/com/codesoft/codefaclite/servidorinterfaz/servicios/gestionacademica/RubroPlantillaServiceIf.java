@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface RubroPlantillaServiceIf extends ServiceAbstractIf<RubroPlantilla>{
     public void grabarConDetalles(RubroPlantilla rubroPlantilla) throws RemoteException;

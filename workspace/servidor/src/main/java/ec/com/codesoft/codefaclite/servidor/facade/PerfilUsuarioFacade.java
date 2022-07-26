@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.PerfilUsuario;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PerfilUsuarioFacade extends AbstractFacade<PerfilUsuario>{
 

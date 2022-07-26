@@ -16,7 +16,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ParametroCodefacServiceIf extends ServiceAbstractIf<ParametroCodefac>
 {

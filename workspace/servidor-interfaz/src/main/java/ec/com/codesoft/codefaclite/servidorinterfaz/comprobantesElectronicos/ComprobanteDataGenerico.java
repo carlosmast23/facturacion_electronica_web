@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteDataGenerico implements ComprobanteDataInterface,Serializable {
     

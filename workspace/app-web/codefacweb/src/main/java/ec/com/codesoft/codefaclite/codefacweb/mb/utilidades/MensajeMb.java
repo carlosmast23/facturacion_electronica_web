@@ -17,7 +17,7 @@ import org.primefaces.PrimeFaces;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class MensajeMb implements Serializable{
     

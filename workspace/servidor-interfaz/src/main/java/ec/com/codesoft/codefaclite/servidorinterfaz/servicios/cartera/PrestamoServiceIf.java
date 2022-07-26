@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface PrestamoServiceIf extends ServiceAbstractIf<Prestamo>{
     public List<PrestamoCuota> buscarCuotasPorPrestamo(Prestamo prestamo) throws RemoteException ,ServicioCodefacException;

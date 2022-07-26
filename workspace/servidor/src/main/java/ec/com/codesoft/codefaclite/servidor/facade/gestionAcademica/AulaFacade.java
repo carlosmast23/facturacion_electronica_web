@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.Aula;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AulaFacade extends AbstractFacade<Aula>{
 

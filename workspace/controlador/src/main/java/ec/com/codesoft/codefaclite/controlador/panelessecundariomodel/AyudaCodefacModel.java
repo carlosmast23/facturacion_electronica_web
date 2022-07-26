@@ -10,7 +10,7 @@ import java.awt.event.MouseListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AyudaCodefacModel extends AyudaCodefacPanel{
 

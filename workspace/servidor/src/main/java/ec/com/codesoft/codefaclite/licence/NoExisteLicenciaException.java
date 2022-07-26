@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.licence;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class NoExisteLicenciaException extends Exception {
 

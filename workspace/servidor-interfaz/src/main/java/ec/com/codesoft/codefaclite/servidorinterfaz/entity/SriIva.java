@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 //@Entity
 //@Table(name = "SRI_IVA")

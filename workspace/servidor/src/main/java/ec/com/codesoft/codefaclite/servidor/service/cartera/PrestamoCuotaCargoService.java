@@ -16,7 +16,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PrestamoCuotaCargoService extends ServiceAbstract<PrestamoCuotaCargo,PrestamoCuotaCargoFacade> implements PrestamoCuotaCargoServiceIf {
 

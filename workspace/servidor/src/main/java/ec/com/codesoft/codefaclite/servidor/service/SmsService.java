@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SmsService extends UnicastRemoteObject implements SmsServiceIf{ 
 

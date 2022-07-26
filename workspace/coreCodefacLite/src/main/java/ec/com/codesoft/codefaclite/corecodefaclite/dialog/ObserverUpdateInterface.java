@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.corecodefaclite.dialog;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ObserverUpdateInterface<T> {
     public void updateInterface(T entity);

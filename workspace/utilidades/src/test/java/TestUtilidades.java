@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestUtilidades {
     public static void main(String[] args) {

@@ -28,7 +28,7 @@ import javax.swing.event.ChangeListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class WidgetVirtualMallModelo extends WidgetVirtualMall {
 

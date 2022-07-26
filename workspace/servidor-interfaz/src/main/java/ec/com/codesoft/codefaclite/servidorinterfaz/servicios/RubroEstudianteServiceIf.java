@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface RubroEstudianteServiceIf extends ServiceAbstractIf<RubroEstudiante> {
     

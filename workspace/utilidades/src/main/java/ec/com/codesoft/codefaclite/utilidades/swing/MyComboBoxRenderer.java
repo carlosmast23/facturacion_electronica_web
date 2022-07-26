@@ -12,7 +12,7 @@ import javax.swing.ListCellRenderer;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class MyComboBoxRenderer extends JLabel implements ListCellRenderer {
   private String _title;

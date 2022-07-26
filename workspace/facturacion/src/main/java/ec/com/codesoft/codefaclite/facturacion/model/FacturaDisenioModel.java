@@ -61,7 +61,7 @@ import javax.swing.event.ChangeListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaDisenioModel extends FacturaDisenoPanel implements RepaintInterface {
 

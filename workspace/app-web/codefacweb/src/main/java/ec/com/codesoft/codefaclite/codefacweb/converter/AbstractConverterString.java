@@ -13,7 +13,7 @@ import javax.faces.context.FacesContext;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AbstractConverterString {
      

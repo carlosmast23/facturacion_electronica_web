@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.Factura;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteDataLiquidacionCompra extends ComprobanteDataFactura{
     

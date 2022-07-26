@@ -33,7 +33,7 @@ import javax.mail.internet.MimeMultipart;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CorreoElectronico {
 

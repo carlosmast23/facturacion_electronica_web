@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.utilidades.seguridad.UtilidadesHash;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestHash {
     public static void main(String[] args) {

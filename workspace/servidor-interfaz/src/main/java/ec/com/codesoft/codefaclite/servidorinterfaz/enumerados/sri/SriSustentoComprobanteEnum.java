@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * TABLA 5 DE LOS ATS
  * Todo: Falta implementar un campo para saber que documentos legales son los que puede usar
- * @author Carlos
+ * @author
  */
 public enum SriSustentoComprobanteEnum 
 {

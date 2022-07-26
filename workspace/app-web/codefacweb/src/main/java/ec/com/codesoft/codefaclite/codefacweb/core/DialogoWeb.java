@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.codefacweb.core;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface DialogoWeb<T> {
     public T getResultDialogo();

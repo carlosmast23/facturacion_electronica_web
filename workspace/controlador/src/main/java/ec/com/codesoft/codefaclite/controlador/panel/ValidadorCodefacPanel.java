@@ -10,7 +10,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ValidadorCodefacPanel extends PanelSecundarioAbstract {
 

@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.facturacionelectronica.exception;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComprobanteElectronicoException extends Exception {
     

@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.academico.CatalogoPro
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CatalogoProductoFacade extends AbstractFacade<CatalogoProducto>{
     

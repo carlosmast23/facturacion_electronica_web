@@ -12,7 +12,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("tipoIdentificacionEnumConverter")
 public class TipoIdentificacionEnumConverter extends AbstractConverter implements Converter {

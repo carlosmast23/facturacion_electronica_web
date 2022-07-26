@@ -37,7 +37,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class MigrarModel extends MigrarPanel{
 

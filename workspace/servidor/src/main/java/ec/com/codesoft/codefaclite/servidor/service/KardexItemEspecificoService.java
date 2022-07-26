@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class KardexItemEspecificoService extends ServiceAbstract<KardexItemEspecifico, KardexItemEspecificoFacade> implements  KardexItemEspecificoServiceIf
 {

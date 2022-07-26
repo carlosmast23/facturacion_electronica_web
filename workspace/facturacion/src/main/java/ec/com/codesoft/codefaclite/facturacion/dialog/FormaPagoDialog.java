@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FormaPagoDialog extends javax.swing.JDialog {
 

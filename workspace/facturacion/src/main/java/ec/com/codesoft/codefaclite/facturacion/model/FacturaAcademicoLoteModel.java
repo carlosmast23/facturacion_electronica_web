@@ -58,7 +58,7 @@ import org.eclipse.persistence.sessions.factories.SessionFactory;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaAcademicoLoteModel extends FacturaAcademicoLotePanel {
 

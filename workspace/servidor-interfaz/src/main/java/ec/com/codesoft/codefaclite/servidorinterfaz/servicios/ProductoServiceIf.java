@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ProductoServiceIf extends ServiceAbstractIf<Producto> {
 

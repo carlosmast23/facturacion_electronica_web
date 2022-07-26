@@ -23,7 +23,7 @@ import org.apache.commons.configuration.PropertiesConfiguration;
  * TODO: Optimizar el problema que esta clase no deberia interactuar directamente con el atributo de las propiedades
  * por que se supone que esta clase funciona como una clase de envoltorio y debe comunciarse por metodos de put y set
  * por que si algun rato se cambia de implementacion solo se modifica en esta clase y no en todos los lugares que usen el atributo property
- * @author Carlos
+ * @author
  */
 public class ArchivoConfiguracionesCodefac {
 

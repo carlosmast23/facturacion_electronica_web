@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.compra.OrdenCompraDet
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class OrdenCompraDetalleFacade extends AbstractFacade<OrdenCompraDetalle>{
 

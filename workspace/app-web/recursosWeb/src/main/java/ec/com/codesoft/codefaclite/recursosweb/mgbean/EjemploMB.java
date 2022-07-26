@@ -13,7 +13,7 @@ import javax.faces.bean.ViewScoped;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @ManagedBean(name = "ejemploMB")
 @ViewScoped

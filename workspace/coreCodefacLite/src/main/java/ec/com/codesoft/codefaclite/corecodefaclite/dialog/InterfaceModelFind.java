@@ -13,7 +13,7 @@ import java.util.Vector;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface InterfaceModelFind<T>
 {

@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @ManagedBean
 @ViewScoped

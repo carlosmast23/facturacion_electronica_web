@@ -16,7 +16,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("empresaConverter")
 public class EmpresaConverter extends AbstractConverter implements Converter{

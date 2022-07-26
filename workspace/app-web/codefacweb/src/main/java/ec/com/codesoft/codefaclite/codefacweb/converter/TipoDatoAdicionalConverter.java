@@ -13,7 +13,7 @@ import javax.faces.convert.FacesConverter;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @FacesConverter("tipoDatoAdicionalConverter")
 public class TipoDatoAdicionalConverter extends AbstractConverter implements Converter {

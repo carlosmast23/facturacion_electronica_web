@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.Usuario;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface TipoDocumentoServiceIf extends ServiceAbstractIf<Usuario> {
     

@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.servidorinterfaz.entity.excepciones;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PersistenciaDuplicadaException extends Exception {
     public PersistenciaDuplicadaException(String message) {

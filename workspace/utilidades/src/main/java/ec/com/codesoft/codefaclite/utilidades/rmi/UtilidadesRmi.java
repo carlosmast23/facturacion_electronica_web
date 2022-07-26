@@ -18,7 +18,7 @@ import java.io.OutputStream;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class UtilidadesRmi {
     

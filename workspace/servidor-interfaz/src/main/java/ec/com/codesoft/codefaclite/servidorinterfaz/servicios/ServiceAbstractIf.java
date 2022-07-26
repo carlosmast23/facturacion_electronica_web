@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 /**
  *
- * @author Carlos
+ * @author
  * @param <Entity>
  */
 public interface ServiceAbstractIf<Entity> extends Remote {

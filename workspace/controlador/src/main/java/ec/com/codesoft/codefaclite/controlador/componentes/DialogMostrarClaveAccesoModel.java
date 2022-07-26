@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.componentes;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DialogMostrarClaveAccesoModel{
     

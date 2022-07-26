@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.util.ParametroUtilidades;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum EnumSiNo implements ParametroUtilidades.ComparadorInterface<EnumSiNo>{
     NO("no","n",false),

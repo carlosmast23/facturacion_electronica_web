@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.AccesoDirecto;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AccesoDirectoFacade extends AbstractFacade<AccesoDirecto>{
 

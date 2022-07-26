@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComponenteEnvioSmsData {
     

@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlValue;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FormaDePagoAts implements Serializable {
     private String formaPago;

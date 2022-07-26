@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.main.other;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ArchivoDescarga {
     public String nombreArchivo;

@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CatalogoProductoService extends ServiceAbstract<CatalogoProducto,CatalogoProductoFacade> implements CatalogoProductoServiceIf{
             

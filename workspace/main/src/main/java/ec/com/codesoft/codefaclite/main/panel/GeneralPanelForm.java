@@ -25,7 +25,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class GeneralPanelForm extends javax.swing.JFrame  {
 

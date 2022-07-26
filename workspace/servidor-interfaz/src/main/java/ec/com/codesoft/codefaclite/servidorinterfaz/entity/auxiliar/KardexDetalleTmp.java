@@ -13,7 +13,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class KardexDetalleTmp extends KardexDetalle implements Serializable{
     public boolean seleccion;

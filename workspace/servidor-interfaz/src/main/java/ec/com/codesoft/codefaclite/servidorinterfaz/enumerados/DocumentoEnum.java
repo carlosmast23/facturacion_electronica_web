@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * TODO: Ver si aumentar un campo para saber cuales son documentos legales del Sri y cuales son documentos internos para otros procesos
- * @author Carlos
+ * @author
  */
 public enum DocumentoEnum implements ParametroUtilidades.ComparadorInterface{
 

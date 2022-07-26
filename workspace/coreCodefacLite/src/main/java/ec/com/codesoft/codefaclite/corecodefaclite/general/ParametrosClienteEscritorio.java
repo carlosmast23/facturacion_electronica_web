@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.corecodefaclite.general;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ParametrosClienteEscritorio {
     

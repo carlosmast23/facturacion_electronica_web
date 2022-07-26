@@ -15,7 +15,7 @@ import java.awt.event.MouseListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AcercaModel extends AcercaDialog{
     

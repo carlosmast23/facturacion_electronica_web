@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface ComprobanteDataInterface {
     public String getCodigoComprobante();

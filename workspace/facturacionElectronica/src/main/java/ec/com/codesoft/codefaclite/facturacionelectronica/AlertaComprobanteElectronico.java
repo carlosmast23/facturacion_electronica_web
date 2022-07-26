@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AlertaComprobanteElectronico implements Serializable{
     public String mensaje;

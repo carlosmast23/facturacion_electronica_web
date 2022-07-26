@@ -14,7 +14,7 @@ import javax.xml.namespace.QName;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AutorizacionTest {
     public static void main(String[] args) {

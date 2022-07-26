@@ -9,7 +9,7 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class GuiaRemisionDestinatariosReporte {
     private String preimpreso;

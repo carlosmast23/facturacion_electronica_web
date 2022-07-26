@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class StockMinimoData implements ExcelDatosInterface{
     private String codigo;

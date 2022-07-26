@@ -21,7 +21,7 @@ import org.jdesktop.swingx.JXDatePicker;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ComprobantesConfiguracionPanel extends ControladorCodefacInterface {
 

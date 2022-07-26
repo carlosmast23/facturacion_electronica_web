@@ -9,7 +9,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.PermisoVentana;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PermisoVentanaFacade extends AbstractFacade<PermisoVentana>{
     

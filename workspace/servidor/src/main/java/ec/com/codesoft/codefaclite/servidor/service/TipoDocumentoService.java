@@ -11,7 +11,7 @@ import java.rmi.RemoteException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TipoDocumentoService extends ServiceAbstract<TipoDocumento, TipoDocumentoFacade>{
 

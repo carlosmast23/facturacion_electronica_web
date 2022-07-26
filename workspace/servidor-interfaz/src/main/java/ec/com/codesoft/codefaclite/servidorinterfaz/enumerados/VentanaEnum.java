@@ -19,7 +19,7 @@ import javax.swing.KeyStroke;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum VentanaEnum implements Serializable{
 

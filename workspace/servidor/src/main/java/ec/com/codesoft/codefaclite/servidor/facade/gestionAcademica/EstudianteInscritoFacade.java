@@ -23,7 +23,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class EstudianteInscritoFacade extends AbstractFacade<EstudianteInscrito> {
 

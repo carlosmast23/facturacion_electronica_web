@@ -99,7 +99,7 @@ import org.eclipse.persistence.internal.sessions.factories.SessionsFactory;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturacionService extends ServiceAbstract<Factura, FacturaFacade> implements FacturacionServiceIf
 {

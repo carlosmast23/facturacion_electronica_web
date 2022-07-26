@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.facturacion.reportdata;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ProformaDetalleData {
     private String codigo;

@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ValidadorCodefacModel extends ValidadorCodefacPanel{
     public static final String PROPIEDAD_TABLA="tabla";

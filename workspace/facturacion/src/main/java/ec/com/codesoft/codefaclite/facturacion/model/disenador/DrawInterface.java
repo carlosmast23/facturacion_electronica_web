@@ -10,7 +10,7 @@ import java.awt.Point;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface DrawInterface {
     public abstract void dibujar(Graphics g,Point desplazamiento,DrawDocumento documento,float escala);

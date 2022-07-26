@@ -15,7 +15,7 @@ import java.util.Map;
 /**
  * Estos documentos son internos del sistema y me permite clasificar a que proceso
  * pertenece o con cual modulo se debe relacionar
- * @author Carlos
+ * @author
  * @nota No mover los codigos anteriores porque en la basese de datos ya estan referenciados a las mismas
  */
 public enum TipoDocumentoEnum implements ParametroUtilidades.ComparadorInterface<TipoDocumentoEnum>{

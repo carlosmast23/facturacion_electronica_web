@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CompraAgrupadoCategoriaData implements ExcelDatosInterface {
     private String categoria;

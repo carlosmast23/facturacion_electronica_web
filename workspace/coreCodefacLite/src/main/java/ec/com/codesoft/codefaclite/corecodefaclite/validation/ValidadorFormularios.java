@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.corecodefaclite.validation;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ValidadorFormularios {
     //public void static 

@@ -9,7 +9,7 @@ import net.sf.jasperreports.components.list.HorizontalFillList;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public enum OrientacionReporteEnum {
     HORIZONTAL,VERTICAL;

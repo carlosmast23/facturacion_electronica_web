@@ -21,7 +21,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  *TODO: Ver si se puede crear una clase abstracta anterior que agrupe las funcionalidades reptidas de factura y cñoquidacion de compras
- * @author Carlos
+ * @author
  */
 @XmlRootElement(name = ComprobanteElectronico.LIQUIDACION_COMPRA)
 @XmlType(propOrder = {"informacionTributaria","informacionLiquidacionCompra","detalles","informacionAdicional"})

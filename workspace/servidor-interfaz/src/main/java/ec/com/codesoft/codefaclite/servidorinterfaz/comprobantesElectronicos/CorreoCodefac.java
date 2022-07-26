@@ -23,7 +23,7 @@ import javax.mail.MessagingException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class CorreoCodefac {
     private CorreoElectronico correoElectronico;

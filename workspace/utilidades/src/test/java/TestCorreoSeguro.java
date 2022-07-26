@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestCorreoSeguro {
     private static final String SMTP_HOST_NAME = "smtp.gmail.com";

@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class IngresarDatosClienteModel extends IngresarDatosClienteDialog{
     

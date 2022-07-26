@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @XmlRootElement(name = ComprobanteElectronico.LOTE)
 @XmlType(propOrder = {"claveAcceso","ruc","comprobantes"})

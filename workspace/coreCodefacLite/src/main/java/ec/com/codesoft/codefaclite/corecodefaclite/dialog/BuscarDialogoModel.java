@@ -44,7 +44,7 @@ import javax.swing.table.TableColumnModel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class BuscarDialogoModel extends DialogoBuscadorForm
 {

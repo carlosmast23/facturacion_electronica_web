@@ -16,7 +16,7 @@ import javax.mail.MessagingException;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class TestCorreo {
     public static void main(String[] args) {

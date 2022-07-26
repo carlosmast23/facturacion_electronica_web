@@ -34,7 +34,7 @@ import javax.persistence.EntityTransaction;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class PerfilService extends ServiceAbstract<Perfil,PerfilFacade> implements PerfilServiceIf{
     private static final Logger LOG = Logger.getLogger(PerfilService.class.getName());

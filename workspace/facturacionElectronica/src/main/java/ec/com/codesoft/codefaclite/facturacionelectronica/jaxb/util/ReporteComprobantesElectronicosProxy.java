@@ -12,7 +12,7 @@ import net.sf.jasperreports.engine.JasperReport;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ReporteComprobantesElectronicosProxy {
     public URL pathRecursos;

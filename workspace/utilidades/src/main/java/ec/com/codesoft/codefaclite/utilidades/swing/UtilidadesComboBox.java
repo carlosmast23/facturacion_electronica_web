@@ -10,7 +10,7 @@ import javax.swing.JComboBox;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesComboBox {
 

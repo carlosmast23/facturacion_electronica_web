@@ -18,7 +18,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 @Entity
 @Table(name = "DETALLE_PRODUCTO_GUIA_REMISION")

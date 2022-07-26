@@ -10,7 +10,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class Publicidad {
     private URL urlImagen;

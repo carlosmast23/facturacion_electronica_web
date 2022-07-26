@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ValidacionRespuesta {
     

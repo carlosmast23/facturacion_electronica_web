@@ -19,7 +19,7 @@ import javax.swing.table.TableCellRenderer;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class MigrarPanel extends ControladorCodefacInterface {
 

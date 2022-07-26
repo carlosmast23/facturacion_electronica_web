@@ -63,7 +63,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class AtsService extends UnicastRemoteObject implements Serializable,AtsServiceIf {
 

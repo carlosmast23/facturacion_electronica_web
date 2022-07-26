@@ -29,7 +29,7 @@ import javax.swing.DefaultListModel;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class DescargaModel extends DescargaDialog implements Runnable{
     

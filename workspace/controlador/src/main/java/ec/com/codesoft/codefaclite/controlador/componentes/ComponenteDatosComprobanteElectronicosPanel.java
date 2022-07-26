@@ -51,7 +51,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ComponenteDatosComprobanteElectronicosPanel extends javax.swing.JPanel {
 

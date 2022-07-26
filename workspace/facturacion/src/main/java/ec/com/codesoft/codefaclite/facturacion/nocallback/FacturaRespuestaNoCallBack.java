@@ -33,7 +33,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class FacturaRespuestaNoCallBack extends ComprobanteRespuestaNoCallBack
 {

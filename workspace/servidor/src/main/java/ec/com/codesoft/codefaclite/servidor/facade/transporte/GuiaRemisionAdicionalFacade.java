@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.servidorinterfaz.entity.transporte.GuiaRemisi
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class GuiaRemisionAdicionalFacade extends AbstractFacade<GuiaRemisionAdicional> {
 

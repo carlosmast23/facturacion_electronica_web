@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface PersonaServiceIf extends ServiceAbstractIf<Persona>{
     

@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface CatalogoProductoServiceIf extends ServiceAbstractIf<CatalogoProducto> 
 {

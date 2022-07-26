@@ -11,7 +11,7 @@ import java.util.Map;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface MetodosEnvioInterface { 
     public abstract void enviarCorreo(String mensaje,String subject,List<String> destinatorios,Map<String,String> pathFiles) throws Exception;

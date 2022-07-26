@@ -54,7 +54,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class UtilidadesService extends UnicastRemoteObject implements UtilidadesServiceIf {
 

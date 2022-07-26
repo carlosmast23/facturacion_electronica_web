@@ -9,7 +9,7 @@ import java.awt.Graphics;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface RepaintInterface {
     public void repaint(Graphics g);

@@ -9,7 +9,7 @@ import javax.swing.JButton;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class ModoAplicativoDialog extends javax.swing.JDialog {
 

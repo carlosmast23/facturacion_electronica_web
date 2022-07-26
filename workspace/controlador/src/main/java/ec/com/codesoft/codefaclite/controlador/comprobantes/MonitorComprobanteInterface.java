@@ -7,7 +7,7 @@ package ec.com.codesoft.codefaclite.controlador.comprobantes;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public interface MonitorComprobanteInterface {
     public void eventBtnAbrir();

@@ -13,7 +13,7 @@ import ec.com.codesoft.codefaclite.corecodefaclite.dialog.InterfaceModelFind;
 
 /**
  * TODO: Ver si unifico este dialogo con persona
- * @author Carlos
+ * @author
  */
 public class ReferidoBusquedaDialogo extends ClienteBusquedaDialogo{
 

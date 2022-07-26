@@ -10,7 +10,7 @@ import ec.com.codesoft.codefaclite.controlador.core.swing.GeneralPanelInterface;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public abstract class ControladorCodefacInterface extends GeneralPanelInterface{
     public SessionCodefacInterface session;    

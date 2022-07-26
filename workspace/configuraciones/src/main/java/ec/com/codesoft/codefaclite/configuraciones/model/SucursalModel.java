@@ -29,7 +29,7 @@ import javax.swing.JComponent;
 
 /**
  *
- * @author Carlos
+ * @author
  */
 public class SucursalModel extends SucursalPanel {
     
